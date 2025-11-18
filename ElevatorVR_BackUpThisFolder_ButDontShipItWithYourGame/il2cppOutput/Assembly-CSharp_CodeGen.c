@@ -1,0 +1,102 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void ElevatorController_Start_m567268E26C084228667E5319718B02C4E1FCF1E4 (void);
+extern void ElevatorController_Update_m4FF83A520F6FD67DC27E3D216B796FCCC602EDDF (void);
+extern void ElevatorController_HandleLeftController_m9B5D62CDFDC8FCD697B2D87036A2E18E8760D999 (void);
+extern void ElevatorController_HandleRightController_mBD576DE83A9BB8CC98F240707FFB45BB51A72ACF (void);
+extern void ElevatorController_ChangeUserFloor_m4C3752B84F9B4A2BFCF32FA0A733775992D92138 (void);
+extern void ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC (void);
+extern void ElevatorController_MoveElevatorToFloor_m6830D811A6A1B85826F669FEBAA5624229897042 (void);
+extern void ElevatorController_UpdateUI_mE57A9C2EB9CDCB0CDC7F487CD24BCE3110206771 (void);
+extern void ElevatorController__ctor_mAABB0A6C0AC6AB2F43FF9F7C014146DE6790FD44 (void);
+extern void U3CMoveElevatorToFloorU3Ed__22__ctor_mE0FD63184D0FC912FB9424C7F2512145044D9473 (void);
+extern void U3CMoveElevatorToFloorU3Ed__22_System_IDisposable_Dispose_mABDBACB10C9A6D21CEC28CBD39A0090FECBC6E25 (void);
+extern void U3CMoveElevatorToFloorU3Ed__22_MoveNext_mB32CFB0175909F61024FC2BDF96266D10A009EB2 (void);
+extern void U3CMoveElevatorToFloorU3Ed__22_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m20522BBC1E728163AF63F65FF017391681FAC34A (void);
+extern void U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_Reset_m5227E88083828D56EC2C6C12F3E2C00658AAFB68 (void);
+extern void U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_get_Current_mDD135AEFDA97324FE1D4910F178DF66682994D3B (void);
+extern void ElevatorPlacement_Start_m0FE602D959F47A89467DDA95123F6420BA8D8FED (void);
+extern void ElevatorPlacement_Update_mD0DC7CBAB24A6A75B06F102C11C71863A5BE1831 (void);
+extern void ElevatorPlacement__ctor_m439A96AB18A87DB991CF6A8F87D9CDB8640E45C1 (void);
+extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
+extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
+static Il2CppMethodPointer s_methodPointers[22] = 
+{
+	ElevatorController_Start_m567268E26C084228667E5319718B02C4E1FCF1E4,
+	ElevatorController_Update_m4FF83A520F6FD67DC27E3D216B796FCCC602EDDF,
+	ElevatorController_HandleLeftController_m9B5D62CDFDC8FCD697B2D87036A2E18E8760D999,
+	ElevatorController_HandleRightController_mBD576DE83A9BB8CC98F240707FFB45BB51A72ACF,
+	ElevatorController_ChangeUserFloor_m4C3752B84F9B4A2BFCF32FA0A733775992D92138,
+	ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC,
+	ElevatorController_MoveElevatorToFloor_m6830D811A6A1B85826F669FEBAA5624229897042,
+	ElevatorController_UpdateUI_mE57A9C2EB9CDCB0CDC7F487CD24BCE3110206771,
+	ElevatorController__ctor_mAABB0A6C0AC6AB2F43FF9F7C014146DE6790FD44,
+	U3CMoveElevatorToFloorU3Ed__22__ctor_mE0FD63184D0FC912FB9424C7F2512145044D9473,
+	U3CMoveElevatorToFloorU3Ed__22_System_IDisposable_Dispose_mABDBACB10C9A6D21CEC28CBD39A0090FECBC6E25,
+	U3CMoveElevatorToFloorU3Ed__22_MoveNext_mB32CFB0175909F61024FC2BDF96266D10A009EB2,
+	U3CMoveElevatorToFloorU3Ed__22_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m20522BBC1E728163AF63F65FF017391681FAC34A,
+	U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_Reset_m5227E88083828D56EC2C6C12F3E2C00658AAFB68,
+	U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_get_Current_mDD135AEFDA97324FE1D4910F178DF66682994D3B,
+	ElevatorPlacement_Start_m0FE602D959F47A89467DDA95123F6420BA8D8FED,
+	ElevatorPlacement_Update_mD0DC7CBAB24A6A75B06F102C11C71863A5BE1831,
+	ElevatorPlacement__ctor_m439A96AB18A87DB991CF6A8F87D9CDB8640E45C1,
+	Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6,
+	Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
+};
+static const int32_t s_InvokerIndices[22] = 
+{
+	14069,
+	14069,
+	14069,
+	14069,
+	10641,
+	10641,
+	4088,
+	14069,
+	14069,
+	10641,
+	14069,
+	13686,
+	13876,
+	14069,
+	13876,
+	14069,
+	14069,
+	14069,
+	14069,
+	14069,
+	24286,
+	14069,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	22,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
