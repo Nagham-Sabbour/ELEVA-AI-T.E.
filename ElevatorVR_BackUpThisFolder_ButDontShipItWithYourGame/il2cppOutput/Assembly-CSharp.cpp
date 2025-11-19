@@ -100,6 +100,7 @@ IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2
 IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____8FAFABE5E8C88BAEB2D8B116BF60A74DD950A228A8441A2E477AF30E10DF41E1_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____92454DBB38F29494D3040815578CF09678F81DBF6A2A1C943095C7E4CD1C5BEE_FieldInfo_var;
@@ -1188,8 +1189,17 @@ struct ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288  : public Mon
 {
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___xrCamera;
 	float ___initialDistance;
+	float ___assumedEyeHeight;
 	float ___moveSpeed;
 	bool ___placementDone;
+	float ___baseFloorY;
+	bool ___isRotating;
+	float ___grabStartRigYaw;
+	float ___grabStartHandYaw;
+	bool ___rightTriggerLast;
+	bool ___rightStickClickLast;
+	bool ___leftTriggerLast;
+	float ___lastLeftTriggerClickTime;
 };
 struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -1546,6 +1556,10 @@ struct InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD_StaticFields
 {
 	List_1_t90832B88D7207769654164CC28440CF594CC397D* ___s_InputSubsystemCache;
 };
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
+{
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion;
+};
 struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___zeroVector;
@@ -1697,19 +1711,35 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_PlaceInFrontOfCamera_mF1FDB8BF823AB574FC652667F5A01C0DCF387632 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, bool ___0_keepY, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_TryGetFeatureValue_mB2C15D1FC747DA9FB5958FA17E77049886FB3BBA (InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD* __this, InputFeatureUsage_1_tEB160A05BCDCCA4F96072CBA0866498D06B9A27C ___0_usage, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_StartRotation_m88D3826C8D84DCBF09282B7E5F662BF9582379B4 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___0_rightHand, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_UpdateRotation_m88FA2DF2D8056E969D1E543081223294B6DD37E4 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___0_rightHand, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_MoveWithStick_m9312BDE3403E733DED506E26BA2F109D58A0C7A6 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_stickAxis, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_eulerAngles_mCAAF48EFCF628F1ED91C2FFE75A4FD19C039DD6A (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_eulerAngles_m9F0BC484A7915A51FAB87230644229B75BACA004 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_TryGetFeatureValue_mB2C15D1FC747DA9FB5958FA17E77049886FB3BBA (InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD* __this, InputFeatureUsage_1_tEB160A05BCDCCA4F96072CBA0866498D06B9A27C ___0_usage, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___1_value, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_TryGetFeatureValue_m0C1A9761DD0D1C6D1EF4BAB2FAF1BC1A9541BB9F (InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD* __this, InputFeatureUsage_1_t8489CEC68B1EC178F2634079A9D7CD9E90D3CF5D ___0_usage, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* ___1_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_get_eulerAngles_m2DB5158B5C3A71FD60FC8A6EE43D3AAA1CFED122_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_DeltaAngle_mCBA858CE5C1BEEBE375812325A50E434FF66D6D4_inline (float ___0_current, float ___1_target, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_right_mC6DC057C23313802E2186A9E0DB760D795A758A4 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_Internal_ToEulerRad_m5BD0EEC543120C320DC77FCCDFD2CE2E6BD3F1A8 (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_rotation, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_Internal_MakePositive_m73E2D01920CB0DFE661A55022C129E8617F0C9A8 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_euler, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Repeat_m6F1560A163481BB311D685294E1B463C3E4EB3BA_inline (float ___0_t, float ___1_length, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1723,7 +1753,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 77225
+// Method Definition Index: 77169
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_Start_m567268E26C084228667E5319718B02C4E1FCF1E4 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1770,7 +1800,7 @@ IL_0033:
 		return;
 	}
 }
-// Method Definition Index: 77226
+// Method Definition Index: 77170
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_Update_m4FF83A520F6FD67DC27E3D216B796FCCC602EDDF (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1782,7 +1812,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_Update_m4FF83A520F6FD
 		return;
 	}
 }
-// Method Definition Index: 77227
+// Method Definition Index: 77171
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_HandleLeftController_m9B5D62CDFDC8FCD697B2D87036A2E18E8760D999 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1865,7 +1895,7 @@ IL_004d:
 		return;
 	}
 }
-// Method Definition Index: 77228
+// Method Definition Index: 77172
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_HandleRightController_mBD576DE83A9BB8CC98F240707FFB45BB51A72ACF (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1962,7 +1992,7 @@ IL_0056:
 		return;
 	}
 }
-// Method Definition Index: 77229
+// Method Definition Index: 77173
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_ChangeUserFloor_m4C3752B84F9B4A2BFCF32FA0A733775992D92138 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_delta, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -2029,7 +2059,7 @@ IL_0029:
 		return;
 	}
 }
-// Method Definition Index: 77230
+// Method Definition Index: 77174
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_direction, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -2076,7 +2106,7 @@ IL_001c:
 		return;
 	}
 }
-// Method Definition Index: 77231
+// Method Definition Index: 77175
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ElevatorController_MoveElevatorToFloor_m6830D811A6A1B85826F669FEBAA5624229897042 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_targetFloor, int32_t ___1_direction, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2103,7 +2133,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ElevatorController_MoveElevato
 		return L_4;
 	}
 }
-// Method Definition Index: 77232
+// Method Definition Index: 77176
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_UpdateUI_mE57A9C2EB9CDCB0CDC7F487CD24BCE3110206771 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2167,7 +2197,7 @@ IL_005c:
 		return;
 	}
 }
-// Method Definition Index: 77233
+// Method Definition Index: 77177
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController__ctor_mAABB0A6C0AC6AB2F43FF9F7C014146DE6790FD44 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2191,7 +2221,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController__ctor_mAABB0A6C0AC6AB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 77234
+// Method Definition Index: 77178
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__22__ctor_mE0FD63184D0FC912FB9424C7F2512145044D9473 (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -2201,14 +2231,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__22__ctor_mE0
 		return;
 	}
 }
-// Method Definition Index: 77235
+// Method Definition Index: 77179
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__22_System_IDisposable_Dispose_mABDBACB10C9A6D21CEC28CBD39A0090FECBC6E25 (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 77236
+// Method Definition Index: 77180
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CMoveElevatorToFloorU3Ed__22_MoveNext_mB32CFB0175909F61024FC2BDF96266D10A009EB2 (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2432,7 +2462,7 @@ IL_0144:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 77237
+// Method Definition Index: 77181
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CMoveElevatorToFloorU3Ed__22_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m20522BBC1E728163AF63F65FF017391681FAC34A (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2440,7 +2470,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CMoveElevatorToFloorU3Ed__22
 		return L_0;
 	}
 }
-// Method Definition Index: 77238
+// Method Definition Index: 77182
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_Reset_m5227E88083828D56EC2C6C12F3E2C00658AAFB68 (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2449,7 +2479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__22_System_Co
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_Reset_m5227E88083828D56EC2C6C12F3E2C00658AAFB68_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 77239
+// Method Definition Index: 77183
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_get_Current_mDD135AEFDA97324FE1D4910F178DF66682994D3B (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2465,7 +2495,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CMoveElevatorToFloorU3Ed__22
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 77240
+// Method Definition Index: 77184
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_Start_m0FE602D959F47A89467DDA95123F6420BA8D8FED (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2475,14 +2505,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_Start_m0FE602D959F47A8
 		s_Il2CppMethodInitialized = true;
 	}
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* V_0 = NULL;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
-	memset((&V_1), 0, sizeof(V_1));
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_2;
-	memset((&V_2), 0, sizeof(V_2));
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
-	memset((&V_3), 0, sizeof(V_3));
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:13>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:34>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___xrCamera;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -2493,11 +2517,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_Start_m0FE602D959F47A8
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:16>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:36>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_2;
 		L_2 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		V_0 = L_2;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:17>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:37>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -2508,7 +2532,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_Start_m0FE602D959F47A8
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:19>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:38>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_5 = V_0;
 		NullCheck(L_5);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
@@ -2519,79 +2543,442 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_Start_m0FE602D959F47A8
 
 IL_0029:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:23>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:41>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = __this->___xrCamera;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_8;
 		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_8)
 		{
-			goto IL_00cf;
+			goto IL_0056;
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:26>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:43>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = __this->___xrCamera;
 		NullCheck(L_9);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
-		L_10 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_9, NULL);
-		V_1 = L_10;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:27>
-		(&V_1)->___y = (0.0f);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:28>
-		Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline((&V_1), NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:30>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = __this->___xrCamera;
-		NullCheck(L_11);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
-		L_12 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_11, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_1;
-		float L_14 = __this->___initialDistance;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
-		L_15 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_13, L_14, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
-		L_16 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_12, L_15, NULL);
-		V_2 = L_16;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:32>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = __this->___xrCamera;
-		NullCheck(L_17);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
-		L_18 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_17, NULL);
-		float L_19 = L_18.___y;
-		(&V_2)->___y = ((float)il2cpp_codegen_subtract(L_19, (1.60000002f)));
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:34>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
-		L_20 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = V_2;
-		NullCheck(L_20);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_20, L_21, NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:37>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22;
-		L_22 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_22);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
-		L_23 = Transform_get_eulerAngles_mCAAF48EFCF628F1ED91C2FFE75A4FD19C039DD6A(L_22, NULL);
-		V_3 = L_23;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:38>
-		(&V_3)->___x = (0.0f);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:39>
-		(&V_3)->___z = (0.0f);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:40>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24;
-		L_24 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = V_3;
-		NullCheck(L_24);
-		Transform_set_eulerAngles_m9F0BC484A7915A51FAB87230644229B75BACA004(L_24, L_25, NULL);
+		L_10 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_9, NULL);
+		float L_11 = L_10.___y;
+		float L_12 = __this->___assumedEyeHeight;
+		__this->___baseFloorY = ((float)il2cpp_codegen_subtract(L_11, L_12));
+		goto IL_006c;
 	}
 
-IL_00cf:
+IL_0056:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:42>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:47>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
+		L_13 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_13);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_13, NULL);
+		float L_15 = L_14.___y;
+		__this->___baseFloorY = L_15;
+	}
+
+IL_006c:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:51>
+		ElevatorPlacement_PlaceInFrontOfCamera_mF1FDB8BF823AB574FC652667F5A01C0DCF387632(__this, (bool)0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:52>
 		return;
 	}
 }
-// Method Definition Index: 77241
+// Method Definition Index: 77185
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_Update_mD0DC7CBAB24A6A75B06F102C11C71863A5BE1831 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	bool V_2 = false;
+	bool V_3 = false;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	bool V_5 = false;
+	float V_6 = 0.0f;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:56>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___xrCamera;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:57>
+		return;
+	}
+
+IL_000f:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:59>
+		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_2;
+		L_2 = InputDevices_GetDeviceAtXRNode_m3D322E7D1FFDA9C4D53E6B944E636C39B7A9592B(5, NULL);
+		V_0 = L_2;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:60>
+		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_3;
+		L_3 = InputDevices_GetDeviceAtXRNode_m3D322E7D1FFDA9C4D53E6B944E636C39B7A9592B(4, NULL);
+		V_1 = L_3;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:62>
+		V_2 = (bool)0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:63>
+		V_3 = (bool)0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:64>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4;
+		L_4 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
+		V_4 = L_4;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:66>
+		V_5 = (bool)0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:68>
+		il2cpp_codegen_runtime_class_init_inline(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
+		InputFeatureUsage_1_tE336B2F0B9AC721519BFA17A08D6353FD5221637 L_5 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___triggerButton;
+		bool L_6;
+		L_6 = InputDevice_TryGetFeatureValue_m24EC3B6C41AE4098269427232AD5F52E786BF884((&V_0), L_5, (&V_2), NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:69>
+		InputFeatureUsage_1_tE336B2F0B9AC721519BFA17A08D6353FD5221637 L_7 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___primary2DAxisClick;
+		bool L_8;
+		L_8 = InputDevice_TryGetFeatureValue_m24EC3B6C41AE4098269427232AD5F52E786BF884((&V_0), L_7, (&V_3), NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:70>
+		InputFeatureUsage_1_tEB160A05BCDCCA4F96072CBA0866498D06B9A27C L_9 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___primary2DAxis;
+		bool L_10;
+		L_10 = InputDevice_TryGetFeatureValue_mB2C15D1FC747DA9FB5958FA17E77049886FB3BBA((&V_0), L_9, (&V_4), NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:72>
+		InputFeatureUsage_1_tE336B2F0B9AC721519BFA17A08D6353FD5221637 L_11 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___triggerButton;
+		bool L_12;
+		L_12 = InputDevice_TryGetFeatureValue_m24EC3B6C41AE4098269427232AD5F52E786BF884((&V_1), L_11, (&V_5), NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:75>
+		bool L_13 = V_5;
+		if (!L_13)
+		{
+			goto IL_00b5;
+		}
+	}
+	{
+		bool L_14 = __this->___leftTriggerLast;
+		if (L_14)
+		{
+			goto IL_00b5;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:77>
+		float L_15;
+		L_15 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		V_6 = L_15;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:78>
+		float L_16 = V_6;
+		float L_17 = __this->___lastLeftTriggerClickTime;
+		if ((!(((float)((float)il2cpp_codegen_subtract(L_16, L_17))) <= ((float)(0.300000012f)))))
+		{
+			goto IL_00ad;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:81>
+		bool L_18 = __this->___placementDone;
+		__this->___placementDone = (bool)((((int32_t)L_18) == ((int32_t)0))? 1 : 0);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:82>
+		__this->___isRotating = (bool)0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:83>
+		__this->___lastLeftTriggerClickTime = (-999.0f);
+		goto IL_00b5;
+	}
+
+IL_00ad:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:87>
+		float L_19 = V_6;
+		__this->___lastLeftTriggerClickTime = L_19;
+	}
+
+IL_00b5:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:90>
+		bool L_20 = V_5;
+		__this->___leftTriggerLast = L_20;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:93>
+		bool L_21 = __this->___placementDone;
+		if (!L_21)
+		{
+			goto IL_00db;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:95>
+		__this->___isRotating = (bool)0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:96>
+		bool L_22 = V_2;
+		__this->___rightTriggerLast = L_22;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:97>
+		bool L_23 = V_3;
+		__this->___rightStickClickLast = L_23;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:98>
+		return;
+	}
+
+IL_00db:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:102>
+		bool L_24 = V_3;
+		if (!L_24)
+		{
+			goto IL_00ed;
+		}
+	}
+	{
+		bool L_25 = __this->___rightStickClickLast;
+		if (L_25)
+		{
+			goto IL_00ed;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:105>
+		ElevatorPlacement_PlaceInFrontOfCamera_mF1FDB8BF823AB574FC652667F5A01C0DCF387632(__this, (bool)1, NULL);
+	}
+
+IL_00ed:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:107>
+		bool L_26 = V_3;
+		__this->___rightStickClickLast = L_26;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:110>
+		bool L_27 = V_2;
+		if (!L_27)
+		{
+			goto IL_0108;
+		}
+	}
+	{
+		bool L_28 = __this->___rightTriggerLast;
+		if (L_28)
+		{
+			goto IL_0108;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:112>
+		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_29 = V_0;
+		ElevatorPlacement_StartRotation_m88D3826C8D84DCBF09282B7E5F662BF9582379B4(__this, L_29, NULL);
+		goto IL_011a;
+	}
+
+IL_0108:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:114>
+		bool L_30 = V_2;
+		if (L_30)
+		{
+			goto IL_011a;
+		}
+	}
+	{
+		bool L_31 = __this->___rightTriggerLast;
+		if (!L_31)
+		{
+			goto IL_011a;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:116>
+		__this->___isRotating = (bool)0;
+	}
+
+IL_011a:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:118>
+		bool L_32 = V_2;
+		__this->___rightTriggerLast = L_32;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:120>
+		bool L_33 = __this->___isRotating;
+		if (!L_33)
+		{
+			goto IL_0130;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:122>
+		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_34 = V_0;
+		ElevatorPlacement_UpdateRotation_m88FA2DF2D8056E969D1E543081223294B6DD37E4(__this, L_34, NULL);
+	}
+
+IL_0130:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:126>
+		float L_35;
+		L_35 = Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline((&V_4), NULL);
+		if ((!(((float)L_35) > ((float)(0.00100000005f)))))
+		{
+			goto IL_0146;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:128>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_36 = V_4;
+		ElevatorPlacement_MoveWithStick_m9312BDE3403E733DED506E26BA2F109D58A0C7A6(__this, L_36, NULL);
+	}
+
+IL_0146:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:130>
+		return;
+	}
+}
+// Method Definition Index: 77186
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_PlaceInFrontOfCamera_mF1FDB8BF823AB574FC652667F5A01C0DCF387632 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, bool ___0_keepY, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:135>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___xrCamera;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:135>
+		return;
+	}
+
+IL_000f:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:138>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = __this->___xrCamera;
+		NullCheck(L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_2, NULL);
+		V_0 = L_3;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:139>
+		(&V_0)->___y = (0.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:140>
+		float L_4;
+		L_4 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_0), NULL);
+		if ((!(((float)L_4) < ((float)(9.99999975E-05f)))))
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:142>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___xrCamera;
+		NullCheck(L_5);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_5, NULL);
+		NullCheck(L_6);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_6, NULL);
+		V_0 = L_7;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:143>
+		(&V_0)->___y = (0.0f);
+	}
+
+IL_0052:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:145>
+		Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline((&V_0), NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:147>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->___xrCamera;
+		NullCheck(L_8);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_8, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = V_0;
+		float L_11 = __this->___initialDistance;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_10, L_11, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		L_13 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_9, L_12, NULL);
+		V_1 = L_13;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:149>
+		bool L_14 = ___0_keepY;
+		if (!L_14)
+		{
+			goto IL_0092;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:152>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
+		L_15 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_15);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		L_16 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_15, NULL);
+		float L_17 = L_16.___y;
+		(&V_1)->___y = L_17;
+		goto IL_009f;
+	}
+
+IL_0092:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:157>
+		float L_18 = __this->___baseFloorY;
+		(&V_1)->___y = L_18;
+	}
+
+IL_009f:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:160>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
+		L_19 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = V_1;
+		NullCheck(L_19);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_19, L_20, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:163>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
+		L_21 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_21);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
+		L_22 = Transform_get_eulerAngles_mCAAF48EFCF628F1ED91C2FFE75A4FD19C039DD6A(L_21, NULL);
+		V_2 = L_22;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:164>
+		(&V_2)->___x = (0.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:165>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23 = __this->___xrCamera;
+		NullCheck(L_23);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
+		L_24 = Transform_get_eulerAngles_mCAAF48EFCF628F1ED91C2FFE75A4FD19C039DD6A(L_23, NULL);
+		float L_25 = L_24.___y;
+		(&V_2)->___y = L_25;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:166>
+		(&V_2)->___z = (0.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:167>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26;
+		L_26 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = V_2;
+		NullCheck(L_26);
+		Transform_set_eulerAngles_m9F0BC484A7915A51FAB87230644229B75BACA004(L_26, L_27, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:168>
+		return;
+	}
+}
+// Method Definition Index: 77187
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_StartRotation_m88D3826C8D84DCBF09282B7E5F662BF9582379B4 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___0_rightHand, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2599,103 +2986,240 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_Update_mD0DC7CBAB24A6A
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD V_0;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_0;
 	memset((&V_0), 0, sizeof(V_0));
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_1;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
 	memset((&V_1), 0, sizeof(V_1));
-	bool V_2 = false;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
-	memset((&V_3), 0, sizeof(V_3));
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:46>
-		bool L_0 = __this->___placementDone;
-		if (!L_0)
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:173>
+		il2cpp_codegen_runtime_class_init_inline(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
+		InputFeatureUsage_1_t8489CEC68B1EC178F2634079A9D7CD9E90D3CF5D L_0 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___deviceRotation;
+		bool L_1;
+		L_1 = InputDevice_TryGetFeatureValue_m0C1A9761DD0D1C6D1EF4BAB2FAF1BC1A9541BB9F((&___0_rightHand), L_0, (&V_0), NULL);
+		if (L_1)
 		{
-			goto IL_0009;
+			goto IL_0011;
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:46>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:174>
 		return;
 	}
 
-IL_0009:
+IL_0011:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:49>
-		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_1;
-		L_1 = InputDevices_GetDeviceAtXRNode_m3D322E7D1FFDA9C4D53E6B944E636C39B7A9592B(5, NULL);
-		V_0 = L_1;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:52>
-		il2cpp_codegen_runtime_class_init_inline(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
-		InputFeatureUsage_1_tEB160A05BCDCCA4F96072CBA0866498D06B9A27C L_2 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___primary2DAxis;
-		bool L_3;
-		L_3 = InputDevice_TryGetFeatureValue_mB2C15D1FC747DA9FB5958FA17E77049886FB3BBA((&V_0), L_2, (&V_1), NULL);
-		if (!L_3)
-		{
-			goto IL_0062;
-		}
-	}
-	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:55>
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = V_1;
-		float L_5 = L_4.___x;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6 = V_1;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:176>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Quaternion_get_eulerAngles_m2DB5158B5C3A71FD60FC8A6EE43D3AAA1CFED122_inline((&V_0), NULL);
+		V_1 = L_2;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:177>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = V_1;
+		float L_4 = L_3.___y;
+		__this->___grabStartHandYaw = L_4;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:178>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_5);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Transform_get_eulerAngles_mCAAF48EFCF628F1ED91C2FFE75A4FD19C039DD6A(L_5, NULL);
 		float L_7 = L_6.___y;
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_3), L_5, (0.0f), L_7, NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:56>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = V_3;
-		float L_9 = __this->___moveSpeed;
-		float L_10;
-		L_10 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
-		L_11 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_8, ((float)il2cpp_codegen_multiply(L_9, L_10)), NULL);
-		V_3 = L_11;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:59>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
-		L_12 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13 = L_12;
-		NullCheck(L_13);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
-		L_14 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_13, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = V_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
-		L_16 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_14, L_15, NULL);
-		NullCheck(L_13);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_13, L_16, NULL);
-	}
-
-IL_0062:
-	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:64>
-		il2cpp_codegen_runtime_class_init_inline(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
-		InputFeatureUsage_1_tE336B2F0B9AC721519BFA17A08D6353FD5221637 L_17 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___triggerButton;
-		bool L_18;
-		L_18 = InputDevice_TryGetFeatureValue_m24EC3B6C41AE4098269427232AD5F52E786BF884((&V_0), L_17, (&V_2), NULL);
-		bool L_19 = V_2;
-		if (!((int32_t)((int32_t)L_18&(int32_t)L_19)))
-		{
-			goto IL_007b;
-		}
-	}
-	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:66>
-		__this->___placementDone = (bool)1;
-	}
-
-IL_007b:
-	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:68>
+		__this->___grabStartRigYaw = L_7;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:179>
+		__this->___isRotating = (bool)1;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:180>
 		return;
 	}
 }
-// Method Definition Index: 77242
+// Method Definition Index: 77188
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_UpdateRotation_m88FA2DF2D8056E969D1E543081223294B6DD37E4 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___0_rightHand, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:185>
+		il2cpp_codegen_runtime_class_init_inline(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
+		InputFeatureUsage_1_t8489CEC68B1EC178F2634079A9D7CD9E90D3CF5D L_0 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___deviceRotation;
+		bool L_1;
+		L_1 = InputDevice_TryGetFeatureValue_m0C1A9761DD0D1C6D1EF4BAB2FAF1BC1A9541BB9F((&___0_rightHand), L_0, (&V_0), NULL);
+		if (L_1)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:186>
+		return;
+	}
+
+IL_0011:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:188>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Quaternion_get_eulerAngles_m2DB5158B5C3A71FD60FC8A6EE43D3AAA1CFED122_inline((&V_0), NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:189>
+		float L_3 = L_2.___y;
+		V_1 = L_3;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:192>
+		float L_4 = __this->___grabStartHandYaw;
+		float L_5 = V_1;
+		float L_6;
+		L_6 = Mathf_DeltaAngle_mCBA858CE5C1BEEBE375812325A50E434FF66D6D4_inline(L_4, L_5, NULL);
+		V_2 = L_6;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:193>
+		float L_7 = __this->___grabStartRigYaw;
+		float L_8 = V_2;
+		V_3 = ((float)il2cpp_codegen_add(L_7, L_8));
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:195>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_9);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Transform_get_eulerAngles_mCAAF48EFCF628F1ED91C2FFE75A4FD19C039DD6A(L_9, NULL);
+		V_4 = L_10;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:196>
+		(&V_4)->___x = (0.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:197>
+		float L_11 = V_3;
+		(&V_4)->___y = L_11;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:198>
+		(&V_4)->___z = (0.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:199>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
+		L_12 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_4;
+		NullCheck(L_12);
+		Transform_set_eulerAngles_m9F0BC484A7915A51FAB87230644229B75BACA004(L_12, L_13, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:200>
+		return;
+	}
+}
+// Method Definition Index: 77189
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_MoveWithStick_m9312BDE3403E733DED506E26BA2F109D58A0C7A6 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_stickAxis, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:204>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___xrCamera;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:204>
+		return;
+	}
+
+IL_000f:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:207>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = __this->___xrCamera;
+		NullCheck(L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_2, NULL);
+		V_0 = L_3;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:208>
+		(&V_0)->___y = (0.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:209>
+		Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline((&V_0), NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:211>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = __this->___xrCamera;
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Transform_get_right_mC6DC057C23313802E2186A9E0DB760D795A758A4(L_4, NULL);
+		V_1 = L_5;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:212>
+		(&V_1)->___y = (0.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:213>
+		Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline((&V_1), NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:215>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = V_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7 = ___0_stickAxis;
+		float L_8 = L_7.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_6, L_8, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = V_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11 = ___0_stickAxis;
+		float L_12 = L_11.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		L_13 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_10, L_12, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_9, L_13, NULL);
+		V_2 = L_14;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:216>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
+		L_15 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_15);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		L_16 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_15, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = V_2;
+		float L_18 = __this->___moveSpeed;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_17, L_18, NULL);
+		float L_20;
+		L_20 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
+		L_21 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_19, L_20, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
+		L_22 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_16, L_21, NULL);
+		V_3 = L_22;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:219>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
+		L_23 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_23);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
+		L_24 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_23, NULL);
+		float L_25 = L_24.___y;
+		(&V_3)->___y = L_25;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:221>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26;
+		L_26 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = V_3;
+		NullCheck(L_26);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_26, L_27, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:222>
+		return;
+	}
+}
+// Method Definition Index: 77190
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement__ctor_m439A96AB18A87DB991CF6A8F87D9CDB8640E45C1 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:7>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:10>
 		__this->___initialDistance = (2.0f);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:8>
-		__this->___moveSpeed = (1.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:11>
+		__this->___assumedEyeHeight = (1.60000002f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:12>
+		__this->___moveSpeed = (1.5f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorPlacement.cs:28>
+		__this->___lastLeftTriggerClickTime = (-999.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -2708,7 +3232,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement__ctor_m439A96AB18A87DB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 77243
+// Method Definition Index: 77191
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2724,7 +3248,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A90
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 77244
+// Method Definition Index: 77192
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2740,7 +3264,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 77245
+// Method Definition Index: 77193
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2774,7 +3298,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 		return L_6;
 	}
 }
-// Method Definition Index: 77246
+// Method Definition Index: 77194
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2999,6 +3523,69 @@ IL_0010:
 		return L_5;
 	}
 }
+// Method Definition Index: 44630
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ((Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields*)il2cpp_codegen_static_fields_for(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var))->___zeroVector;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 44614
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->___x;
+		float L_1 = __this->___x;
+		float L_2 = __this->___y;
+		float L_3 = __this->___y;
+		V_0 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_0, L_1)), ((float)il2cpp_codegen_multiply(L_2, L_3))));
+		goto IL_001f;
+	}
+
+IL_001f:
+	{
+		float L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 44480
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->___x;
+		float L_1 = __this->___x;
+		float L_2 = __this->___y;
+		float L_3 = __this->___y;
+		float L_4 = __this->___z;
+		float L_5 = __this->___z;
+		V_0 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_0, L_1)), ((float)il2cpp_codegen_multiply(L_2, L_3)))), ((float)il2cpp_codegen_multiply(L_4, L_5))));
+		goto IL_002d;
+	}
+
+IL_002d:
+	{
+		float L_6 = V_0;
+		return L_6;
+	}
+}
 // Method Definition Index: 44468
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
@@ -3097,17 +3684,65 @@ IL_0030:
 		return L_13;
 	}
 }
-// Method Definition Index: 44460
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
+// Method Definition Index: 44524
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_get_eulerAngles_m2DB5158B5C3A71FD60FC8A6EE43D3AAA1CFED122_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* __this, const RuntimeMethod* method) 
 {
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	{
-		float L_0 = ___0_x;
-		__this->___x = L_0;
-		float L_1 = ___1_y;
-		__this->___y = L_1;
-		float L_2 = ___2_z;
-		__this->___z = L_2;
-		return;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0 = (*(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974*)__this);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Quaternion_Internal_ToEulerRad_m5BD0EEC543120C320DC77FCCDFD2CE2E6BD3F1A8(L_0, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_1, (57.2957802f), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Quaternion_Internal_MakePositive_m73E2D01920CB0DFE661A55022C129E8617F0C9A8(L_2, NULL);
+		V_0 = L_3;
+		goto IL_001e;
+	}
+
+IL_001e:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 44588
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_DeltaAngle_mCBA858CE5C1BEEBE375812325A50E434FF66D6D4_inline (float ___0_current, float ___1_target, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	bool V_1 = false;
+	float V_2 = 0.0f;
+	{
+		float L_0 = ___1_target;
+		float L_1 = ___0_current;
+		float L_2;
+		L_2 = Mathf_Repeat_m6F1560A163481BB311D685294E1B463C3E4EB3BA_inline(((float)il2cpp_codegen_subtract(L_0, L_1)), (360.0f), NULL);
+		V_0 = L_2;
+		float L_3 = V_0;
+		V_1 = (bool)((((float)L_3) > ((float)(180.0f)))? 1 : 0);
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		float L_5 = V_0;
+		V_0 = ((float)il2cpp_codegen_subtract(L_5, (360.0f)));
+	}
+
+IL_0023:
+	{
+		float L_6 = V_0;
+		V_2 = L_6;
+		goto IL_0027;
+	}
+
+IL_0027:
+	{
+		float L_7 = V_2;
+		return L_7;
 	}
 }
 // Method Definition Index: 44477
@@ -3195,5 +3830,93 @@ IL_0009:
 	{
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = V_0;
 		return L_1;
+	}
+}
+// Method Definition Index: 44460
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___x = L_0;
+		float L_1 = ___1_y;
+		__this->___y = L_1;
+		float L_2 = ___2_z;
+		__this->___z = L_2;
+		return;
+	}
+}
+// Method Definition Index: 44585
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Repeat_m6F1560A163481BB311D685294E1B463C3E4EB3BA_inline (float ___0_t, float ___1_length, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = ___0_t;
+		float L_1 = ___0_t;
+		float L_2 = ___1_length;
+		float L_3;
+		L_3 = floorf(((float)(L_1/L_2)));
+		float L_4 = ___1_length;
+		float L_5 = ___1_length;
+		float L_6;
+		L_6 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)il2cpp_codegen_subtract(L_0, ((float)il2cpp_codegen_multiply(L_3, L_4)))), (0.0f), L_5, NULL);
+		V_0 = L_6;
+		goto IL_001b;
+	}
+
+IL_001b:
+	{
+		float L_7 = V_0;
+		return L_7;
+	}
+}
+// Method Definition Index: 44578
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	float V_2 = 0.0f;
+	{
+		float L_0 = ___0_value;
+		float L_1 = ___1_min;
+		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		float L_3 = ___1_min;
+		___0_value = L_3;
+		goto IL_0019;
+	}
+
+IL_000e:
+	{
+		float L_4 = ___0_value;
+		float L_5 = ___2_max;
+		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		float L_7 = ___2_max;
+		___0_value = L_7;
+	}
+
+IL_0019:
+	{
+		float L_8 = ___0_value;
+		V_2 = L_8;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		float L_9 = V_2;
+		return L_9;
 	}
 }

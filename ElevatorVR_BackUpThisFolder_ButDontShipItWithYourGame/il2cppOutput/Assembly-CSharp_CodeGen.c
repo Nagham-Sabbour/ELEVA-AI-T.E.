@@ -24,12 +24,16 @@ extern void U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_Reset_
 extern void U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_get_Current_mDD135AEFDA97324FE1D4910F178DF66682994D3B (void);
 extern void ElevatorPlacement_Start_m0FE602D959F47A89467DDA95123F6420BA8D8FED (void);
 extern void ElevatorPlacement_Update_mD0DC7CBAB24A6A75B06F102C11C71863A5BE1831 (void);
+extern void ElevatorPlacement_PlaceInFrontOfCamera_mF1FDB8BF823AB574FC652667F5A01C0DCF387632 (void);
+extern void ElevatorPlacement_StartRotation_m88D3826C8D84DCBF09282B7E5F662BF9582379B4 (void);
+extern void ElevatorPlacement_UpdateRotation_m88FA2DF2D8056E969D1E543081223294B6DD37E4 (void);
+extern void ElevatorPlacement_MoveWithStick_m9312BDE3403E733DED506E26BA2F109D58A0C7A6 (void);
 extern void ElevatorPlacement__ctor_m439A96AB18A87DB991CF6A8F87D9CDB8640E45C1 (void);
 extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[22] = 
+static Il2CppMethodPointer s_methodPointers[26] = 
 {
 	ElevatorController_Start_m567268E26C084228667E5319718B02C4E1FCF1E4,
 	ElevatorController_Update_m4FF83A520F6FD67DC27E3D216B796FCCC602EDDF,
@@ -48,13 +52,17 @@ static Il2CppMethodPointer s_methodPointers[22] =
 	U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_get_Current_mDD135AEFDA97324FE1D4910F178DF66682994D3B,
 	ElevatorPlacement_Start_m0FE602D959F47A89467DDA95123F6420BA8D8FED,
 	ElevatorPlacement_Update_mD0DC7CBAB24A6A75B06F102C11C71863A5BE1831,
+	ElevatorPlacement_PlaceInFrontOfCamera_mF1FDB8BF823AB574FC652667F5A01C0DCF387632,
+	ElevatorPlacement_StartRotation_m88D3826C8D84DCBF09282B7E5F662BF9582379B4,
+	ElevatorPlacement_UpdateRotation_m88FA2DF2D8056E969D1E543081223294B6DD37E4,
+	ElevatorPlacement_MoveWithStick_m9312BDE3403E733DED506E26BA2F109D58A0C7A6,
 	ElevatorPlacement__ctor_m439A96AB18A87DB991CF6A8F87D9CDB8640E45C1,
 	Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6,
 	Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[22] = 
+static const int32_t s_InvokerIndices[26] = 
 {
 	14069,
 	14069,
@@ -73,6 +81,10 @@ static const int32_t s_InvokerIndices[22] =
 	13876,
 	14069,
 	14069,
+	10516,
+	10629,
+	10629,
+	10875,
 	14069,
 	14069,
 	14069,
@@ -83,7 +95,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	22,
+	26,
 	s_methodPointers,
 	0,
 	NULL,
