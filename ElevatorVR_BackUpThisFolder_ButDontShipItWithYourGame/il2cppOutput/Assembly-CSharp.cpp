@@ -15,7 +15,18 @@ struct VirtualActionInvoker1
 		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
+struct InterfaceActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
 
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+
+struct Action_1_tE8693FF0E67CDBA52BAFB211BFF1844D076ABAFB;
 struct Action_1_tB93AB717F9D419A1BEC832FF76E74EAA32184CC1;
 struct Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180;
 struct Func_3_tC721DF8CDD07ED66A4833A19A2ED2302608C906C;
@@ -51,8 +62,10 @@ struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
 struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26;
 struct CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860;
+struct CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804;
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
+struct DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB;
 struct ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758;
 struct ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
@@ -86,32 +99,62 @@ struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
 struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7;
 struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E;
+struct UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F;
+struct UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C;
+struct UploadHandler_t7E504B1A83346248A0C8C4AF73A893226CB83EF6;
+struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E;
 struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
-struct U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94;
+struct U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94;
+struct U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61;
+struct U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD;
+struct ApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401;
 struct MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6;
 
 IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____8FAFABE5E8C88BAEB2D8B116BF60A74DD950A228A8441A2E477AF30E10DF41E1_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____92454DBB38F29494D3040815578CF09678F81DBF6A2A1C943095C7E4CD1C5BEE_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____1BC33BB65C2726EEF29F531E8D165B301DA7F6C5FC1932ACA55B5D2F3616F0F1_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____E981CAB56B4D7AE317C53619E9BF49C893FB879E15C6FAFC634A1B8065D0D3DD_FieldInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral05315F09D1D55D5A95C0D44DC9452F0A6B5D6F73;
+IL2CPP_EXTERN_C String_t* _stringLiteral08AF6DF8D62FECC7238917E00D1CDD7A84338231;
+IL2CPP_EXTERN_C String_t* _stringLiteral35F1BC5D8BFA7F4E3E62B68B7BAD5D2CFDBD43BF;
 IL2CPP_EXTERN_C String_t* _stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0;
+IL2CPP_EXTERN_C String_t* _stringLiteral3E45D87634344B740D4FA03FD71FE0A8F425F239;
 IL2CPP_EXTERN_C String_t* _stringLiteral3E62A28E6D19717C05020E9E9670CB0BA9AD7F9F;
 IL2CPP_EXTERN_C String_t* _stringLiteral902CA5426654ABBC114CAB5C5F3FE53247587F5A;
+IL2CPP_EXTERN_C String_t* _stringLiteral946EA42E6E8378240C3765497B5FEB4348E699E2;
+IL2CPP_EXTERN_C String_t* _stringLiteralB5D0F7376533CE0D9A05848C16710A7A000F24F6;
+IL2CPP_EXTERN_C String_t* _stringLiteralD144444E7E1FBA665711B83DC1B53B457BF4E598;
+IL2CPP_EXTERN_C String_t* _stringLiteralE9B98BCC7C88C5DC2A79EF6F9EBC9F6656B9CF27;
 IL2CPP_EXTERN_C String_t* _stringLiteralEC26A3E643C2616F1EC45654B84B62C3FE3082FE;
 IL2CPP_EXTERN_C String_t* _stringLiteralF4EC3331B2888372138EB2110AEB8414565BC508;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_Reset_m5227E88083828D56EC2C6C12F3E2C00658AAFB68_RuntimeMethod_var;
+IL2CPP_EXTERN_C String_t* _stringLiteralF56491E5231BF029B8173CAC347F8156EEC5C990;
+IL2CPP_EXTERN_C const RuntimeMethod* JsonUtility_FromJson_TisApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F_mA8E7A4754DBE566F47C6732479ED183D8C7659E8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CGetFloorFromApiU3Ed__29_System_Collections_IEnumerator_Reset_m5EB1EBA17BCD2B6BF663036F328BBAD298F7A196_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CMoveElevatorToFloorU3Ed__26_System_Collections_IEnumerator_Reset_m5CFD318305EA04AA107A57152FC4E060C9E5EBBF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CPollApiRoutineU3Ed__28_System_Collections_IEnumerator_Reset_mEA5B08BC95BB61D894F3874F6B66FA2E98A392F7_RuntimeMethod_var;
+struct CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshaled_com;
+struct DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB_marshaled_com;
 struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
+struct UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F_marshaled_com;
+struct UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F_marshaled_pinvoke;
+struct UploadHandler_t7E504B1A83346248A0C8C4AF73A893226CB83EF6_marshaled_com;
 
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 
@@ -158,7 +201,14 @@ struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinv
 struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
 {
 };
-struct U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94  : public RuntimeObject
+struct U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* ___U3CU3E4__this;
+	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___U3CwwwU3E5__2;
+};
+struct U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -168,6 +218,18 @@ struct U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94 
 	float ___U3CstartYU3E5__2;
 	float ___U3CtargetYU3E5__3;
 	float ___U3CelapsedU3E5__4;
+	float ___U3CtotalTimeU3E5__5;
+};
+struct U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* ___U3CU3E4__this;
+};
+struct ApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F  : public RuntimeObject
+{
+	int32_t ___value;
+	int64_t ___ts;
 };
 struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401  : public RuntimeObject
 {
@@ -574,6 +636,33 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
 	};
 };
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	float ___m_Seconds;
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	float ___m_Seconds;
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	float ___m_Seconds;
+};
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D113_t1F72EB1067381864673F77952DF916D3916950B2 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D113_t1F72EB1067381864673F77952DF916D3916950B2__padding[113];
+	};
+};
+#pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D119_t87CC104F7166751CB6682A8A4AE96C639B76884B 
 {
@@ -586,21 +675,6 @@ struct __StaticArrayInitTypeSizeU3D119_t87CC104F7166751CB6682A8A4AE96C639B76884B
 			};
 		};
 		uint8_t __StaticArrayInitTypeSizeU3D119_t87CC104F7166751CB6682A8A4AE96C639B76884B__padding[119];
-	};
-};
-#pragma pack(pop, tp)
-#pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D78_tFACA1F1448A4ED8E76812B4AC3C6536BAB042A3B 
-{
-	union
-	{
-		struct
-		{
-			union
-			{
-			};
-		};
-		uint8_t __StaticArrayInitTypeSizeU3D78_tFACA1F1448A4ED8E76812B4AC3C6536BAB042A3B__padding[78];
 	};
 };
 #pragma pack(pop, tp)
@@ -682,6 +756,33 @@ struct TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9
 	int32_t ___m_RolloverSize;
 	int32_t ___m_Count;
 };
+struct AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	intptr_t ___m_Ptr;
+	Action_1_tE8693FF0E67CDBA52BAFB211BFF1844D076ABAFB* ___m_completeCallback;
+};
+struct AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr;
+	Il2CppMethodPointer ___m_completeCallback;
+};
+struct AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	intptr_t ___m_Ptr;
+	Il2CppMethodPointer ___m_completeCallback;
+};
+struct CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804  : public RuntimeObject
+{
+	intptr_t ___m_Ptr;
+};
+struct CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr;
+};
+struct CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshaled_com
+{
+	intptr_t ___m_Ptr;
+};
 struct ColorMode_tA7A815AAB9F175EFBA0AE0814E55728432A880BF 
 {
 	int32_t ___value__;
@@ -695,6 +796,18 @@ struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_pinvoke : p
 	intptr_t ___m_Ptr;
 };
 struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	intptr_t ___m_Ptr;
+};
+struct DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB  : public RuntimeObject
+{
+	intptr_t ___m_Ptr;
+};
+struct DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr;
+};
+struct DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB_marshaled_com
 {
 	intptr_t ___m_Ptr;
 };
@@ -825,6 +938,18 @@ struct TextureMappingOptions_t0E1A47C529DEB45A875486256E7026E97C940DAE
 {
 	int32_t ___value__;
 };
+struct UploadHandler_t7E504B1A83346248A0C8C4AF73A893226CB83EF6  : public RuntimeObject
+{
+	intptr_t ___m_Ptr;
+};
+struct UploadHandler_t7E504B1A83346248A0C8C4AF73A893226CB83EF6_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr;
+};
+struct UploadHandler_t7E504B1A83346248A0C8C4AF73A893226CB83EF6_marshaled_com
+{
+	intptr_t ___m_Ptr;
+};
 struct VertexGradient_t2C057B53C0EA6E987C2B7BAB0305E686DA1C9A8F 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topLeft;
@@ -845,6 +970,10 @@ struct XRNode_t41F4B2F0EDD99DB33C49EC731C8C7F9DF142B5FF
 	int32_t ___value__;
 };
 struct TextInputSources_t41387D6C9CB16E60390F47A15AEB8185BE966D26 
+{
+	int32_t ___value__;
+};
+struct Result_tFB98154F15BF37A66902802D441FEFADC68D4C87 
 {
 	int32_t ___value__;
 };
@@ -913,6 +1042,51 @@ struct TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3
 	float ___marginRight;
 	int32_t ___alignment;
 	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___lineExtents;
+};
+struct UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F  : public RuntimeObject
+{
+	intptr_t ___m_Ptr;
+	DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* ___m_DownloadHandler;
+	UploadHandler_t7E504B1A83346248A0C8C4AF73A893226CB83EF6* ___m_UploadHandler;
+	CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804* ___m_CertificateHandler;
+	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___m_Uri;
+	bool ___U3CdisposeCertificateHandlerOnDisposeU3Ek__BackingField;
+	bool ___U3CdisposeDownloadHandlerOnDisposeU3Ek__BackingField;
+	bool ___U3CdisposeUploadHandlerOnDisposeU3Ek__BackingField;
+};
+struct UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr;
+	DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB_marshaled_pinvoke ___m_DownloadHandler;
+	UploadHandler_t7E504B1A83346248A0C8C4AF73A893226CB83EF6_marshaled_pinvoke ___m_UploadHandler;
+	CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshaled_pinvoke ___m_CertificateHandler;
+	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___m_Uri;
+	int32_t ___U3CdisposeCertificateHandlerOnDisposeU3Ek__BackingField;
+	int32_t ___U3CdisposeDownloadHandlerOnDisposeU3Ek__BackingField;
+	int32_t ___U3CdisposeUploadHandlerOnDisposeU3Ek__BackingField;
+};
+struct UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F_marshaled_com
+{
+	intptr_t ___m_Ptr;
+	DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB_marshaled_com* ___m_DownloadHandler;
+	UploadHandler_t7E504B1A83346248A0C8C4AF73A893226CB83EF6_marshaled_com* ___m_UploadHandler;
+	CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshaled_com* ___m_CertificateHandler;
+	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___m_Uri;
+	int32_t ___U3CdisposeCertificateHandlerOnDisposeU3Ek__BackingField;
+	int32_t ___U3CdisposeDownloadHandlerOnDisposeU3Ek__BackingField;
+	int32_t ___U3CdisposeUploadHandlerOnDisposeU3Ek__BackingField;
+};
+struct UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C  : public AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C
+{
+	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___U3CwebRequestU3Ek__BackingField;
+};
+struct UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C_marshaled_pinvoke : public AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C_marshaled_pinvoke
+{
+	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F_marshaled_pinvoke* ___U3CwebRequestU3Ek__BackingField;
+};
+struct UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C_marshaled_com : public AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C_marshaled_com
+{
+	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F_marshaled_com* ___U3CwebRequestU3Ek__BackingField;
 };
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
@@ -1177,6 +1351,9 @@ struct ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758  : public Mo
 	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___userFloorText;
 	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___elevatorFloorText;
 	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___directionText;
+	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___apiDebugText;
+	String_t* ___apiUrl;
+	float ___pollInterval;
 	int32_t ___currentElevatorFloor;
 	int32_t ___userFloor;
 	bool ___isMoving;
@@ -1184,6 +1361,7 @@ struct ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758  : public Mo
 	bool ___leftSecondaryLast;
 	bool ___rightPrimaryLast;
 	bool ___rightSecondaryLast;
+	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___moveRoutine;
 };
 struct ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -1478,8 +1656,8 @@ struct TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E  : public TMP_Text_
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D78_tFACA1F1448A4ED8E76812B4AC3C6536BAB042A3B ___8FAFABE5E8C88BAEB2D8B116BF60A74DD950A228A8441A2E477AF30E10DF41E1;
-	__StaticArrayInitTypeSizeU3D119_t87CC104F7166751CB6682A8A4AE96C639B76884B ___92454DBB38F29494D3040815578CF09678F81DBF6A2A1C943095C7E4CD1C5BEE;
+	__StaticArrayInitTypeSizeU3D119_t87CC104F7166751CB6682A8A4AE96C639B76884B ___1BC33BB65C2726EEF29F531E8D165B301DA7F6C5FC1932ACA55B5D2F3616F0F1;
+	__StaticArrayInitTypeSizeU3D113_t1F72EB1067381864673F77952DF916D3916950B2 ___E981CAB56B4D7AE317C53619E9BF49C893FB879E15C6FAFC634A1B8065D0D3DD;
 };
 struct CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields
 {
@@ -1682,33 +1860,59 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArr
 };
 
 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* JsonUtility_FromJson_TisRuntimeObject_m0CCF0FE109BF4C85AECC9C5D0DBB43422A24FB40_gshared (String_t* ___0_json, const RuntimeMethod* method) ;
 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_UpdateUI_mE57A9C2EB9CDCB0CDC7F487CD24BCE3110206771 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ElevatorController_PollApiRoutine_mF0189DF7AA8F58503836E55712B88BB6255CFE22 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_HandleLeftController_m9B5D62CDFDC8FCD697B2D87036A2E18E8760D999 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_HandleRightController_mBD576DE83A9BB8CC98F240707FFB45BB51A72ACF (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD InputDevices_GetDeviceAtXRNode_m3D322E7D1FFDA9C4D53E6B944E636C39B7A9592B (int32_t ___0_node, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_TryGetFeatureValue_m24EC3B6C41AE4098269427232AD5F52E786BF884 (InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD* __this, InputFeatureUsage_1_tE336B2F0B9AC721519BFA17A08D6353FD5221637 ___0_usage, bool* ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_ChangeUserFloor_m4C3752B84F9B4A2BFCF32FA0A733775992D92138 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_delta, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_direction, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline (int32_t ___0_value, int32_t ___1_min, int32_t ___2_max, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_StopAllCoroutines_m872033451D42013A99867D09337490017E9ED318 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___0_routine, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ElevatorController_MoveElevatorToFloor_m6830D811A6A1B85826F669FEBAA5624229897042 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_targetFloor, int32_t ___1_direction, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__22__ctor_mE0FD63184D0FC912FB9424C7F2512145044D9473 (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__26__ctor_m122A6AEAF4EAEE5FCF56158B88CD91A4211317EB (U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPollApiRoutineU3Ed__28__ctor_m5A895E998ECB1AEE6B56D9DA59E78C3E87C2A56C (U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGetFloorFromApiU3Ed__29__ctor_m810DE264DE04A253CA19240EBB50D9C583EF056A (U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___0_format, RuntimeObject* ___1_arg0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_targetFloor, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGetFloorFromApiU3Ed__29_U3CU3Em__Finally1_mB1EA1DF85E784FB5F84C6B49EDCDD5D4AEAC411E (U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGetFloorFromApiU3Ed__29_System_IDisposable_Dispose_mC2AC5F8B87FEC257E2AB122F9E40DED6449FC4B9 (U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* UnityWebRequest_Get_m1A332EE069BB5052368307F254A5A7627BB5FD86 (String_t* ___0_uri, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C* UnityWebRequest_SendWebRequest_mA3CD13983BAA5074A0640EDD661B1E46E6DB6C13 (UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnityWebRequest_get_result_mEF83848C5FCFB5E307CE4B57E42BF02FC9AED449 (UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UnityWebRequest_get_error_m20A5D813ED59118B7AA1D1E2EB5250178B1F5B6F (UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* UnityWebRequest_get_downloadHandler_m1AA91B23D9D594A4F4FE2975FC356C508528F1D5 (UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8 (DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5 (String_t* __this, const RuntimeMethod* method) ;
+inline ApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F* JsonUtility_FromJson_TisApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F_mA8E7A4754DBE566F47C6732479ED183D8C7659E8 (String_t* ___0_json, const RuntimeMethod* method)
+{
+	return ((  ApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F* (*) (String_t*, const RuntimeMethod*))JsonUtility_FromJson_TisRuntimeObject_m0CCF0FE109BF4C85AECC9C5D0DBB43422A24FB40_gshared)(___0_json, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987 (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_HandleApiFloor_m8A7E52EEB4722F376BAF770401E1DD4FA410F4AA (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_apiFloor, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Abs_mD945EDDEA0D62D21BFDBAB7B1C0F18DFF1CEC905_inline (int32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline (int32_t ___0_a, int32_t ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, RuntimeObject* ___3_arg2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ElevatorController_GetFloorFromApi_m2838CEE9D334156E0551DFBB8584EDA60DDB65F9 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_PlaceInFrontOfCamera_mF1FDB8BF823AB574FC652667F5A01C0DCF387632 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, bool ___0_keepY, const RuntimeMethod* method) ;
@@ -1753,7 +1957,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 95676
+// Method Definition Index: 95712
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_Start_m567268E26C084228667E5319718B02C4E1FCF1E4 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1765,7 +1969,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_Start_m567268E26C0842
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:34>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:50>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___elevatorCab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -1776,16 +1980,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_Start_m567268E26C0842
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:36>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:52>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = __this->___elevatorCab;
 		NullCheck(L_2);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		L_3 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_2, NULL);
 		V_0 = L_3;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:37>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:53>
 		float L_4 = __this->___baseHeight;
 		(&V_0)->___y = L_4;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:38>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:54>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___elevatorCab;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = V_0;
 		NullCheck(L_5);
@@ -1794,25 +1998,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_Start_m567268E26C0842
 
 IL_0033:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:41>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:57>
 		ElevatorController_UpdateUI_mE57A9C2EB9CDCB0CDC7F487CD24BCE3110206771(__this, NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:42>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:60>
+		RuntimeObject* L_7;
+		L_7 = ElevatorController_PollApiRoutine_mF0189DF7AA8F58503836E55712B88BB6255CFE22(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_8;
+		L_8 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_7, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:61>
 		return;
 	}
 }
-// Method Definition Index: 95677
+// Method Definition Index: 95713
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_Update_m4FF83A520F6FD67DC27E3D216B796FCCC602EDDF (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:46>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:66>
 		ElevatorController_HandleLeftController_m9B5D62CDFDC8FCD697B2D87036A2E18E8760D999(__this, NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:47>
-		ElevatorController_HandleRightController_mBD576DE83A9BB8CC98F240707FFB45BB51A72ACF(__this, NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:48>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:70>
 		return;
 	}
 }
-// Method Definition Index: 95678
+// Method Definition Index: 95714
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_HandleLeftController_m9B5D62CDFDC8FCD697B2D87036A2E18E8760D999 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1826,24 +2033,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_HandleLeftController_
 	bool V_1 = false;
 	bool V_2 = false;
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:52>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:74>
 		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_0;
 		L_0 = InputDevices_GetDeviceAtXRNode_m3D322E7D1FFDA9C4D53E6B944E636C39B7A9592B(4, NULL);
 		V_0 = L_0;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:54>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:76>
 		V_1 = (bool)0;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:55>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:77>
 		V_2 = (bool)0;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:57>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:79>
 		il2cpp_codegen_runtime_class_init_inline(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
 		InputFeatureUsage_1_tE336B2F0B9AC721519BFA17A08D6353FD5221637 L_1 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___primaryButton;
 		bool L_2;
 		L_2 = InputDevice_TryGetFeatureValue_m24EC3B6C41AE4098269427232AD5F52E786BF884((&V_0), L_1, (&V_1), NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:58>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:80>
 		InputFeatureUsage_1_tE336B2F0B9AC721519BFA17A08D6353FD5221637 L_3 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___secondaryButton;
 		bool L_4;
 		L_4 = InputDevice_TryGetFeatureValue_m24EC3B6C41AE4098269427232AD5F52E786BF884((&V_0), L_3, (&V_2), NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:61>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:83>
 		bool L_5 = V_1;
 		if (!L_5)
 		{
@@ -1858,13 +2065,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_HandleLeftController_
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:63>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:85>
 		ElevatorController_ChangeUserFloor_m4C3752B84F9B4A2BFCF32FA0A733775992D92138(__this, (-1), NULL);
 	}
 
 IL_003b:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:65>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:87>
 		bool L_7 = V_2;
 		if (!L_7)
 		{
@@ -1879,120 +2086,23 @@ IL_003b:
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:67>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:89>
 		ElevatorController_ChangeUserFloor_m4C3752B84F9B4A2BFCF32FA0A733775992D92138(__this, 1, NULL);
 	}
 
 IL_004d:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:70>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:92>
 		bool L_9 = V_1;
 		__this->___leftPrimaryLast = L_9;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:71>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:93>
 		bool L_10 = V_2;
 		__this->___leftSecondaryLast = L_10;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:72>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:94>
 		return;
 	}
 }
-// Method Definition Index: 95679
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_HandleRightController_mBD576DE83A9BB8CC98F240707FFB45BB51A72ACF (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	bool V_1 = false;
-	bool V_2 = false;
-	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:76>
-		bool L_0 = __this->___isMoving;
-		if (!L_0)
-		{
-			goto IL_0009;
-		}
-	}
-	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:76>
-		return;
-	}
-
-IL_0009:
-	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:78>
-		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_1;
-		L_1 = InputDevices_GetDeviceAtXRNode_m3D322E7D1FFDA9C4D53E6B944E636C39B7A9592B(5, NULL);
-		V_0 = L_1;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:80>
-		V_1 = (bool)0;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:81>
-		V_2 = (bool)0;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:83>
-		il2cpp_codegen_runtime_class_init_inline(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
-		InputFeatureUsage_1_tE336B2F0B9AC721519BFA17A08D6353FD5221637 L_2 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___primaryButton;
-		bool L_3;
-		L_3 = InputDevice_TryGetFeatureValue_m24EC3B6C41AE4098269427232AD5F52E786BF884((&V_0), L_2, (&V_1), NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:84>
-		InputFeatureUsage_1_tE336B2F0B9AC721519BFA17A08D6353FD5221637 L_4 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___secondaryButton;
-		bool L_5;
-		L_5 = InputDevice_TryGetFeatureValue_m24EC3B6C41AE4098269427232AD5F52E786BF884((&V_0), L_4, (&V_2), NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:87>
-		bool L_6 = V_1;
-		if (!L_6)
-		{
-			goto IL_0044;
-		}
-	}
-	{
-		bool L_7 = __this->___rightPrimaryLast;
-		if (L_7)
-		{
-			goto IL_0044;
-		}
-	}
-	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:89>
-		ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC(__this, (-1), NULL);
-	}
-
-IL_0044:
-	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:91>
-		bool L_8 = V_2;
-		if (!L_8)
-		{
-			goto IL_0056;
-		}
-	}
-	{
-		bool L_9 = __this->___rightSecondaryLast;
-		if (L_9)
-		{
-			goto IL_0056;
-		}
-	}
-	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:93>
-		ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC(__this, 1, NULL);
-	}
-
-IL_0056:
-	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:96>
-		bool L_10 = V_1;
-		__this->___rightPrimaryLast = L_10;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:97>
-		bool L_11 = V_2;
-		__this->___rightSecondaryLast = L_11;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:98>
-		return;
-	}
-}
-// Method Definition Index: 95680
+// Method Definition Index: 95715
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_ChangeUserFloor_m4C3752B84F9B4A2BFCF32FA0A733775992D92138 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_delta, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -2001,10 +2111,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_ChangeUserFloor_m4C37
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
 	memset((&V_3), 0, sizeof(V_3));
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:102>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:129>
 		int32_t L_0 = __this->___userFloor;
 		V_0 = L_0;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:103>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:130>
 		int32_t L_1 = __this->___userFloor;
 		int32_t L_2 = ___0_delta;
 		int32_t L_3 = __this->___minFloor;
@@ -2012,11 +2122,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_ChangeUserFloor_m4C37
 		int32_t L_5;
 		L_5 = Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline(((int32_t)il2cpp_codegen_add(L_1, L_2)), L_3, L_4, NULL);
 		V_1 = L_5;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:105>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:131>
 		int32_t L_6 = V_1;
 		int32_t L_7 = V_0;
 		V_2 = ((int32_t)il2cpp_codegen_subtract(L_6, L_7));
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:107>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:133>
 		int32_t L_8 = V_2;
 		if (L_8)
 		{
@@ -2024,116 +2134,149 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_ChangeUserFloor_m4C37
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:107>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:133>
 		return;
 	}
 
 IL_0029:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:111>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:136>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
 		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		NullCheck(L_9);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
 		L_10 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_9, NULL);
 		V_3 = L_10;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:112>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:137>
 		float* L_11 = (float*)(&(&V_3)->___y);
 		float* L_12 = L_11;
 		float L_13 = *((float*)L_12);
 		int32_t L_14 = V_2;
 		float L_15 = __this->___floorHeight;
 		*((float*)L_12) = (float)((float)il2cpp_codegen_subtract(L_13, ((float)il2cpp_codegen_multiply(((float)L_14), L_15))));
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:113>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:138>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
 		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = V_3;
 		NullCheck(L_16);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_16, L_17, NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:115>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:140>
 		int32_t L_18 = V_1;
 		__this->___userFloor = L_18;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:116>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:141>
 		ElevatorController_UpdateUI_mE57A9C2EB9CDCB0CDC7F487CD24BCE3110206771(__this, NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:117>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:142>
 		return;
 	}
 }
-// Method Definition Index: 95681
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_direction, const RuntimeMethod* method) 
+// Method Definition Index: 95716
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_targetFloor, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
+	int32_t G_B6_0 = 0;
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:121>
-		int32_t L_0 = __this->___currentElevatorFloor;
-		int32_t L_1 = ___0_direction;
-		V_0 = ((int32_t)il2cpp_codegen_add(L_0, L_1));
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:122>
-		int32_t L_2 = V_0;
-		int32_t L_3 = __this->___minFloor;
-		if ((((int32_t)L_2) < ((int32_t)L_3)))
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:148>
+		int32_t L_0 = ___0_targetFloor;
+		int32_t L_1 = __this->___minFloor;
+		if ((((int32_t)L_0) < ((int32_t)L_1)))
 		{
-			goto IL_001b;
+			goto IL_0012;
 		}
 	}
 	{
-		int32_t L_4 = V_0;
-		int32_t L_5 = __this->___maxFloor;
-		if ((((int32_t)L_4) <= ((int32_t)L_5)))
+		int32_t L_2 = ___0_targetFloor;
+		int32_t L_3 = __this->___maxFloor;
+		if ((((int32_t)L_2) <= ((int32_t)L_3)))
 		{
-			goto IL_001c;
+			goto IL_0013;
 		}
 	}
 
-IL_001b:
+IL_0012:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:122>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:148>
 		return;
 	}
 
-IL_001c:
+IL_0013:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:124>
-		MonoBehaviour_StopAllCoroutines_m872033451D42013A99867D09337490017E9ED318(__this, NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:125>
-		int32_t L_6 = V_0;
-		int32_t L_7 = ___0_direction;
-		RuntimeObject* L_8;
-		L_8 = ElevatorController_MoveElevatorToFloor_m6830D811A6A1B85826F669FEBAA5624229897042(__this, L_6, L_7, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_9;
-		L_9 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_8, NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:126>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:150>
+		int32_t L_4 = ___0_targetFloor;
+		int32_t L_5 = __this->___currentElevatorFloor;
+		if ((((int32_t)L_4) > ((int32_t)L_5)))
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		G_B6_0 = (-1);
+		goto IL_0020;
+	}
+
+IL_001f:
+	{
+		G_B6_0 = 1;
+	}
+
+IL_0020:
+	{
+		V_0 = G_B6_0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:152>
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_6 = __this->___moveRoutine;
+		if (!L_6)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:154>
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_7 = __this->___moveRoutine;
+		MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A(__this, L_7, NULL);
+	}
+
+IL_0035:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:156>
+		int32_t L_8 = ___0_targetFloor;
+		int32_t L_9 = V_0;
+		RuntimeObject* L_10;
+		L_10 = ElevatorController_MoveElevatorToFloor_m6830D811A6A1B85826F669FEBAA5624229897042(__this, L_8, L_9, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_11;
+		L_11 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_10, NULL);
+		__this->___moveRoutine = L_11;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___moveRoutine), (void*)L_11);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:157>
 		return;
 	}
 }
-// Method Definition Index: 95682
+// Method Definition Index: 95717
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ElevatorController_MoveElevatorToFloor_m6830D811A6A1B85826F669FEBAA5624229897042 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_targetFloor, int32_t ___1_direction, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* L_0 = (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94*)il2cpp_codegen_object_new(U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94_il2cpp_TypeInfo_var);
-		U3CMoveElevatorToFloorU3Ed__22__ctor_mE0FD63184D0FC912FB9424C7F2512145044D9473(L_0, 0, NULL);
-		U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* L_1 = L_0;
+		U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61* L_0 = (U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61*)il2cpp_codegen_object_new(U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61_il2cpp_TypeInfo_var);
+		U3CMoveElevatorToFloorU3Ed__26__ctor_m122A6AEAF4EAEE5FCF56158B88CD91A4211317EB(L_0, 0, NULL);
+		U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
-		U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* L_2 = L_1;
+		U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61* L_2 = L_1;
 		int32_t L_3 = ___0_targetFloor;
 		NullCheck(L_2);
 		L_2->___targetFloor = L_3;
-		U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* L_4 = L_2;
+		U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61* L_4 = L_2;
 		int32_t L_5 = ___1_direction;
 		NullCheck(L_4);
 		L_4->___direction = L_5;
 		return L_4;
 	}
 }
-// Method Definition Index: 95683
+// Method Definition Index: 95718
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_UpdateUI_mE57A9C2EB9CDCB0CDC7F487CD24BCE3110206771 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2145,7 +2288,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_UpdateUI_mE57A9C2EB9C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:164>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:202>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_0 = __this->___userFloorText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -2156,7 +2299,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_UpdateUI_mE57A9C2EB9C
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:166>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:204>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_2 = __this->___userFloorText;
 		int32_t* L_3 = (int32_t*)(&__this->___userFloor);
 		String_t* L_4;
@@ -2169,7 +2312,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_UpdateUI_mE57A9C2EB9C
 
 IL_002e:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:168>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:206>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_6 = __this->___elevatorFloorText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -2180,7 +2323,7 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:170>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:208>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_8 = __this->___elevatorFloorText;
 		int32_t* L_9 = (int32_t*)(&__this->___currentElevatorFloor);
 		String_t* L_10;
@@ -2193,22 +2336,184 @@ IL_002e:
 
 IL_005c:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:172>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:210>
 		return;
 	}
 }
-// Method Definition Index: 95684
+// Method Definition Index: 95719
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ElevatorController_PollApiRoutine_mF0189DF7AA8F58503836E55712B88BB6255CFE22 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD* L_0 = (U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD*)il2cpp_codegen_object_new(U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD_il2cpp_TypeInfo_var);
+		U3CPollApiRoutineU3Ed__28__ctor_m5A895E998ECB1AEE6B56D9DA59E78C3E87C2A56C(L_0, 0, NULL);
+		U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 95720
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ElevatorController_GetFloorFromApi_m2838CEE9D334156E0551DFBB8584EDA60DDB65F9 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94* L_0 = (U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94*)il2cpp_codegen_object_new(U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94_il2cpp_TypeInfo_var);
+		U3CGetFloorFromApiU3Ed__29__ctor_m810DE264DE04A253CA19240EBB50D9C583EF056A(L_0, 0, NULL);
+		U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 95721
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_HandleApiFloor_m8A7E52EEB4722F376BAF770401E1DD4FA410F4AA (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, int32_t ___0_apiFloor, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral946EA42E6E8378240C3765497B5FEB4348E699E2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB5D0F7376533CE0D9A05848C16710A7A000F24F6);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	String_t* V_1 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:267>
+		int32_t L_0 = ___0_apiFloor;
+		int32_t L_1 = __this->___currentElevatorFloor;
+		if ((!(((uint32_t)L_0) == ((uint32_t)L_1))))
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:270>
+		return;
+	}
+
+IL_000a:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:273>
+		bool L_2 = __this->___isMoving;
+		if (!L_2)
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:275>
+		int32_t L_3 = ___0_apiFloor;
+		int32_t L_4 = L_3;
+		RuntimeObject* L_5 = Box(il2cpp_defaults.int32_class, &L_4);
+		String_t* L_6;
+		L_6 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral946EA42E6E8378240C3765497B5FEB4348E699E2, L_5, NULL);
+		V_1 = L_6;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:276>
+		String_t* L_7 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_7, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:277>
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_8 = __this->___apiDebugText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_9;
+		L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_9)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:277>
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_10 = __this->___apiDebugText;
+		String_t* L_11 = V_1;
+		NullCheck(L_10);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_10, L_11);
+	}
+
+IL_0043:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:278>
+		return;
+	}
+
+IL_0044:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:281>
+		int32_t L_12 = ___0_apiFloor;
+		int32_t L_13 = L_12;
+		RuntimeObject* L_14 = Box(il2cpp_defaults.int32_class, &L_13);
+		String_t* L_15;
+		L_15 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralB5D0F7376533CE0D9A05848C16710A7A000F24F6, L_14, NULL);
+		V_0 = L_15;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:282>
+		String_t* L_16 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_16, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:283>
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_17 = __this->___apiDebugText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_18;
+		L_18 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_17, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_18)
+		{
+			goto IL_0075;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:283>
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_19 = __this->___apiDebugText;
+		String_t* L_20 = V_0;
+		NullCheck(L_19);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_19, L_20);
+	}
+
+IL_0075:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:285>
+		int32_t L_21 = ___0_apiFloor;
+		ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC(__this, L_21, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:286>
+		return;
+	}
+}
+// Method Definition Index: 95722
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController__ctor_mAABB0A6C0AC6AB2F43FF9F7C014146DE6790FD44 (ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:10>
-		__this->___baseHeight = (1.0f);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF56491E5231BF029B8173CAC347F8156EEC5C990);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
 		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:11>
-		__this->___floorHeight = (4.0f);
+		__this->___baseHeight = (1.0f);
 		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:12>
+		__this->___floorHeight = (4.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:13>
 		__this->___travelTimePerFloor = (5.0f);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:14>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:15>
 		__this->___maxFloor = 8;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:24>
+		__this->___apiUrl = _stringLiteralF56491E5231BF029B8173CAC347F8156EEC5C990;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___apiUrl), (void*)_stringLiteralF56491E5231BF029B8173CAC347F8156EEC5C990);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:25>
+		__this->___pollInterval = (0.5f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -2221,8 +2526,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController__ctor_mAABB0A6C0AC6AB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 95685
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__22__ctor_mE0FD63184D0FC912FB9424C7F2512145044D9473 (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+// Method Definition Index: 95723
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ApiResponse__ctor_mB7F74CDA6C12AF28AD4FF8D4A4D9562A6F3DD8D6 (ApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 95724
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGetFloorFromApiU3Ed__29__ctor_m810DE264DE04A253CA19240EBB50D9C583EF056A (U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -2231,31 +2552,498 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__22__ctor_mE0
 		return;
 	}
 }
-// Method Definition Index: 95686
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__22_System_IDisposable_Dispose_mABDBACB10C9A6D21CEC28CBD39A0090FECBC6E25 (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, const RuntimeMethod* method) 
+// Method Definition Index: 95725
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGetFloorFromApiU3Ed__29_System_IDisposable_Dispose_mC2AC5F8B87FEC257E2AB122F9E40DED6449FC4B9 (U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		int32_t L_1 = V_0;
+		if ((((int32_t)L_1) == ((int32_t)((int32_t)-3))))
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		int32_t L_2 = V_0;
+		if ((!(((uint32_t)L_2) == ((uint32_t)1))))
+		{
+			goto IL_001a;
+		}
+	}
+
+IL_0010:
+	{
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0013:
+			{
+				U3CGetFloorFromApiU3Ed__29_U3CU3Em__Finally1_mB1EA1DF85E784FB5F84C6B49EDCDD5D4AEAC411E(__this, NULL);
+				return;
+			}
+		});
+		try
+		{
+			goto IL_001a;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_001a:
+	{
+		return;
+	}
+}
+// Method Definition Index: 95726
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CGetFloorFromApiU3Ed__29_MoveNext_m346C437E30C395BF83D9387A2FD408EE52EC7B12 (U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonUtility_FromJson_TisApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F_mA8E7A4754DBE566F47C6732479ED183D8C7659E8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral05315F09D1D55D5A95C0D44DC9452F0A6B5D6F73);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral08AF6DF8D62FECC7238917E00D1CDD7A84338231);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3E45D87634344B740D4FA03FD71FE0A8F425F239);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t V_1 = 0;
+	ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* V_2 = NULL;
+	String_t* V_3 = NULL;
+	String_t* V_4 = NULL;
+	ApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F* V_5 = NULL;
+	int32_t V_6 = 0;
+	String_t* V_7 = NULL;
+	String_t* V_8 = NULL;
+	String_t* V_9 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		auto __finallyBlock = il2cpp::utils::Fault([&]
+		{
+
+FAULT_01b2:
+			{
+				U3CGetFloorFromApiU3Ed__29_System_IDisposable_Dispose_mC2AC5F8B87FEC257E2AB122F9E40DED6449FC4B9(__this, NULL);
+				return;
+			}
+		});
+		try
+		{
+			{
+				int32_t L_0 = __this->___U3CU3E1__state;
+				V_1 = L_0;
+				ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_1 = __this->___U3CU3E4__this;
+				V_2 = L_1;
+				int32_t L_2 = V_1;
+				if (!L_2)
+				{
+					goto IL_001c_1;
+				}
+			}
+			{
+				int32_t L_3 = V_1;
+				if ((((int32_t)L_3) == ((int32_t)1)))
+				{
+					goto IL_005b_1;
+				}
+			}
+			{
+				V_0 = (bool)0;
+				goto IL_01b9;
+			}
+
+IL_001c_1:
+			{
+				__this->___U3CU3E1__state = (-1);
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:226>
+				ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_4 = V_2;
+				NullCheck(L_4);
+				String_t* L_5 = L_4->___apiUrl;
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_6;
+				L_6 = UnityWebRequest_Get_m1A332EE069BB5052368307F254A5A7627BB5FD86(L_5, NULL);
+				__this->___U3CwwwU3E5__2 = L_6;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwwwU3E5__2), (void*)L_6);
+				__this->___U3CU3E1__state = ((int32_t)-3);
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:228>
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_7 = __this->___U3CwwwU3E5__2;
+				NullCheck(L_7);
+				UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C* L_8;
+				L_8 = UnityWebRequest_SendWebRequest_mA3CD13983BAA5074A0640EDD661B1E46E6DB6C13(L_7, NULL);
+				__this->___U3CU3E2__current = L_8;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_8);
+				__this->___U3CU3E1__state = 1;
+				V_0 = (bool)1;
+				goto IL_01b9;
+			}
+
+IL_005b_1:
+			{
+				__this->___U3CU3E1__state = ((int32_t)-3);
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:230>
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_9 = __this->___U3CwwwU3E5__2;
+				NullCheck(L_9);
+				int32_t L_10;
+				L_10 = UnityWebRequest_get_result_mEF83848C5FCFB5E307CE4B57E42BF02FC9AED449(L_9, NULL);
+				if ((((int32_t)L_10) == ((int32_t)1)))
+				{
+					goto IL_00b1_1;
+				}
+			}
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:232>
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_11 = __this->___U3CwwwU3E5__2;
+				NullCheck(L_11);
+				String_t* L_12;
+				L_12 = UnityWebRequest_get_error_m20A5D813ED59118B7AA1D1E2EB5250178B1F5B6F(L_11, NULL);
+				String_t* L_13;
+				L_13 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral05315F09D1D55D5A95C0D44DC9452F0A6B5D6F73, L_12, NULL);
+				V_8 = L_13;
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:233>
+				String_t* L_14 = V_8;
+				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+				Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_14, NULL);
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:234>
+				ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_15 = V_2;
+				NullCheck(L_15);
+				TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_16 = L_15->___apiDebugText;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_17;
+				L_17 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_16, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (!L_17)
+				{
+					goto IL_00aa_1;
+				}
+			}
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:234>
+				ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_18 = V_2;
+				NullCheck(L_18);
+				TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_19 = L_18->___apiDebugText;
+				String_t* L_20 = V_8;
+				NullCheck(L_19);
+				VirtualActionInvoker1< String_t* >::Invoke(66, L_19, L_20);
+			}
+
+IL_00aa_1:
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:235>
+				V_0 = (bool)0;
+				goto IL_019f_1;
+			}
+
+IL_00b1_1:
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:238>
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_21 = __this->___U3CwwwU3E5__2;
+				NullCheck(L_21);
+				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_22;
+				L_22 = UnityWebRequest_get_downloadHandler_m1AA91B23D9D594A4F4FE2975FC356C508528F1D5(L_21, NULL);
+				NullCheck(L_22);
+				String_t* L_23;
+				L_23 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_22, NULL);
+				NullCheck(L_23);
+				String_t* L_24;
+				L_24 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_23, NULL);
+				V_3 = L_24;
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:239>
+				String_t* L_25 = V_3;
+				String_t* L_26;
+				L_26 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral08AF6DF8D62FECC7238917E00D1CDD7A84338231, L_25, NULL);
+				V_4 = L_26;
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:240>
+				String_t* L_27 = V_4;
+				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_27, NULL);
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:241>
+				ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_28 = V_2;
+				NullCheck(L_28);
+				TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_29 = L_28->___apiDebugText;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_30;
+				L_30 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_29, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (!L_30)
+				{
+					goto IL_00f6_1;
+				}
+			}
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:241>
+				ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_31 = V_2;
+				NullCheck(L_31);
+				TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_32 = L_31->___apiDebugText;
+				String_t* L_33 = V_4;
+				NullCheck(L_32);
+				VirtualActionInvoker1< String_t* >::Invoke(66, L_32, L_33);
+			}
+
+IL_00f6_1:
+			{
+			}
+			try
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:246>
+				String_t* L_34 = V_3;
+				ApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F* L_35;
+				L_35 = JsonUtility_FromJson_TisApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F_mA8E7A4754DBE566F47C6732479ED183D8C7659E8(L_34, JsonUtility_FromJson_TisApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F_mA8E7A4754DBE566F47C6732479ED183D8C7659E8_RuntimeMethod_var);
+				V_5 = L_35;
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:247>
+				goto IL_0135_1;
+			}
+			catch(Il2CppExceptionWrapper& e)
+			{
+				if(il2cpp_codegen_class_is_assignable_from (il2cpp_defaults.object_class, il2cpp_codegen_object_class(e.ex)))
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto CATCH_0101_1;
+				}
+				throw e;
+			}
+
+CATCH_0101_1:
+			{
+				{
+					RuntimeObject* L_36 = ((RuntimeObject*)IL2CPP_GET_ACTIVE_EXCEPTION(RuntimeObject*));;
+					//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:248>
+					//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:250>
+					String_t* L_37 = V_3;
+					String_t* L_38;
+					L_38 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral35F1BC5D8BFA7F4E3E62B68B7BAD5D2CFDBD43BF)), L_37, NULL);
+					V_9 = L_38;
+					//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:251>
+					String_t* L_39 = V_9;
+					il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
+					Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_39, NULL);
+					//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:252>
+					ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_40 = V_2;
+					NullCheck(L_40);
+					TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_41 = L_40->___apiDebugText;
+					il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var)));
+					bool L_42;
+					L_42 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_41, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+					if (!L_42)
+					{
+						goto IL_0131_1;
+					}
+				}
+				{
+					//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:252>
+					ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_43 = V_2;
+					NullCheck(L_43);
+					TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_44 = L_43->___apiDebugText;
+					String_t* L_45 = V_9;
+					NullCheck(L_44);
+					VirtualActionInvoker1< String_t* >::Invoke(66, L_44, L_45);
+				}
+
+IL_0131_1:
+				{
+					//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:253>
+					V_0 = (bool)0;
+					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+					goto IL_019f_1;
+				}
+			}
+
+IL_0135_1:
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:256>
+				ApiResponse_t5EB99D357D66B969FF4038A3F38E67AF52B6409F* L_46 = V_5;
+				NullCheck(L_46);
+				int32_t L_47 = L_46->___value;
+				ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_48 = V_2;
+				NullCheck(L_48);
+				int32_t L_49 = L_48->___minFloor;
+				ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_50 = V_2;
+				NullCheck(L_50);
+				int32_t L_51 = L_50->___maxFloor;
+				int32_t L_52;
+				L_52 = Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline(L_47, L_49, L_51, NULL);
+				V_6 = L_52;
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:257>
+				int32_t L_53 = V_6;
+				int32_t L_54 = L_53;
+				RuntimeObject* L_55 = Box(il2cpp_defaults.int32_class, &L_54);
+				ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_56 = V_2;
+				NullCheck(L_56);
+				int32_t L_57 = L_56->___currentElevatorFloor;
+				int32_t L_58 = L_57;
+				RuntimeObject* L_59 = Box(il2cpp_defaults.int32_class, &L_58);
+				String_t* L_60;
+				L_60 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral3E45D87634344B740D4FA03FD71FE0A8F425F239, L_55, L_59, NULL);
+				V_7 = L_60;
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:258>
+				String_t* L_61 = V_7;
+				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_61, NULL);
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:259>
+				ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_62 = V_2;
+				NullCheck(L_62);
+				TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_63 = L_62->___apiDebugText;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_64;
+				L_64 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_63, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (!L_64)
+				{
+					goto IL_018f_1;
+				}
+			}
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:259>
+				ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_65 = V_2;
+				NullCheck(L_65);
+				TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_66 = L_65->___apiDebugText;
+				String_t* L_67 = V_7;
+				NullCheck(L_66);
+				VirtualActionInvoker1< String_t* >::Invoke(66, L_66, L_67);
+			}
+
+IL_018f_1:
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:261>
+				ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_68 = V_2;
+				int32_t L_69 = V_6;
+				NullCheck(L_68);
+				ElevatorController_HandleApiFloor_m8A7E52EEB4722F376BAF770401E1DD4FA410F4AA(L_68, L_69, NULL);
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:262>
+				U3CGetFloorFromApiU3Ed__29_U3CU3Em__Finally1_mB1EA1DF85E784FB5F84C6B49EDCDD5D4AEAC411E(__this, NULL);
+				goto IL_01a7_1;
+			}
+
+IL_019f_1:
+			{
+				U3CGetFloorFromApiU3Ed__29_U3CU3Em__Finally1_mB1EA1DF85E784FB5F84C6B49EDCDD5D4AEAC411E(__this, NULL);
+				goto IL_01b9;
+			}
+
+IL_01a7_1:
+			{
+				__this->___U3CwwwU3E5__2 = (UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwwwU3E5__2), (void*)(UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F*)NULL);
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:263>
+				V_0 = (bool)0;
+				goto IL_01b9;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_01b9:
+	{
+		bool L_70 = V_0;
+		return L_70;
+	}
+}
+// Method Definition Index: 95727
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGetFloorFromApiU3Ed__29_U3CU3Em__Finally1_mB1EA1DF85E784FB5F84C6B49EDCDD5D4AEAC411E (U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		__this->___U3CU3E1__state = (-1);
+		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_0 = __this->___U3CwwwU3E5__2;
+		if (!L_0)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_1 = __this->___U3CwwwU3E5__2;
+		NullCheck(L_1);
+		InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_1);
+	}
+
+IL_001a:
+	{
+		return;
+	}
+}
+// Method Definition Index: 95728
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CGetFloorFromApiU3Ed__29_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m542AB96631D2990E14AFA77DCC93397E22296536 (U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 95729
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGetFloorFromApiU3Ed__29_System_Collections_IEnumerator_Reset_m5EB1EBA17BCD2B6BF663036F328BBAD298F7A196 (U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CGetFloorFromApiU3Ed__29_System_Collections_IEnumerator_Reset_m5EB1EBA17BCD2B6BF663036F328BBAD298F7A196_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 95730
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CGetFloorFromApiU3Ed__29_System_Collections_IEnumerator_get_Current_m0EBC0894D9D050D03D11B827985E7F30E87C67B3 (U3CGetFloorFromApiU3Ed__29_t3C1A37C38355F96760971476AE88C5C60D472C94* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 95731
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__26__ctor_m122A6AEAF4EAEE5FCF56158B88CD91A4211317EB (U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 95732
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__26_System_IDisposable_Dispose_mF5FD00C1FA3F7634E4E64C06E888975A5BFB801D (U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 95687
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CMoveElevatorToFloorU3Ed__22_MoveNext_mB32CFB0175909F61024FC2BDF96266D10A009EB2 (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, const RuntimeMethod* method) 
+// Method Definition Index: 95733
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CMoveElevatorToFloorU3Ed__26_MoveNext_mA1E2F41891781372E93C77CAD3251D7793E64765 (U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3E62A28E6D19717C05020E9E9670CB0BA9AD7F9F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE9B98BCC7C88C5DC2A79EF6F9EBC9F6656B9CF27);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF4EC3331B2888372138EB2110AEB8414565BC508);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
 	ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* V_1 = NULL;
-	float V_2 = 0.0f;
+	int32_t V_2 = 0;
 	float V_3 = 0.0f;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_4;
-	memset((&V_4), 0, sizeof(V_4));
+	float V_4 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_5;
+	memset((&V_5), 0, sizeof(V_5));
 	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* G_B6_0 = NULL;
 	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* G_B5_0 = NULL;
 	String_t* G_B7_0 = NULL;
@@ -2275,7 +3063,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CMoveElevatorToFloorU3Ed__22_MoveNext_
 		int32_t L_3 = V_0;
 		if ((((int32_t)L_3) == ((int32_t)1)))
 		{
-			goto IL_00fe;
+			goto IL_0158;
 		}
 	}
 	{
@@ -2285,11 +3073,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CMoveElevatorToFloorU3Ed__22_MoveNext_
 IL_001a:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:130>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:161>
 		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_4 = V_1;
 		NullCheck(L_4);
 		L_4->___isMoving = (bool)1;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:131>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:163>
 		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_5 = V_1;
 		NullCheck(L_5);
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_6 = L_5->___directionText;
@@ -2302,7 +3090,7 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:133>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:165>
 		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_8 = V_1;
 		NullCheck(L_8);
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_9 = L_8->___directionText;
@@ -2334,7 +3122,7 @@ IL_0051:
 
 IL_0056:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:136>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:168>
 		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_11 = V_1;
 		NullCheck(L_11);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = L_11->___elevatorCab;
@@ -2343,7 +3131,7 @@ IL_0056:
 		L_13 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_12, NULL);
 		float L_14 = L_13.___y;
 		__this->___U3CstartYU3E5__2 = L_14;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:137>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:169>
 		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_15 = V_1;
 		NullCheck(L_15);
 		float L_16 = L_15->___baseHeight;
@@ -2352,135 +3140,168 @@ IL_0056:
 		NullCheck(L_18);
 		float L_19 = L_18->___floorHeight;
 		__this->___U3CtargetYU3E5__3 = ((float)il2cpp_codegen_add(L_16, ((float)il2cpp_codegen_multiply(((float)L_17), L_19))));
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:138>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:170>
 		__this->___U3CelapsedU3E5__4 = (0.0f);
-		goto IL_0105;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:172>
+		int32_t L_20 = __this->___targetFloor;
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_21 = V_1;
+		NullCheck(L_21);
+		int32_t L_22 = L_21->___currentElevatorFloor;
+		int32_t L_23;
+		L_23 = Mathf_Abs_mD945EDDEA0D62D21BFDBAB7B1C0F18DFF1CEC905_inline(((int32_t)il2cpp_codegen_subtract(L_20, L_22)), NULL);
+		int32_t L_24;
+		L_24 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(1, L_23, NULL);
+		V_2 = L_24;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:173>
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_25 = V_1;
+		NullCheck(L_25);
+		float L_26 = L_25->___travelTimePerFloor;
+		int32_t L_27 = V_2;
+		__this->___U3CtotalTimeU3E5__5 = ((float)il2cpp_codegen_multiply(L_26, ((float)L_27)));
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:175>
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_28 = V_1;
+		NullCheck(L_28);
+		int32_t L_29 = L_28->___currentElevatorFloor;
+		int32_t L_30 = L_29;
+		RuntimeObject* L_31 = Box(il2cpp_defaults.int32_class, &L_30);
+		int32_t L_32 = __this->___targetFloor;
+		int32_t L_33 = L_32;
+		RuntimeObject* L_34 = Box(il2cpp_defaults.int32_class, &L_33);
+		float L_35 = __this->___U3CtotalTimeU3E5__5;
+		float L_36 = L_35;
+		RuntimeObject* L_37 = Box(il2cpp_defaults.single_class, &L_36);
+		String_t* L_38;
+		L_38 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(_stringLiteralE9B98BCC7C88C5DC2A79EF6F9EBC9F6656B9CF27, L_31, L_34, L_37, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_38, NULL);
+		goto IL_015f;
 	}
 
-IL_0094:
+IL_00ec:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:142>
-		float L_20 = __this->___U3CelapsedU3E5__4;
-		float L_21;
-		L_21 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		__this->___U3CelapsedU3E5__4 = ((float)il2cpp_codegen_add(L_20, L_21));
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:143>
-		float L_22 = __this->___U3CelapsedU3E5__4;
-		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_23 = V_1;
-		NullCheck(L_23);
-		float L_24 = L_23->___travelTimePerFloor;
-		float L_25;
-		L_25 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(((float)(L_22/L_24)), NULL);
-		V_2 = L_25;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:144>
-		float L_26 = __this->___U3CstartYU3E5__2;
-		float L_27 = __this->___U3CtargetYU3E5__3;
-		float L_28 = V_2;
-		float L_29;
-		L_29 = Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline(L_26, L_27, L_28, NULL);
-		V_3 = L_29;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:145>
-		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_30 = V_1;
-		NullCheck(L_30);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31 = L_30->___elevatorCab;
-		NullCheck(L_31);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
-		L_32 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_31, NULL);
-		V_4 = L_32;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:146>
-		float L_33 = V_3;
-		(&V_4)->___y = L_33;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:147>
-		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_34 = V_1;
-		NullCheck(L_34);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35 = L_34->___elevatorCab;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = V_4;
-		NullCheck(L_35);
-		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_35, L_36, NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:148>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:179>
+		float L_39 = __this->___U3CelapsedU3E5__4;
+		float L_40;
+		L_40 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___U3CelapsedU3E5__4 = ((float)il2cpp_codegen_add(L_39, L_40));
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:180>
+		float L_41 = __this->___U3CelapsedU3E5__4;
+		float L_42 = __this->___U3CtotalTimeU3E5__5;
+		float L_43;
+		L_43 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(((float)(L_41/L_42)), NULL);
+		V_3 = L_43;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:181>
+		float L_44 = __this->___U3CstartYU3E5__2;
+		float L_45 = __this->___U3CtargetYU3E5__3;
+		float L_46 = V_3;
+		float L_47;
+		L_47 = Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline(L_44, L_45, L_46, NULL);
+		V_4 = L_47;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:182>
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_48 = V_1;
+		NullCheck(L_48);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_49 = L_48->___elevatorCab;
+		NullCheck(L_49);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50;
+		L_50 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_49, NULL);
+		V_5 = L_50;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:183>
+		float L_51 = V_4;
+		(&V_5)->___y = L_51;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:184>
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_52 = V_1;
+		NullCheck(L_52);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_53 = L_52->___elevatorCab;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54 = V_5;
+		NullCheck(L_53);
+		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_53, L_54, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:185>
 		__this->___U3CU3E2__current = NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)NULL);
 		__this->___U3CU3E1__state = 1;
 		return (bool)1;
 	}
 
-IL_00fe:
+IL_0158:
 	{
 		__this->___U3CU3E1__state = (-1);
 	}
 
-IL_0105:
+IL_015f:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:140>
-		float L_37 = __this->___U3CelapsedU3E5__4;
-		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_38 = V_1;
-		NullCheck(L_38);
-		float L_39 = L_38->___travelTimePerFloor;
-		if ((((float)L_37) < ((float)L_39)))
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:177>
+		float L_55 = __this->___U3CelapsedU3E5__4;
+		float L_56 = __this->___U3CtotalTimeU3E5__5;
+		if ((((float)L_55) < ((float)L_56)))
 		{
-			goto IL_0094;
+			goto IL_00ec;
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:151>
-		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_40 = V_1;
-		int32_t L_41 = __this->___targetFloor;
-		NullCheck(L_40);
-		L_40->___currentElevatorFloor = L_41;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:152>
-		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_42 = V_1;
-		NullCheck(L_42);
-		L_42->___isMoving = (bool)0;
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:154>
-		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_43 = V_1;
-		NullCheck(L_43);
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_44 = L_43->___directionText;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:188>
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_57 = V_1;
+		int32_t L_58 = __this->___targetFloor;
+		NullCheck(L_57);
+		L_57->___currentElevatorFloor = L_58;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:189>
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_59 = V_1;
+		NullCheck(L_59);
+		L_59->___isMoving = (bool)0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:191>
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_60 = V_1;
+		NullCheck(L_60);
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_61 = L_60->___directionText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_45;
-		L_45 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_44, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_45)
+		bool L_62;
+		L_62 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_61, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_62)
 		{
-			goto IL_0144;
+			goto IL_01a1;
 		}
 	}
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:156>
-		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_46 = V_1;
-		NullCheck(L_46);
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_47 = L_46->___directionText;
-		NullCheck(L_47);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_47, _stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:193>
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_63 = V_1;
+		NullCheck(L_63);
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_64 = L_63->___directionText;
+		NullCheck(L_64);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_64, _stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0);
 	}
 
-IL_0144:
+IL_01a1:
 	{
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:159>
-		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_48 = V_1;
-		NullCheck(L_48);
-		ElevatorController_UpdateUI_mE57A9C2EB9CDCB0CDC7F487CD24BCE3110206771(L_48, NULL);
-		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:160>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:196>
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_65 = V_1;
+		NullCheck(L_65);
+		ElevatorController_UpdateUI_mE57A9C2EB9CDCB0CDC7F487CD24BCE3110206771(L_65, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:197>
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_66 = V_1;
+		NullCheck(L_66);
+		L_66->___moveRoutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_66->___moveRoutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:198>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 95688
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CMoveElevatorToFloorU3Ed__22_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m20522BBC1E728163AF63F65FF017391681FAC34A (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, const RuntimeMethod* method) 
+// Method Definition Index: 95734
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CMoveElevatorToFloorU3Ed__26_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m70C08F8B7623B782C4A92EE2FB61EE15D5459BC3 (U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
 		return L_0;
 	}
 }
-// Method Definition Index: 95689
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_Reset_m5227E88083828D56EC2C6C12F3E2C00658AAFB68 (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, const RuntimeMethod* method) 
+// Method Definition Index: 95735
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveElevatorToFloorU3Ed__26_System_Collections_IEnumerator_Reset_m5CFD318305EA04AA107A57152FC4E060C9E5EBBF (U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_Reset_m5227E88083828D56EC2C6C12F3E2C00658AAFB68_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CMoveElevatorToFloorU3Ed__26_System_Collections_IEnumerator_Reset_m5CFD318305EA04AA107A57152FC4E060C9E5EBBF_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 95690
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CMoveElevatorToFloorU3Ed__22_System_Collections_IEnumerator_get_Current_mDD135AEFDA97324FE1D4910F178DF66682994D3B (U3CMoveElevatorToFloorU3Ed__22_t1F2F76D72587B872E6D19CCEF33675245B476E94* __this, const RuntimeMethod* method) 
+// Method Definition Index: 95736
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CMoveElevatorToFloorU3Ed__26_System_Collections_IEnumerator_get_Current_m65502CD40EEE5C521162530CDC54BDDF5C90B9BF (U3CMoveElevatorToFloorU3Ed__26_t7149BC366EFDCD49F0AEC5052192EC208EB0FD61* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -2495,7 +3316,143 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CMoveElevatorToFloorU3Ed__22
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 95691
+// Method Definition Index: 95737
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPollApiRoutineU3Ed__28__ctor_m5A895E998ECB1AEE6B56D9DA59E78C3E87C2A56C (U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 95738
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPollApiRoutineU3Ed__28_System_IDisposable_Dispose_mEB0F1D55022380B34BAE0D6508208EA3E563FA06 (U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 95739
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CPollApiRoutineU3Ed__28_MoveNext_mC6438789E63D8F7A60F145B6E75755DB724008AC (U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD144444E7E1FBA665711B83DC1B53B457BF4E598);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		switch (L_2)
+		{
+			case 0:
+			{
+				goto IL_0022;
+			}
+			case 1:
+			{
+				goto IL_004e;
+			}
+			case 2:
+			{
+				goto IL_006f;
+			}
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0022:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:216>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralD144444E7E1FBA665711B83DC1B53B457BF4E598, NULL);
+	}
+
+IL_0033:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:219>
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_3 = V_1;
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_4 = V_1;
+		NullCheck(L_4);
+		RuntimeObject* L_5;
+		L_5 = ElevatorController_GetFloorFromApi_m2838CEE9D334156E0551DFBB8584EDA60DDB65F9(L_4, NULL);
+		NullCheck(L_3);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_6;
+		L_6 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(L_3, L_5, NULL);
+		__this->___U3CU3E2__current = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_6);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_004e:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:220>
+		ElevatorController_tF9C734CE7B55581243B8F36A6EB2AF56A07A2758* L_7 = V_1;
+		NullCheck(L_7);
+		float L_8 = L_7->___pollInterval;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_9 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_9, L_8, NULL);
+		__this->___U3CU3E2__current = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_9);
+		__this->___U3CU3E1__state = 2;
+		return (bool)1;
+	}
+
+IL_006f:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:217>
+		goto IL_0033;
+	}
+}
+// Method Definition Index: 95740
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CPollApiRoutineU3Ed__28_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCE80EF0997B4B05B73977EFC310A55ADBFAB8A55 (U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 95741
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPollApiRoutineU3Ed__28_System_Collections_IEnumerator_Reset_mEA5B08BC95BB61D894F3874F6B66FA2E98A392F7 (U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CPollApiRoutineU3Ed__28_System_Collections_IEnumerator_Reset_mEA5B08BC95BB61D894F3874F6B66FA2E98A392F7_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 95742
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CPollApiRoutineU3Ed__28_System_Collections_IEnumerator_get_Current_m271454FBE8EEC082F0B86355B3C58807B6B678E3 (U3CPollApiRoutineU3Ed__28_t7918D64AB53239675ABD866C8580FA112D4858BD* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 95743
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_Start_m0FE602D959F47A89467DDA95123F6420BA8D8FED (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2585,7 +3542,7 @@ IL_006c:
 		return;
 	}
 }
-// Method Definition Index: 95692
+// Method Definition Index: 95744
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_Update_mD0DC7CBAB24A6A75B06F102C11C71863A5BE1831 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2836,7 +3793,7 @@ IL_0146:
 		return;
 	}
 }
-// Method Definition Index: 95693
+// Method Definition Index: 95745
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_PlaceInFrontOfCamera_mF1FDB8BF823AB574FC652667F5A01C0DCF387632 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, bool ___0_keepY, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2977,7 +3934,7 @@ IL_009f:
 		return;
 	}
 }
-// Method Definition Index: 95694
+// Method Definition Index: 95746
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_StartRotation_m88D3826C8D84DCBF09282B7E5F662BF9582379B4 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___0_rightHand, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3030,7 +3987,7 @@ IL_0011:
 		return;
 	}
 }
-// Method Definition Index: 95695
+// Method Definition Index: 95747
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_UpdateRotation_m88FA2DF2D8056E969D1E543081223294B6DD37E4 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___0_rightHand, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3104,7 +4061,7 @@ IL_0011:
 		return;
 	}
 }
-// Method Definition Index: 95696
+// Method Definition Index: 95748
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement_MoveWithStick_m9312BDE3403E733DED506E26BA2F109D58A0C7A6 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_stickAxis, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3208,7 +4165,7 @@ IL_000f:
 		return;
 	}
 }
-// Method Definition Index: 95697
+// Method Definition Index: 95749
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement__ctor_m439A96AB18A87DB991CF6A8F87D9CDB8640E45C1 (ElevatorPlacement_t7E9B330A2DB644E7387063769F9DD98642621288* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3232,7 +4189,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorPlacement__ctor_m439A96AB18A87DB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 95698
+// Method Definition Index: 95750
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3248,7 +4205,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A90
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 95699
+// Method Definition Index: 95751
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3264,15 +4221,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 95700
+// Method Definition Index: 95752
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____8FAFABE5E8C88BAEB2D8B116BF60A74DD950A228A8441A2E477AF30E10DF41E1_FieldInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____92454DBB38F29494D3040815578CF09678F81DBF6A2A1C943095C7E4CD1C5BEE_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____1BC33BB65C2726EEF29F531E8D165B301DA7F6C5FC1932ACA55B5D2F3616F0F1_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____E981CAB56B4D7AE317C53619E9BF49C893FB879E15C6FAFC634A1B8065D0D3DD_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E V_0;
@@ -3281,24 +4238,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)119));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____92454DBB38F29494D3040815578CF09678F81DBF6A2A1C943095C7E4CD1C5BEE_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____1BC33BB65C2726EEF29F531E8D165B301DA7F6C5FC1932ACA55B5D2F3616F0F1_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)78));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)113));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____8FAFABE5E8C88BAEB2D8B116BF60A74DD950A228A8441A2E477AF30E10DF41E1_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____E981CAB56B4D7AE317C53619E9BF49C893FB879E15C6FAFC634A1B8065D0D3DD_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
 		(&V_0)->___TotalFiles = 3;
-		(&V_0)->___TotalTypes = 4;
+		(&V_0)->___TotalTypes = 5;
 		(&V_0)->___IsEditorOnly = (bool)0;
 		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_6 = V_0;
 		return L_6;
 	}
 }
-// Method Definition Index: 95701
+// Method Definition Index: 95753
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3403,7 +4360,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_ma
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 45872
+// Method Definition Index: 45873
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline (int32_t ___0_value, int32_t ___1_min, int32_t ___2_max, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -3454,7 +4411,69 @@ IL_001d:
 		return L_9;
 	}
 }
-// Method Definition Index: 45873
+// Method Definition Index: 45854
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Abs_mD945EDDEA0D62D21BFDBAB7B1C0F18DFF1CEC905_inline (int32_t ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = ___0_value;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		int32_t L_1;
+		L_1 = il2cpp_codegen_abs(L_0);
+		V_0 = L_1;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		int32_t L_2 = V_0;
+		return L_2;
+	}
+}
+// Method Definition Index: 45859
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline (int32_t ___0_a, int32_t ___1_b, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		int32_t L_0 = ___0_a;
+		int32_t L_1 = ___1_b;
+		if ((((int32_t)L_0) > ((int32_t)L_1)))
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		int32_t L_2 = ___1_b;
+		G_B3_0 = L_2;
+		goto IL_0009;
+	}
+
+IL_0008:
+	{
+		int32_t L_3 = ___0_a;
+		G_B3_0 = L_3;
+	}
+
+IL_0009:
+	{
+		V_0 = G_B3_0;
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 45874
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -3502,7 +4521,7 @@ IL_002d:
 		return L_5;
 	}
 }
-// Method Definition Index: 45874
+// Method Definition Index: 45875
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -3523,7 +4542,7 @@ IL_0010:
 		return L_5;
 	}
 }
-// Method Definition Index: 45929
+// Method Definition Index: 45930
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3546,7 +4565,7 @@ IL_0009:
 		return L_1;
 	}
 }
-// Method Definition Index: 45911
+// Method Definition Index: 45912
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -3565,7 +4584,7 @@ IL_001f:
 		return L_4;
 	}
 }
-// Method Definition Index: 45770
+// Method Definition Index: 45771
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -3586,7 +4605,7 @@ IL_002d:
 		return L_6;
 	}
 }
-// Method Definition Index: 45758
+// Method Definition Index: 45759
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -3625,7 +4644,7 @@ IL_0038:
 		return;
 	}
 }
-// Method Definition Index: 45784
+// Method Definition Index: 45785
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -3653,7 +4672,7 @@ IL_0021:
 		return L_10;
 	}
 }
-// Method Definition Index: 45781
+// Method Definition Index: 45782
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -3684,7 +4703,7 @@ IL_0030:
 		return L_13;
 	}
 }
-// Method Definition Index: 45815
+// Method Definition Index: 45816
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_get_eulerAngles_m2DB5158B5C3A71FD60FC8A6EE43D3AAA1CFED122_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -3707,7 +4726,7 @@ IL_001e:
 		return L_4;
 	}
 }
-// Method Definition Index: 45882
+// Method Definition Index: 45883
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_DeltaAngle_mCBA858CE5C1BEEBE375812325A50E434FF66D6D4_inline (float ___0_current, float ___1_target, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -3745,7 +4764,7 @@ IL_0027:
 		return L_7;
 	}
 }
-// Method Definition Index: 45767
+// Method Definition Index: 45768
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3781,7 +4800,7 @@ IL_0034:
 		return L_13;
 	}
 }
-// Method Definition Index: 45786
+// Method Definition Index: 45787
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -3809,7 +4828,7 @@ IL_0021:
 		return L_10;
 	}
 }
-// Method Definition Index: 45773
+// Method Definition Index: 45774
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3832,7 +4851,7 @@ IL_0009:
 		return L_1;
 	}
 }
-// Method Definition Index: 45749
+// Method Definition Index: 45750
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	{
@@ -3845,7 +4864,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999E
 		return;
 	}
 }
-// Method Definition Index: 45879
+// Method Definition Index: 45880
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Repeat_m6F1560A163481BB311D685294E1B463C3E4EB3BA_inline (float ___0_t, float ___1_length, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -3869,7 +4888,7 @@ IL_001b:
 		return L_7;
 	}
 }
-// Method Definition Index: 45871
+// Method Definition Index: 45872
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
