@@ -60,11 +60,11 @@ public class ElevatorController : MonoBehaviour
         // primary = floor up, secondary = floor down (your chosen floor)
         if (primaryPressed && !leftPrimaryLast)
         {
-            ChangeUserFloor(+1);
+            ChangeUserFloor(-1);
         }
         if (secondaryPressed && !leftSecondaryLast)
         {
-            ChangeUserFloor(-1);
+            ChangeUserFloor(+1);
         }
 
         leftPrimaryLast = primaryPressed;
@@ -86,11 +86,11 @@ public class ElevatorController : MonoBehaviour
         // primary = elevator up, secondary = elevator down
         if (primaryPressed && !rightPrimaryLast)
         {
-            TryMoveElevator(+1);
+            TryMoveElevator(-1);
         }
         if (secondaryPressed && !rightSecondaryLast)
         {
-            TryMoveElevator(-1);
+            TryMoveElevator(+1);
         }
 
         rightPrimaryLast = primaryPressed;

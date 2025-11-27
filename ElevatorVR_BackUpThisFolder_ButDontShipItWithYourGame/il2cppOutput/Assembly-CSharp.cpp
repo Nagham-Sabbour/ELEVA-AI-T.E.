@@ -1859,7 +1859,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevatorController_HandleLeftController_
 	}
 	{
 		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:63>
-		ElevatorController_ChangeUserFloor_m4C3752B84F9B4A2BFCF32FA0A733775992D92138(__this, 1, NULL);
+		ElevatorController_ChangeUserFloor_m4C3752B84F9B4A2BFCF32FA0A733775992D92138(__this, (-1), NULL);
 	}
 
 IL_003b:
@@ -1880,7 +1880,7 @@ IL_003b:
 	}
 	{
 		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:67>
-		ElevatorController_ChangeUserFloor_m4C3752B84F9B4A2BFCF32FA0A733775992D92138(__this, (-1), NULL);
+		ElevatorController_ChangeUserFloor_m4C3752B84F9B4A2BFCF32FA0A733775992D92138(__this, 1, NULL);
 	}
 
 IL_004d:
@@ -1956,7 +1956,7 @@ IL_0009:
 	}
 	{
 		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:89>
-		ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC(__this, 1, NULL);
+		ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC(__this, (-1), NULL);
 	}
 
 IL_0044:
@@ -1977,7 +1977,7 @@ IL_0044:
 	}
 	{
 		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/ElevatorController.cs:93>
-		ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC(__this, (-1), NULL);
+		ElevatorController_TryMoveElevator_m854A6BF854C00B05A6D7FD246E0077FF4D0B1DFC(__this, 1, NULL);
 	}
 
 IL_0056:

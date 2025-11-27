@@ -186,19 +186,8 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
   features:
-  - {fileID: -3705335930383181945}
-  - {fileID: -1680933596224470888}
-  - {fileID: -9050351750595746857}
-  - {fileID: -3686728026554875803}
-  - {fileID: 6613504096715182490}
-  - {fileID: 4292156026049630910}
-  - {fileID: -7629041774558697469}
-  - {fileID: 2152532608749578804}
-  - {fileID: -1106355975078385123}
-  - {fileID: 5520237804603294411}
   - {fileID: 84069698317848286}
-  - {fileID: 7546772133275533083}
-  - {fileID: -5093359834248785645}
+  - {fileID: -3705335930383181945}
   - {fileID: -5050429060991611569}
   - {fileID: -8118079229018486689}
   - {fileID: -8986326402404154803}
@@ -210,6 +199,17 @@ MonoBehaviour:
   - {fileID: -5135497605127849776}
   - {fileID: 6151281248387587052}
   - {fileID: 8856113697837532392}
+  - {fileID: 6613504096715182490}
+  - {fileID: -9050351750595746857}
+  - {fileID: 2152532608749578804}
+  - {fileID: -7629041774558697469}
+  - {fileID: -1106355975078385123}
+  - {fileID: -5093359834248785645}
+  - {fileID: -1680933596224470888}
+  - {fileID: -3686728026554875803}
+  - {fileID: 4292156026049630910}
+  - {fileID: 7546772133275533083}
+  - {fileID: 5520237804603294411}
   - {fileID: 65579186526879105}
   - {fileID: 2405850448729507432}
   - {fileID: -6885547447707077116}
@@ -300,7 +300,7 @@ MonoBehaviour:
   targetOpenXRApiVersion: 
   required: 0
   customRuntimeLoaderName: 
-  m_SuppressVisibility: 0
+  m_SuppressVisibility: 1
 --- !u!114 &-6932675697803457760
 MonoBehaviour:
   m_ObjectHideFlags: 0
