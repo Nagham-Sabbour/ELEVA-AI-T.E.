@@ -5447,10 +5447,6 @@ struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6
 	float ___m23;
 	float ___m33;
 };
-struct MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D  : public Manipulator_tD5727ABA1F5AD1A50927212FAEB090E6BBCB4EBE
-{
-	List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* ___U3CactivatorsU3Ek__BackingField;
-};
 struct Name_t9E47EF25D1808C27515EB99D71DB90E187AC1354 
 {
 	String_t* ___name;
@@ -11372,6 +11368,10 @@ struct MouseButton_t8D0B198592CF83A5A765258D30674D66A3E64A0C
 {
 	int32_t ___value__;
 };
+struct MouseButton_tEF578B8F208D798E053BC320C29FCBB655E24454 
+{
+	int32_t ___value__;
+};
 #pragma pack(push, tp, 1)
 struct MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1 
 {
@@ -11742,10 +11742,6 @@ struct PointerHitData_t927DDC8A5D92D79ADF60B26847B55B6860E4D4ED_marshaled_com
 	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___hitCollider;
 	UIDocument_t4186BEBCC01278F63B895274AA08AD9ADFBF4C77* ___hitDocument;
 	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___hitElement;
-};
-struct PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72  : public MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D
-{
-	int32_t ___m_CurrentPointerId;
 };
 struct PointerState_t3BD79772D06D5CC227EBE757B27F8262EB46A919 
 {
@@ -16466,36 +16462,6 @@ struct ColorParameter_t367FD9EBE5DAA0ADB44F7DD0C260E9CDE3827CC0  : public Volume
 	bool ___showAlpha;
 	bool ___showEyeDropper;
 };
-struct ColumnMover_tF8B270BEC7C26ECD780F9EEAE6EC2A99BDC6986F  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
-{
-	float ___m_StartPos;
-	float ___m_LastPos;
-	bool ___m_Active;
-	bool ___m_Moving;
-	bool ___m_Cancelled;
-	MultiColumnCollectionHeader_t0B041BD57A14950E8C33DCD854F3A3C2C3DA706D* ___m_Header;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_PreviewElement;
-	MultiColumnHeaderColumnMoveLocationPreview_tA46A9C48704DECDEA2D3D32312F6A3C71F655FA7* ___m_LocationPreviewElement;
-	Column_tD686764EBBB4AFE8473E2464D0039885E3A2EC6A* ___m_ColumnToMove;
-	float ___m_ColumnToMovePos;
-	float ___m_ColumnToMoveWidth;
-	Column_tD686764EBBB4AFE8473E2464D0039885E3A2EC6A* ___m_DestinationColumn;
-	bool ___m_MoveBeforeDestination;
-	ColumnLayout_tF0A72BFB169B3329F9720AF33516EBAFAB4400B4* ___U3CcolumnLayoutU3Ek__BackingField;
-	Action_1_t9695AED713CA91CBC7D63B1EED2BDF6D6C9C33F9* ___activeChanged;
-	Action_1_t9695AED713CA91CBC7D63B1EED2BDF6D6C9C33F9* ___movingChanged;
-};
-struct ColumnResizer_tA24C857E9E5A60F51969581DA49CE869DA2BF51A  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
-{
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Start;
-	bool ___m_Active;
-	bool ___m_Resizing;
-	MultiColumnCollectionHeader_t0B041BD57A14950E8C33DCD854F3A3C2C3DA706D* ___m_Header;
-	Column_tD686764EBBB4AFE8473E2464D0039885E3A2EC6A* ___m_Column;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_PreviewElement;
-	ColumnLayout_tF0A72BFB169B3329F9720AF33516EBAFAB4400B4* ___U3CcolumnLayoutU3Ek__BackingField;
-	bool ___U3CpreviewU3Ek__BackingField;
-};
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
 };
@@ -17552,6 +17518,12 @@ struct LocalKeyword_tED7F563B432A5461E58CE7032AF6D1CD669CD0CB_marshaled_com
 	LocalKeywordSpace_t8D56A7A6130EF8C8F8BA247C67F1CB8256DA34AA ___m_SpaceInfo;
 	Il2CppChar* ___m_Name;
 	uint32_t ___m_Index;
+};
+struct ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 
+{
+	int32_t ___U3CbuttonU3Ek__BackingField;
+	int32_t ___U3CmodifiersU3Ek__BackingField;
+	int32_t ___U3CclickCountU3Ek__BackingField;
 };
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
@@ -22334,6 +22306,11 @@ struct MouseButtonModel_tE3D39670E1934335CA8A468707FCC22184099729_marshaled_com
 	int32_t ___m_IsDown;
 	ImplementationData_t070DC0E12FE9606C72C24B90F29B9047865FB05D_marshaled_com ___m_ImplementationData;
 };
+struct MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D  : public Manipulator_tD5727ABA1F5AD1A50927212FAEB090E6BBCB4EBE
+{
+	List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* ___U3CactivatorsU3Ek__BackingField;
+	ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 ___m_currentActivator;
+};
 struct NamedValue_t1D89B1ACD11D2B5284666865014E67683742B8ED 
 {
 	String_t* ___U3CnameU3Ek__BackingField;
@@ -25289,6 +25266,10 @@ struct PaniniProjection_t1E2B2CBC65D2E9BC9D4C6C07163D742F1FE85BDA  : public Volu
 	ClampedFloatParameter_tCD9F742962EAA50F658BC77595AB025D9EF8DEB8* ___distance;
 	ClampedFloatParameter_tCD9F742962EAA50F658BC77595AB025D9EF8DEB8* ___cropToFit;
 };
+struct PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72  : public MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D
+{
+	int32_t ___m_CurrentPointerId;
+};
 struct PointerModel_tD1252FA4D2BD0081B0E6E9CF20948FFC2C6F47AF 
 {
 	int32_t ___U3CpointerIdU3Ek__BackingField;
@@ -27059,6 +27040,36 @@ struct ColorTweenJob_t1BEEC88338C32DADE1D0E383FB1E1327444022A4
 	TweenJobData_1_t9932452930B7CDE5DC4DA408B50B8E4C7A3AAFB7 ___U3CjobDataU3Ek__BackingField;
 	uint8_t ___U3CcolorBlendModeU3Ek__BackingField;
 	float ___U3CcolorBlendAmountU3Ek__BackingField;
+};
+struct ColumnMover_tF8B270BEC7C26ECD780F9EEAE6EC2A99BDC6986F  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
+{
+	float ___m_StartPos;
+	float ___m_LastPos;
+	bool ___m_Active;
+	bool ___m_Moving;
+	bool ___m_Cancelled;
+	MultiColumnCollectionHeader_t0B041BD57A14950E8C33DCD854F3A3C2C3DA706D* ___m_Header;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_PreviewElement;
+	MultiColumnHeaderColumnMoveLocationPreview_tA46A9C48704DECDEA2D3D32312F6A3C71F655FA7* ___m_LocationPreviewElement;
+	Column_tD686764EBBB4AFE8473E2464D0039885E3A2EC6A* ___m_ColumnToMove;
+	float ___m_ColumnToMovePos;
+	float ___m_ColumnToMoveWidth;
+	Column_tD686764EBBB4AFE8473E2464D0039885E3A2EC6A* ___m_DestinationColumn;
+	bool ___m_MoveBeforeDestination;
+	ColumnLayout_tF0A72BFB169B3329F9720AF33516EBAFAB4400B4* ___U3CcolumnLayoutU3Ek__BackingField;
+	Action_1_t9695AED713CA91CBC7D63B1EED2BDF6D6C9C33F9* ___activeChanged;
+	Action_1_t9695AED713CA91CBC7D63B1EED2BDF6D6C9C33F9* ___movingChanged;
+};
+struct ColumnResizer_tA24C857E9E5A60F51969581DA49CE869DA2BF51A  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Start;
+	bool ___m_Active;
+	bool ___m_Resizing;
+	MultiColumnCollectionHeader_t0B041BD57A14950E8C33DCD854F3A3C2C3DA706D* ___m_Header;
+	Column_tD686764EBBB4AFE8473E2464D0039885E3A2EC6A* ___m_Column;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_PreviewElement;
+	ColumnLayout_tF0A72BFB169B3329F9720AF33516EBAFAB4400B4* ___U3CcolumnLayoutU3Ek__BackingField;
+	bool ___U3CpreviewU3Ek__BackingField;
 };
 struct CurveVisualController_tEFCFED7449CE053FC6DB50CCFB85EA6E690FD20A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {

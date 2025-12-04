@@ -26,6 +26,7 @@ public class ElevatorController : MonoBehaviour
 
     private int currentElevatorFloor = 0;
     private int userFloor = 0;
+    public int CurrentUserFloor => userFloor;
     private bool isMoving = false;
 
     // For button edge detection
@@ -36,6 +37,11 @@ public class ElevatorController : MonoBehaviour
 
     // Track only the movement coroutine (don’t kill API polling)
     private Coroutine moveRoutine;
+
+    [Header("User Floor Panel")]
+    public Transform userFloorPanel;
+    public Transform xrCamera;
+
 
     [System.Serializable]
     private class ApiResponse
@@ -58,12 +64,24 @@ public class ElevatorController : MonoBehaviour
 
         // Always start polling the API
         StartCoroutine(PollApiRoutine());
+
+        if (xrCamera == null)
+        {
+            Camera cam = Camera.main;
+            if (cam != null)
+            {
+                xrCamera = cam.transform;
+            }
+        }
+
+        RepositionUserPanel();   // put it at the right height once on start
+        UpdateUI();
     }
 
     void Update()
     {
         // Left controller = user floor (rig moves in Y)
-        HandleLeftController();
+        // HandleLeftController();
 
         // Manual elevator control via right controller (DISABLED – kept for reference)
         // HandleRightController();
@@ -92,6 +110,18 @@ public class ElevatorController : MonoBehaviour
         leftPrimaryLast = primaryPressed;
         leftSecondaryLast = secondaryPressed;
     }
+
+    void RepositionUserPanel()
+    {
+        if (userFloorPanel == null || xrCamera == null) return;
+
+        // Keep the panel’s X/Z where it is relative to the rig,
+        // but snap its world Y to the camera (your head) height.
+        Vector3 pos = userFloorPanel.position;
+        pos.y = xrCamera.position.y;
+        userFloorPanel.position = pos;
+    }
+
 
     // =====================================================================
     // LEGACY: manual elevator control with right controller (kept as comment)
@@ -124,22 +154,31 @@ public class ElevatorController : MonoBehaviour
     }
     */
 
-    void ChangeUserFloor(int delta)
+    // change floor by 1 +/-
+    // determine current floor
+    // determine new floor current + change
+    // ChangeUserFloor(newFloor)
+
+    public void ChangeUserFloor(int delta)
     {
         int oldFloor = userFloor;
         int newFloor = Mathf.Clamp(userFloor + delta, minFloor, maxFloor);
-        int floorDelta = newFloor - oldFloor;
 
+        int floorDelta = newFloor - oldFloor;
         if (floorDelta == 0) return;
 
-        // Move entire rig vertically so new floor aligns with real floor
+        // Move the entire rig vertically so that the new floor aligns with the real floor.
         Vector3 pos = transform.position;
         pos.y -= floorDelta * floorHeight;
         transform.position = pos;
 
         userFloor = newFloor;
         UpdateUI();
+
+        // NEW: keep the panel at comfortable head height in world space
+        RepositionUserPanel();
     }
+
 
     // ================== MOVEMENT (used by API + legacy controls) ==================
 
@@ -167,23 +206,39 @@ public class ElevatorController : MonoBehaviour
 
         float startY = elevatorCab.localPosition.y;
         float targetY = baseHeight + targetFloor * floorHeight;
+
+        int startFloor = currentElevatorFloor;
+        int floorDelta = Mathf.Max(1, Mathf.Abs(targetFloor - startFloor));
+        float totalTime = travelTimePerFloor * floorDelta;   // 5s per floor
+
         float elapsed = 0f;
-
-        int floorDelta = Mathf.Max(1, Mathf.Abs(targetFloor - currentElevatorFloor));
-        float totalTime = travelTimePerFloor * floorDelta; // 5s per floor
-
-        Debug.Log($"[Elevator] Moving from floor {currentElevatorFloor} to {targetFloor} in {totalTime:F2}s");
 
         while (elapsed < totalTime)
         {
             elapsed += Time.deltaTime;
             float t = Mathf.Clamp01(elapsed / totalTime);
+
+            // Move cab
             float newY = Mathf.Lerp(startY, targetY, t);
             Vector3 pos = elevatorCab.localPosition;
             pos.y = newY;
             elevatorCab.localPosition = pos;
+
+            // Update displayed elevator floor as we pass floors
+            int displayFloor = Mathf.RoundToInt(Mathf.Lerp(startFloor, targetFloor, t));
+            if (displayFloor != currentElevatorFloor)
+            {
+                currentElevatorFloor = displayFloor;
+                UpdateUI();
+            }
+
             yield return null;
         }
+
+        // Snap exactly to target and ensure final state
+        Vector3 finalPos = elevatorCab.localPosition;
+        finalPos.y = targetY;
+        elevatorCab.localPosition = finalPos;
 
         currentElevatorFloor = targetFloor;
         isMoving = false;
@@ -194,7 +249,6 @@ public class ElevatorController : MonoBehaviour
         }
 
         UpdateUI();
-        moveRoutine = null;
     }
 
     void UpdateUI()

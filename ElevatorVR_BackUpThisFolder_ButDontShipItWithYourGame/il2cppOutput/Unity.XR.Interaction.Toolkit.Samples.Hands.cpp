@@ -1,0 +1,5234 @@
+﻿#include "pch-cpp.hpp"
+
+
+
+
+
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename R, typename T1>
+struct InterfaceFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+
+struct Action_1_tC926860F20D428DA3E93D6FBA36420E904DD903B;
+struct Action_1_tBE7729820CBA793D8D5D57207BA5938B012863C5;
+struct Action_1_t9A06C49FCB3ADF4C984887951A3DC1DA07CFFBF0;
+struct Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8;
+struct Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE;
+struct Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A;
+struct Action_1_t81CC87F0365077EC678FAF69B68180DC9750249B;
+struct Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E;
+struct Action_1_t4D300E27C41C3B058E576318A71EAB3A8E6A48A1;
+struct BaseAffordanceStateReceiver_1_t8B790ACDC3D68ED037D4C2E8E8812B2BDA97DBB4;
+struct BaseAffordanceTheme_1_tDE4824F41024DDB47B2C61FE23860FB77EA960BB;
+struct BindableEnum_1_tFEF9312749E9FA8606777BD0F773B3C0C2B25075;
+struct BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C;
+struct BindableVariableBase_1_t9E98D971B506CF9B28B829E832171C4DE7175A46;
+struct BindableVariableBase_1_t0B8C3C183E9A64B760FC611EA6858D9BD639E610;
+struct BindableVariableBase_1_tB9252B4815AD3E511244D3B578854D3FF333E4BD;
+struct BindableVariableBase_1_t1241F44A52819D39C97ED9E1CA5C6C736EF53E9B;
+struct BindableVariable_1_t8FDD824B71E4868C9A1011DF94BED5A0049FCF42;
+struct BindableVariable_1_tAB8C2D23769D801C8E39D4AA927DD23AF0E6816C;
+struct BindableVariable_1_tB68DAB26AE7AF6E274A845BB487AEE92F9E1DAA0;
+struct Dictionary_2_tA13026C91A8E0CE5AB55DC00628A33C71D2BE3F2;
+struct Dictionary_2_tBF02F25A38E519F312D7EF1C8B204EBDC91AB9A1;
+struct ExposedRegistrationList_1_t11A438A04DF188A3BE1950639AAF0CBFAF9065A5;
+struct ExposedRegistrationList_1_t0AF641D8E06922C1FFAF3DA223105F57CE5BC4D8;
+struct Func_3_tE48B8474EE65D1530A10889B067677A4DDAB1DC5;
+struct Func_3_tE82E2E9CB095585276C858A2EA8860ACC9745B0C;
+struct Func_3_tA9AA477D8A5A68C7DC26AE4792295B80F920E61E;
+struct Func_3_tE454B2F07459EA885F6D39FCB5E70BF80B11F175;
+struct Func_3_t592C0BEF675DF1E62EDD0225BF9AA6FDBCE90CB3;
+struct HashSetList_1_t52A6279CDC8FAE4460A87A1B6A5E3437D58F5AE2;
+struct HashSetList_1_tF3CBA0C6731B032420F2FEC573A03EE7A351CBC4;
+struct HashSetList_1_t1A0488B6A7A99FC77B3DC8ADC7C241B5B2F21789;
+struct IReadOnlyBindableVariable_1_tD608177C44612AEF9CD25AEDCA15F1734DD0E073;
+struct IReadOnlyBindableVariable_1_tE7FF8784AFE49751ACE1FED9A9357D96BD6ABF55;
+struct IXRInputValueReader_1_tE6C56CC3831F86463CF271FFFFAEA88A1AFFC425;
+struct List_1_t60791FB9179CEFADA93C6B032DED2E65CB5DA58F;
+struct List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95;
+struct List_1_t96062976A34EF744BABF4798339ADC3741F0CF6C;
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+struct List_1_t9A2E2984B23260AECDFA90CEB1F2887075FA4DF3;
+struct List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2;
+struct List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D;
+struct TweenableVariableAsyncBase_1_tBC224ABEF15BBD66D75B9D20BED7ADB1F273E430;
+struct TweenableVariableBase_1_t894346E06DB112599F8C5FBC5AD5F251F33CFBD9;
+struct TweenableVariableBase_1_tE056BE2293DB2624363EEADF82A5A9439C26C35D;
+struct TweenableVariableBase_1_t491314D6C5C1BEA5AFEAB55CCB93192270815F82;
+struct UnityObjectReferenceCache_1_t5037B37A78F59591F798651810A820937FB97158;
+struct UnityObjectReferenceCache_2_t1413D13E9E061514692C40A683297E679FF60E5D;
+struct UnityObjectReferenceCache_2_t89FB64884388E678953FFA84ECE94DE3CB1D3E66;
+struct XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5;
+struct Action_1U5BU5D_tB846E6FE2326CCD34124D1E5D70117C9D33DEE76;
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+struct IXRHoverInteractorU5BU5D_tF290343C9B996DB5599892C9944E6EC89A4EC718;
+struct InputBindingU5BU5D_t7E47E87B9CAE12B6F6A0659008B425C58D84BB57;
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct PoseU5BU5D_tFC818445A5F54FE4CD8B53D645FF0AD0E2A133EB;
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+struct TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24;
+struct AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354;
+struct BaseAffordanceStateProvider_t5721F9B16D6C029D832F8D6FA0A47326A581D443;
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
+struct BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A;
+struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
+struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76;
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
+struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+struct FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48;
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+struct HandsOneEuroFilterPostProcessor_tE99F8855C6D85959C0EDF9226ED522B08DBF14AE;
+struct HideObjectWhenInteractorBlocked_tFF893F1B7C9DDC188C484B983256019D399F00E9;
+struct HoverEnterEvent_t2BDBCA14FF94DA18C9AC12B43297F6C1641788AB;
+struct HoverExitEvent_t256704BC79FE0AA61EB2DE3FDDF43A1FC97F5832;
+struct ICurveInteractionDataProvider_tCAD1F7E51653D0E39F0146E20903EAA6FE82FA59;
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
+struct IEventBinding_tD24AFBA7F41D64F17C1FA501D200A3B6439C4CBB;
+struct IXRHoverInteractable_tB88E3F220034149EC6037AB0126FC607CC2CF219;
+struct IXRHoverInteractor_t2BC0873850544D16673EAE16AFFA2E8FF92E50BE;
+struct IXRInputButtonReader_t4E43FD29BD50042EF9C0A58AA2355FB25F5864F5;
+struct IXRInteractionGroup_tE179A88275A6C646BAC9BF131BDE92552FC664C0;
+struct IXRInteractionStrengthInteractable_t0C79B1621B5D4987893370F8AF403574853D44B7;
+struct IXRInteractor_tD834ADD95D200FFEC6473A23E515DCD02B33CF97;
+struct IXRSelectInteractable_t647A7E3382497396EA1A9546574AEC0FBC9BC4AF;
+struct IXRTargetFilter_t51750E0C671ECA90F38CC75BCD395285E61D2778;
+struct InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD;
+struct InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09;
+struct InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1;
+struct InputActionState_t780948EA293BAA800AD8699518B58B59FFB8A700;
+struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
+struct LocalPositionOffsetAffordanceReceiver_t80AA3C7E3F8F611E956801F4CEB708BA255EFD08;
+struct MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507;
+struct MethodInfo_t;
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
+struct NearFarInteractor_t43B1C14C2D72CB717E3624B0759E265F5D215E9C;
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+struct ObjectResetPlane_t250386B64E13D2BF74C06B92F37342283E4C392B;
+struct OneEuroFilterVector3_t71848A0EF10F7FB56132C476132C61D96078B8B3;
+struct PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25;
+struct PinchPointFollow_tCD3FAB10E82231C7AB75912BC57946C882926007;
+struct PokeBlendShapeAnimator_t48459CB445F2396B407770EBB860FC85B1B2F282;
+struct PokeGestureDetector_t94EB69FA33D2BEB523C380F2D7D9DF399AF41B17;
+struct PokeThresholdDatumProperty_t367C8AA0927AD55629D9EF7297FCCEB814F6BB30;
+struct QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145;
+struct ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697;
+struct Rigidbody_t268697F5A994213ED97393309870968BC1C7393C;
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+struct SelectEnterEvent_tBA2614C8C25D8794D5804C4F66195D74E64FC5D0;
+struct SelectExitEvent_t15DC0A39F9657BA9E6BAE6250D8D64C9671201F6;
+struct SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E;
+struct String_t;
+struct ToggleGameObject_tD82BA740FE7646FFB4D3A12353FB4DF6CCE4F7AD;
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
+struct TransformSync_tF9249B51AC95936B597FBF4BAF7DBB4B6D30BD35;
+struct UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977;
+struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t2B953E9D20AEC597BF8AA081ECC00608B4FF59FB;
+struct ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D;
+struct Vector3AffordanceReceiver_t2849A6C2EA72BD2796A4E0A5831DFDF230988458;
+struct Vector3AffordanceThemeDatumProperty_t7AE01710B3906411C8AA4452F3110650DB78C38F;
+struct Vector3ScaleAffordanceReceiver_tC5E30AA269B3C026CE28F6C0735CBA1C9B2FD52E;
+struct Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5;
+struct Vector3UnityEvent_tBF9BAC8FCCE7BBF3E98E9EDA6157F00E28B9153E;
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+struct WaitForFixedUpdate_t86F5BC0B6A668AEF2903DE9ADB52062E457BD1B7;
+struct XRBaseInteractable_t76185BD6DF3BC86B3CDD82E6368C3C7157E39AE4;
+struct XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4;
+struct XRBaseTargetFilter_t24D9DBCEA900DFEA08D543C91DFC070C1C91594F;
+struct XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515;
+struct XRInputValueReader_t0A220D04F7D6F5BC7E5A253F5AF8A9C3AB430D59;
+struct XRInteractionManager_t93C7F7F0CFEAD83E1A70F92D05B0E663483746CD;
+struct XRPokeFilter_tC756187569A8DFE55C540B756688000609B89AC8;
+struct XRPokeLogic_tFF15963730D3A0A66FA658DD48177B2CD5A2F26D;
+struct XRRayInteractor_tDB7FC857A50F0B25DE4CEC0EE930242BB7380649;
+struct U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21;
+
+IL2CPP_EXTERN_C RuntimeClass* Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ICurveInteractionDataProvider_tCAD1F7E51653D0E39F0146E20903EAA6FE82FA59_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IPokeStateDataProvider_t14F2B731F2979D1138EB70A11E36F274A23DC91C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IReadOnlyBindableVariable_1_tD608177C44612AEF9CD25AEDCA15F1734DD0E073_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IXRHoverInteractable_tB88E3F220034149EC6037AB0126FC607CC2CF219_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IXRInteractionStrengthInteractable_t0C79B1621B5D4987893370F8AF403574853D44B7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WaitForFixedUpdate_t86F5BC0B6A668AEF2903DE9ADB52062E457BD1B7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tF24BE61EB8818608F56CD2CB1DD10D73B842FAAA____23EBA69CC774245527A2A4AE9514DDA16AA01959C004F335C97DEFBCD6F126C9_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tF24BE61EB8818608F56CD2CB1DD10D73B842FAAA____5F0DBE6E0DAB10CC8C8B9015EEF5E85737454CAD4CF725AC5D0DAD56C559D592_FieldInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral030B3FBF69A6A7FDCE638814FA9B1EAB978702BA;
+IL2CPP_EXTERN_C String_t* _stringLiteral5F74F4552573907FBE09143A3589664BC9ED23CD;
+IL2CPP_EXTERN_C String_t* _stringLiteral6BCA904C9FBE8D02E1CA3063029B795541A96085;
+IL2CPP_EXTERN_C String_t* _stringLiteral85FC412A725E6535BFBEE96D1A4576A820275310;
+IL2CPP_EXTERN_C String_t* _stringLiteral86FADB31129B6F40C720A97600D69389EA3567E3;
+IL2CPP_EXTERN_C String_t* _stringLiteral97EAF83F2BEC9C23305078CA0F79B46A70D93C49;
+IL2CPP_EXTERN_C String_t* _stringLiteralE566E6091771397A8847DE9F0E5AF31E5E383CA7;
+IL2CPP_EXTERN_C const RuntimeMethod* BaseAffordanceStateReceiver_1_OnEnable_mB97FBD627A706DF4A4A13EF3276D3A3E8D87C4D4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* BindableEnum_1__ctor_mB7A02F9C41E3A84F5A402192EC6E8BCAB800568F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* BindableVariableBase_1_SubscribeAndUpdate_m5B7D6AA6417F69F27C39806544D0D88892BA6AE7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* BindableVariableBase_1_get_Value_mCB6FA52E7F1830E7FD9289E4F4FBE44948813802_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* BindableVariableBase_1_get_Value_mDA92236BCE8EC7928399D7271AA97D7B62941EEC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* BindableVariableBase_1_set_Value_m19676F8DE67466CD43313044F2ADBAD0B83D9F0B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* BindableVariableBase_1_set_Value_m397C0DBE79B512C6383D85035C208443AD76AC7E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisIXRHoverInteractable_tB88E3F220034149EC6037AB0126FC607CC2CF219_mEE6B356A977A12B0BE632D42B58DD22EDF2BD125_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisIXRInteractionStrengthInteractable_t0C79B1621B5D4987893370F8AF403574853D44B7_m30F0483203CBCAD90D7F82B220056EA8E75DD550_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_TryGetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2C2A32AA4FD62D8B9BF5E40B7E2F3EF738C532A6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m9BF6C1C74CD711998DC8FAE5D6B8083586F5CFB5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_mBAA697FE341E389C86536D9444A3E4AC02109E87_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mCBBD283BB42C56D73B7C4194020EC95292B36129_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m1AB3815922EAB4210EC4D8F2053BEE86A700CE89_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m01FCD3FC513065087F7E312BC9DE2D1C3FF655E5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m6C9BC48FF099B7CF07ADD778D1DDD6B7D42ED791_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mDC3E95DC5C927A867B9B42EDE1945F909B894268_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m9767A091ADB8D7F7B698451FE1BB2A1528C2E152_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_mB5E64608D47703A98476E026480AE38671047C87_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m118881A6117DB328B006412BD9A85A5A8742CD64_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m30DAA93C38186B88FCB4FDE8CD17B27CC6517431_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m8EAA91B4CE37CBB6C720FD238E4505097B29FFDA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* MetaSystemGestureDetector_OnAimFlagsActionPerformedOrCanceled_mA039A6CD5B5CAAE457D7672710A4A314ACCE12BD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PokeBlendShapeAnimator_U3COnEnableU3Eb__10_0_m5A846165F2893202A66A686FD422B6D006ADE48A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PokeBlendShapeAnimator_U3COnEnableU3Eb__10_1_m1E7963F2192F3A1C80A82AD16EFF8FD27D5A1AF0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TweenableVariableAsyncBase_1_get_Value_m1FEDA58A135C58DC7573858CF65871F63712896F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TweenableVariableAsyncBase_1_set_Value_mBE82FC9D214396EF51C5F3840321A8134DCC925B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TweenableVariableBase_1_HandleTween_m197557B3C05112A4C89C97E2200E07C1DCF2C274_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TweenableVariableBase_1_HandleTween_m46B71286EECBE0E3F279B742875CE8EF4D068791_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TweenableVariableBase_1_HandleTween_m61752C0D7316DD05AB1C8E10319F47902D4CDCD9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TweenableVariableBase_1_set_target_m3127A21F0C2EF40FA4604D603803BA53DE604337_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TweenableVariableBase_1_set_target_m353B619618455D8C59D23B5D02D69EFB492AAA59_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TweenableVariableBase_1_set_target_m3B5D4156AFDDEE2E041341605265E52A487F1657_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CResetRigidbodyRoutineU3Ed__7_System_Collections_IEnumerator_Reset_mF6A6C4B9C85C2AF254CD205BF0AEB1CFC92EC8BF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* XRInputReaderUtility_SetInputProperty_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m15744164C1D61E4554375F75CC67D115002FAEAE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* XRInputValueReader_1_ReadValue_mAFA366F0FF0345B1A9F16C19F1815D10E427860D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* XRInputValueReader_1_TryReadValue_mA7A16FB5DD2CFAD42DF5414A8B012EDCF587F9AC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* XRInputValueReader_1__ctor_m2D198A41FE129CDD40C6FDBF537BC35E3C4B6CFB_RuntimeMethod_var;
+struct Delegate_t_marshaled_com;
+struct Delegate_t_marshaled_pinvoke;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
+
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct PoseU5BU5D_tFC818445A5F54FE4CD8B53D645FF0AD0E2A133EB;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+struct U3CModuleU3E_tA64DDBAC1C53732F6273A4B914F985B00AC62230 
+{
+};
+struct BindableVariableBase_1_tB9252B4815AD3E511244D3B578854D3FF333E4BD  : public RuntimeObject
+{
+	Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* ___valueUpdated;
+	float ___m_InternalValue;
+	bool ___m_CheckEquality;
+	bool ___m_IsInitialized;
+	Func_3_tA9AA477D8A5A68C7DC26AE4792295B80F920E61E* ___m_EqualityMethod;
+	int32_t ___m_BindingCount;
+};
+struct List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95  : public RuntimeObject
+{
+	IXRHoverInteractorU5BU5D_tF290343C9B996DB5599892C9944E6EC89A4EC718* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2  : public RuntimeObject
+{
+	PoseU5BU5D_tFC818445A5F54FE4CD8B53D645FF0AD0E2A133EB* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D  : public RuntimeObject
+{
+	TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct U3CPrivateImplementationDetailsU3E_tF24BE61EB8818608F56CD2CB1DD10D73B842FAAA  : public RuntimeObject
+{
+};
+struct BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A  : public RuntimeObject
+{
+	List_1_t60791FB9179CEFADA93C6B032DED2E65CB5DA58F* ___m_Bindings;
+};
+struct String_t  : public RuntimeObject
+{
+	int32_t ____stringLength;
+	Il2CppChar ____firstChar;
+};
+struct UnityEventBase_t4968A4C72559F35C0923E4BD9C042C3A842E1DB8  : public RuntimeObject
+{
+	InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382* ___m_Calls;
+	PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25* ___m_PersistentCalls;
+	bool ___m_CallsDirty;
+};
+struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t2B953E9D20AEC597BF8AA081ECC00608B4FF59FB  : public RuntimeObject
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D  : public RuntimeObject
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+};
+struct U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___body;
+};
+struct BindableVariable_1_tAB8C2D23769D801C8E39D4AA927DD23AF0E6816C  : public BindableVariableBase_1_tB9252B4815AD3E511244D3B578854D3FF333E4BD
+{
+};
+struct Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A 
+{
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	RuntimeObject* ____current;
+};
+struct Enumerator_t519AE1DAA64E517296768BEA2E732ED47F76A91D 
+{
+	List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____current;
+};
+struct InlinedArray_1_tC208D319D19C2B3DF550BD9CDC11549F23D8F91B 
+{
+	int32_t ___length;
+	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___firstValue;
+	Action_1U5BU5D_tB846E6FE2326CCD34124D1E5D70117C9D33DEE76* ___additionalValues;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	bool ___m_value;
+};
+struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
+{
+	uint8_t ___m_value;
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
+struct InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD 
+{
+	bool ___m_UseReference;
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_Action;
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___m_Reference;
+};
+struct InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshaled_pinvoke
+{
+	int32_t ___m_UseReference;
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_Action;
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___m_Reference;
+};
+struct InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshaled_com
+{
+	int32_t ___m_UseReference;
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_Action;
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___m_Reference;
+};
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	int32_t ___m_value;
+};
+struct IntPtr_t 
+{
+	void* ___m_value;
+};
+struct InteractionLayerMask_t3B3480A4A5E1E0C43314C0D2CEB3BB39175E1FD4 
+{
+	uint32_t ___m_Bits;
+	int32_t ___m_Mask;
+};
+struct JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08 
+{
+	uint64_t ___jobGroup;
+	int32_t ___version;
+};
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+	float ___w;
+};
+struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
+{
+	float ___m_value;
+};
+struct UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977  : public UnityEventBase_t4968A4C72559F35C0923E4BD9C042C3A842E1DB8
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___m_InvokeArray;
+};
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+};
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+struct WaitForFixedUpdate_t86F5BC0B6A668AEF2903DE9ADB52062E457BD1B7  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+};
+struct float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+};
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D1084_t64B41B096F4FA2EDDB87D758C31F83FC751D0AD7 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D1084_t64B41B096F4FA2EDDB87D758C31F83FC751D0AD7__padding[1084];
+	};
+};
+#pragma pack(pop, tp)
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D1630_tB9CD44C4FFF81779E1291724FD10C56BEE62788F 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D1630_tB9CD44C4FFF81779E1291724FD10C56BEE62788F__padding[1630];
+	};
+};
+#pragma pack(pop, tp)
+struct CallbackContext_tB251EE41F509C6E8A6B05EC97C029A45DF4F5FA8 
+{
+	InputActionState_t780948EA293BAA800AD8699518B58B59FFB8A700* ___m_State;
+	int32_t ___m_ActionIndex;
+};
+struct CallbackContext_tB251EE41F509C6E8A6B05EC97C029A45DF4F5FA8_marshaled_pinvoke
+{
+	InputActionState_t780948EA293BAA800AD8699518B58B59FFB8A700* ___m_State;
+	int32_t ___m_ActionIndex;
+};
+struct CallbackContext_tB251EE41F509C6E8A6B05EC97C029A45DF4F5FA8_marshaled_com
+{
+	InputActionState_t780948EA293BAA800AD8699518B58B59FFB8A700* ___m_State;
+	int32_t ___m_ActionIndex;
+};
+struct MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F 
+{
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___FilePathsData;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___TypesData;
+	int32_t ___TotalTypes;
+	int32_t ___TotalFiles;
+	bool ___IsEditorOnly;
+};
+struct MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshaled_pinvoke
+{
+	Il2CppSafeArray* ___FilePathsData;
+	Il2CppSafeArray* ___TypesData;
+	int32_t ___TotalTypes;
+	int32_t ___TotalFiles;
+	int32_t ___IsEditorOnly;
+};
+struct MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshaled_com
+{
+	Il2CppSafeArray* ___FilePathsData;
+	Il2CppSafeArray* ___TypesData;
+	int32_t ___TotalTypes;
+	int32_t ___TotalFiles;
+	int32_t ___IsEditorOnly;
+};
+struct BindableVariableBase_1_t0B8C3C183E9A64B760FC611EA6858D9BD639E610  : public RuntimeObject
+{
+	Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE* ___valueUpdated;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___m_InternalValue;
+	bool ___m_CheckEquality;
+	bool ___m_IsInitialized;
+	Func_3_tE82E2E9CB095585276C858A2EA8860ACC9745B0C* ___m_EqualityMethod;
+	int32_t ___m_BindingCount;
+};
+struct BindableVariableBase_1_t6E41640D2419E25E9579C521963F28A608530041  : public RuntimeObject
+{
+	Action_1_t81CC87F0365077EC678FAF69B68180DC9750249B* ___valueUpdated;
+	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___m_InternalValue;
+	bool ___m_CheckEquality;
+	bool ___m_IsInitialized;
+	Func_3_tE454B2F07459EA885F6D39FCB5E70BF80B11F175* ___m_EqualityMethod;
+	int32_t ___m_BindingCount;
+};
+struct CallbackArray_1_tDFF8C4C6015023B6C2E70BAD26D8BC6BF00D8775 
+{
+	bool ___m_CannotMutateCallbacksArray;
+	InlinedArray_1_tC208D319D19C2B3DF550BD9CDC11549F23D8F91B ___m_Callbacks;
+	InlinedArray_1_tC208D319D19C2B3DF550BD9CDC11549F23D8F91B ___m_CallbacksToAdd;
+	InlinedArray_1_tC208D319D19C2B3DF550BD9CDC11549F23D8F91B ___m_CallbacksToRemove;
+};
+struct TweenableVariableBase_1_tE056BE2293DB2624363EEADF82A5A9439C26C35D  : public BindableVariable_1_tAB8C2D23769D801C8E39D4AA927DD23AF0E6816C
+{
+	AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___m_AnimationCurve;
+	float ___m_Target;
+	float ___U3CinitialValueU3Ek__BackingField;
+};
+struct Allocator_t996642592271AAD9EE688F142741D512C07B5824 
+{
+	int32_t ___value__;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	intptr_t ___m_Ptr;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	intptr_t ___m_Ptr;
+};
+struct Delegate_t  : public RuntimeObject
+{
+	intptr_t ___method_ptr;
+	intptr_t ___invoke_impl;
+	RuntimeObject* ___m_target;
+	intptr_t ___method;
+	intptr_t ___delegate_trampoline;
+	intptr_t ___extra_arg;
+	intptr_t ___method_code;
+	intptr_t ___interp_method;
+	intptr_t ___interp_invoke_impl;
+	MethodInfo_t* ___method_info;
+	MethodInfo_t* ___original_method_info;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
+	bool ___method_is_virtual;
+};
+struct Delegate_t_marshaled_pinvoke
+{
+	intptr_t ___method_ptr;
+	intptr_t ___invoke_impl;
+	Il2CppIUnknown* ___m_target;
+	intptr_t ___method;
+	intptr_t ___delegate_trampoline;
+	intptr_t ___extra_arg;
+	intptr_t ___method_code;
+	intptr_t ___interp_method;
+	intptr_t ___interp_invoke_impl;
+	MethodInfo_t* ___method_info;
+	MethodInfo_t* ___original_method_info;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
+	int32_t ___method_is_virtual;
+};
+struct Delegate_t_marshaled_com
+{
+	intptr_t ___method_ptr;
+	intptr_t ___invoke_impl;
+	Il2CppIUnknown* ___m_target;
+	intptr_t ___method;
+	intptr_t ___delegate_trampoline;
+	intptr_t ___extra_arg;
+	intptr_t ___method_code;
+	intptr_t ___interp_method;
+	intptr_t ___interp_invoke_impl;
+	MethodInfo_t* ___method_info;
+	MethodInfo_t* ___original_method_info;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
+	int32_t ___method_is_virtual;
+};
+struct Exception_t  : public RuntimeObject
+{
+	String_t* ____className;
+	String_t* ____message;
+	RuntimeObject* ____data;
+	Exception_t* ____innerException;
+	String_t* ____helpURL;
+	RuntimeObject* ____stackTrace;
+	String_t* ____stackTraceString;
+	String_t* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	RuntimeObject* ____dynamicMethods;
+	int32_t ____HResult;
+	String_t* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className;
+	char* ____message;
+	RuntimeObject* ____data;
+	Exception_t_marshaled_pinvoke* ____innerException;
+	char* ____helpURL;
+	Il2CppIUnknown* ____stackTrace;
+	char* ____stackTraceString;
+	char* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	Il2CppIUnknown* ____dynamicMethods;
+	int32_t ____HResult;
+	char* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	Il2CppSafeArray* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className;
+	Il2CppChar* ____message;
+	RuntimeObject* ____data;
+	Exception_t_marshaled_com* ____innerException;
+	Il2CppChar* ____helpURL;
+	Il2CppIUnknown* ____stackTrace;
+	Il2CppChar* ____stackTraceString;
+	Il2CppChar* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	Il2CppIUnknown* ____dynamicMethods;
+	int32_t ____HResult;
+	Il2CppChar* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	Il2CppSafeArray* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct InputActionType_t7E3615BDDF3C84F39712E5889559D3AD8E773108 
+{
+	int32_t ___value__;
+};
+struct Int32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C 
+{
+	int32_t ___value__;
+};
+struct InteractorHandedness_t235041BA6D69977D466533780BB6B3F6A69AE499 
+{
+	int32_t ___value__;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+	intptr_t ___m_CachedPtr;
+};
+struct OneEuroFilterVector3_t71848A0EF10F7FB56132C476132C61D96078B8B3  : public RuntimeObject
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_LastRawValue;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_LastFilteredValue;
+	float ___m_MinCutoff;
+	float ___m_Beta;
+};
+struct PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 
+{
+	bool ___U3CmeetsRequirementsU3Ek__BackingField;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CpokeInteractionPointU3Ek__BackingField;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CaxisAlignedPokeInteractionPointU3Ek__BackingField;
+	float ___U3CinteractionStrengthU3Ek__BackingField;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CaxisNormalU3Ek__BackingField;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtargetU3Ek__BackingField;
+};
+struct PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032_marshaled_pinvoke
+{
+	int32_t ___U3CmeetsRequirementsU3Ek__BackingField;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CpokeInteractionPointU3Ek__BackingField;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CaxisAlignedPokeInteractionPointU3Ek__BackingField;
+	float ___U3CinteractionStrengthU3Ek__BackingField;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CaxisNormalU3Ek__BackingField;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtargetU3Ek__BackingField;
+};
+struct PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032_marshaled_com
+{
+	int32_t ___U3CmeetsRequirementsU3Ek__BackingField;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CpokeInteractionPointU3Ek__BackingField;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CaxisAlignedPokeInteractionPointU3Ek__BackingField;
+	float ___U3CinteractionStrengthU3Ek__BackingField;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CaxisNormalU3Ek__BackingField;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtargetU3Ek__BackingField;
+};
+struct Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotation;
+};
+struct ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD 
+{
+	intptr_t ___m_Ptr;
+};
+struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 
+{
+	intptr_t ___value;
+};
+struct TargetPriorityMode_t4A1A7D2CB3263AD5E8C9610A49B27A208CC6C259 
+{
+	int32_t ___value__;
+};
+struct WrapMode_t6C6EABC32662DF078C3C977196618603C2F3A079 
+{
+	int32_t ___value__;
+};
+struct ActionFlags_t639BD2944E073F8DD263CE2CA581FC62C401AB1E 
+{
+	int32_t ___value__;
+};
+struct Flags_t2ED4EFE461994B03533B3B524C8C2EA71315AAE6 
+{
+	int32_t ___value__;
+};
+struct SystemGestureState_t257EC54C81DD6C9DF00092A22CF9B09C5E4FDB23 
+{
+	int32_t ___value__;
+};
+struct InputSourceMode_tFA5D8EFCFC35FC9EC06FB82DE4805FF8C336AC50 
+{
+	int32_t ___value__;
+};
+struct InputSourceMode_tC6F86938AEFC93650B200F13CB1CDF660E091A6C 
+{
+	int32_t ___value__;
+};
+struct BindableVariableBase_1_t9E98D971B506CF9B28B829E832171C4DE7175A46  : public RuntimeObject
+{
+	Action_1_tC926860F20D428DA3E93D6FBA36420E904DD903B* ___valueUpdated;
+	int32_t ___m_InternalValue;
+	bool ___m_CheckEquality;
+	bool ___m_IsInitialized;
+	Func_3_tE48B8474EE65D1530A10889B067677A4DDAB1DC5* ___m_EqualityMethod;
+	int32_t ___m_BindingCount;
+};
+struct BindableVariableBase_1_t1241F44A52819D39C97ED9E1CA5C6C736EF53E9B  : public RuntimeObject
+{
+	Action_1_t4D300E27C41C3B058E576318A71EAB3A8E6A48A1* ___valueUpdated;
+	int32_t ___m_InternalValue;
+	bool ___m_CheckEquality;
+	bool ___m_IsInitialized;
+	Func_3_t592C0BEF675DF1E62EDD0225BF9AA6FDBCE90CB3* ___m_EqualityMethod;
+	int32_t ___m_BindingCount;
+};
+struct BindableVariable_1_t3A66A98B9D01BD0046D7960AEC1E2F23321EFBA9  : public BindableVariableBase_1_t0B8C3C183E9A64B760FC611EA6858D9BD639E610
+{
+};
+struct BindableVariable_1_tB68DAB26AE7AF6E274A845BB487AEE92F9E1DAA0  : public BindableVariableBase_1_t6E41640D2419E25E9579C521963F28A608530041
+{
+};
+struct NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+	int32_t ___m_AllocatorLabel;
+};
+struct NativeArray_1_tEDE9DAD2CAE5954286BC0EF394A57ED0AC69FEE6 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+	int32_t ___m_AllocatorLabel;
+};
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct InputBinding_t0D75BD1538CF81D29450D568D5C938E111633EC5 
+{
+	String_t* ___m_Name;
+	String_t* ___m_Id;
+	String_t* ___m_Path;
+	String_t* ___m_Interactions;
+	String_t* ___m_Processors;
+	String_t* ___m_Groups;
+	String_t* ___m_Action;
+	int32_t ___m_Flags;
+	String_t* ___m_OverridePath;
+	String_t* ___m_OverrideInteractions;
+	String_t* ___m_OverrideProcessors;
+};
+struct InputBinding_t0D75BD1538CF81D29450D568D5C938E111633EC5_marshaled_pinvoke
+{
+	char* ___m_Name;
+	char* ___m_Id;
+	char* ___m_Path;
+	char* ___m_Interactions;
+	char* ___m_Processors;
+	char* ___m_Groups;
+	char* ___m_Action;
+	int32_t ___m_Flags;
+	char* ___m_OverridePath;
+	char* ___m_OverrideInteractions;
+	char* ___m_OverrideProcessors;
+};
+struct InputBinding_t0D75BD1538CF81D29450D568D5C938E111633EC5_marshaled_com
+{
+	Il2CppChar* ___m_Name;
+	Il2CppChar* ___m_Id;
+	Il2CppChar* ___m_Path;
+	Il2CppChar* ___m_Interactions;
+	Il2CppChar* ___m_Processors;
+	Il2CppChar* ___m_Groups;
+	Il2CppChar* ___m_Action;
+	int32_t ___m_Flags;
+	Il2CppChar* ___m_OverridePath;
+	Il2CppChar* ___m_OverrideInteractions;
+	Il2CppChar* ___m_OverrideProcessors;
+};
+struct MulticastDelegate_t  : public Delegate_t
+{
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates;
+};
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates;
+};
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates;
+};
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
+};
+struct XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515  : public RuntimeObject
+{
+	int32_t ___m_InputSourceMode;
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_InputActionPerformed;
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_InputActionValue;
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___m_InputActionReferencePerformed;
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___m_InputActionReferenceValue;
+	Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___m_ObjectReferenceObject;
+	bool ___m_ManualPerformed;
+	float ___m_ManualValue;
+	bool ___m_ManualQueuePerformed;
+	bool ___m_ManualQueueWasPerformedThisFrame;
+	bool ___m_ManualQueueWasCompletedThisFrame;
+	float ___m_ManualQueueValue;
+	int32_t ___m_ManualQueueTargetFrame;
+	int32_t ___m_ManualFramePerformed;
+	int32_t ___m_ManualFrameCompleted;
+	RuntimeObject* ___U3CbypassU3Ek__BackingField;
+	bool ___m_CallingBypass;
+	UnityObjectReferenceCache_2_t89FB64884388E678953FFA84ECE94DE3CB1D3E66* ___m_ObjectReference;
+	UnityObjectReferenceCache_1_t5037B37A78F59591F798651810A820937FB97158* ___m_InputActionReferencePerformedCache;
+	UnityObjectReferenceCache_1_t5037B37A78F59591F798651810A820937FB97158* ___m_InputActionReferenceValueCache;
+};
+struct XRInputValueReader_t0A220D04F7D6F5BC7E5A253F5AF8A9C3AB430D59  : public RuntimeObject
+{
+	int32_t ___m_InputSourceMode;
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_InputAction;
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___m_InputActionReference;
+	UnityObjectReferenceCache_1_t5037B37A78F59591F798651810A820937FB97158* ___m_InputActionReferenceCache;
+};
+struct Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8  : public MulticastDelegate_t
+{
+};
+struct Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A  : public MulticastDelegate_t
+{
+};
+struct Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E  : public MulticastDelegate_t
+{
+};
+struct BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C  : public BindableVariableBase_1_t1241F44A52819D39C97ED9E1CA5C6C736EF53E9B
+{
+};
+struct Func_3_t592C0BEF675DF1E62EDD0225BF9AA6FDBCE90CB3  : public MulticastDelegate_t
+{
+};
+struct Nullable_1_t11786EE914FE65E70B9671129B0DFC4D0DE80C44 
+{
+	bool ___hasValue;
+	InputBinding_t0D75BD1538CF81D29450D568D5C938E111633EC5 ___value;
+};
+struct TweenableVariableBase_1_t894346E06DB112599F8C5FBC5AD5F251F33CFBD9  : public BindableVariable_1_t3A66A98B9D01BD0046D7960AEC1E2F23321EFBA9
+{
+	AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___m_AnimationCurve;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___m_Target;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___U3CinitialValueU3Ek__BackingField;
+};
+struct TweenableVariableBase_1_t491314D6C5C1BEA5AFEAB55CCB93192270815F82  : public BindableVariable_1_tB68DAB26AE7AF6E274A845BB487AEE92F9E1DAA0
+{
+	AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___m_AnimationCurve;
+	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___m_Target;
+	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___U3CinitialValueU3Ek__BackingField;
+};
+struct XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5  : public XRInputValueReader_t0A220D04F7D6F5BC7E5A253F5AF8A9C3AB430D59
+{
+	Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___m_ObjectReferenceObject;
+	float ___m_ManualValue;
+	RuntimeObject* ___U3CbypassU3Ek__BackingField;
+	bool ___m_CallingBypass;
+	UnityObjectReferenceCache_2_t1413D13E9E061514692C40A683297E679FF60E5D* ___m_ObjectReference;
+};
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct NativeCurve_t53467541921F37973B10C15D756AC81FD88381D2 
+{
+	NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF ___m_Values;
+	int32_t ___m_PreWrapMode;
+	int32_t ___m_PostWrapMode;
+};
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Rigidbody_t268697F5A994213ED97393309870968BC1C7393C  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct TweenableVariableAsyncBase_1_tF183EC63E8112FA406C601A7E49A5AC36036F088  : public TweenableVariableBase_1_tE056BE2293DB2624363EEADF82A5A9439C26C35D
+{
+	bool ___m_OutputInitialized;
+	NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF ___m_JobOutputStore;
+	bool ___m_CurveDirty;
+	NativeCurve_t53467541921F37973B10C15D756AC81FD88381D2 ___m_NativeCurve;
+	bool ___m_HasJobPending;
+	JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08 ___m_LastJobHandle;
+};
+struct TweenableVariableAsyncBase_1_tBC224ABEF15BBD66D75B9D20BED7ADB1F273E430  : public TweenableVariableBase_1_t491314D6C5C1BEA5AFEAB55CCB93192270815F82
+{
+	bool ___m_OutputInitialized;
+	NativeArray_1_tEDE9DAD2CAE5954286BC0EF394A57ED0AC69FEE6 ___m_JobOutputStore;
+	bool ___m_CurveDirty;
+	NativeCurve_t53467541921F37973B10C15D756AC81FD88381D2 ___m_NativeCurve;
+	bool ___m_HasJobPending;
+	JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08 ___m_LastJobHandle;
+};
+struct TweenableVariableSynchronousBase_1_t27C59C64A400660B379C3DC861B0AAFB196D92AA  : public TweenableVariableBase_1_t894346E06DB112599F8C5FBC5AD5F251F33CFBD9
+{
+};
+struct InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD  : public RuntimeObject
+{
+	String_t* ___m_Name;
+	int32_t ___m_Type;
+	String_t* ___m_ExpectedControlType;
+	String_t* ___m_Id;
+	String_t* ___m_Processors;
+	String_t* ___m_Interactions;
+	InputBindingU5BU5D_t7E47E87B9CAE12B6F6A0659008B425C58D84BB57* ___m_SingletonActionBindings;
+	int32_t ___m_Flags;
+	Nullable_1_t11786EE914FE65E70B9671129B0DFC4D0DE80C44 ___m_BindingMask;
+	int32_t ___m_BindingsStartIndex;
+	int32_t ___m_BindingsCount;
+	int32_t ___m_ControlStartIndex;
+	int32_t ___m_ControlCount;
+	int32_t ___m_ActionIndexInState;
+	InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* ___m_ActionMap;
+	CallbackArray_1_tDFF8C4C6015023B6C2E70BAD26D8BC6BF00D8775 ___m_OnStarted;
+	CallbackArray_1_tDFF8C4C6015023B6C2E70BAD26D8BC6BF00D8775 ___m_OnCanceled;
+	CallbackArray_1_tDFF8C4C6015023B6C2E70BAD26D8BC6BF00D8775 ___m_OnPerformed;
+};
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
+};
+struct SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E  : public Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF
+{
+};
+struct BaseAffordanceStateReceiver_1_t8B790ACDC3D68ED037D4C2E8E8812B2BDA97DBB4  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	BaseAffordanceStateProvider_t5721F9B16D6C029D832F8D6FA0A47326A581D443* ___m_AffordanceStateProvider;
+	bool ___m_ReplaceIdleStateValueWithInitialValue;
+	BaseAffordanceTheme_1_tDE4824F41024DDB47B2C61FE23860FB77EA960BB* ___m_AffordanceTheme;
+	BindableVariable_1_t8FDD824B71E4868C9A1011DF94BED5A0049FCF42* ___m_AffordanceStateData;
+	bool ___m_Initialized;
+	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___U3CinitialValueU3Ek__BackingField;
+	bool ___U3CinitialValueCapturedU3Ek__BackingField;
+};
+struct FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48  : public TweenableVariableAsyncBase_1_tF183EC63E8112FA406C601A7E49A5AC36036F088
+{
+};
+struct HandsOneEuroFilterPostProcessor_tE99F8855C6D85959C0EDF9226ED522B08DBF14AE  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	float ___m_FilterMinCutoff;
+	float ___m_FilterBeta;
+};
+struct HideObjectWhenInteractorBlocked_tFF893F1B7C9DDC188C484B983256019D399F00E9  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4* ___m_Interactor;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_ObjectToHide;
+	RuntimeObject* ___m_CurveInteractionDataProvider;
+	bool ___m_HasCurveDataProvider;
+};
+struct MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___m_AimFlagsAction;
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___m_SystemGestureStarted;
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___m_SystemGestureEnded;
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___m_MenuPressed;
+	BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C* ___m_SystemGestureState;
+	bool ___m_AimFlagsBound;
+};
+struct ObjectResetPlane_t250386B64E13D2BF74C06B92F37342283E4C392B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* ___m_ObjectsToReset;
+	float ___m_CheckDuration;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_ObjectRoot;
+	List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* ___m_OriginalPositions;
+	float ___m_CheckTimer;
+};
+struct PinchPointFollow_tCD3FAB10E82231C7AB75912BC57946C882926007  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___m_XRHandTrackingEvents;
+	XRRayInteractor_tDB7FC857A50F0B25DE4CEC0EE930242BB7380649* ___m_RayInteractor;
+	NearFarInteractor_t43B1C14C2D72CB717E3624B0759E265F5D215E9C* ___m_NearFarInteractor;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_TargetRotation;
+	float ___m_RotationSmoothingSpeed;
+};
+struct PokeBlendShapeAnimator_t48459CB445F2396B407770EBB860FC85B1B2F282  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	XRPokeFilter_tC756187569A8DFE55C540B756688000609B89AC8* ___m_PokeFilter;
+	SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* ___m_SkinnedMeshRenderer;
+	int32_t ___m_BlendShapeIndex;
+	float ___m_BlendShapeMin;
+	float ___m_BlendShapeMax;
+	BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A* ___m_BindingsGroup;
+	RuntimeObject* ___m_HoverInteractable;
+	RuntimeObject* ___m_InteractionStrengthInteractable;
+	FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48* ___m_TweenableVariable;
+	float ___m_TweenTarget;
+};
+struct PokeGestureDetector_t94EB69FA33D2BEB523C380F2D7D9DF399AF41B17  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	int32_t ___m_Handedness;
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___m_PokeGestureStarted;
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___m_PokeGestureEnded;
+};
+struct QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145  : public TweenableVariableSynchronousBase_1_t27C59C64A400660B379C3DC861B0AAFB196D92AA
+{
+	float ___U3CangleEqualityThresholdU3Ek__BackingField;
+};
+struct ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* ___m_ValueInput;
+	float ___m_PressThreshold;
+	float ___m_ReleaseThreshold;
+	bool ___m_IsPerformed;
+	bool ___m_WasPerformedThisFrame;
+	bool ___m_WasCompletedThisFrame;
+};
+struct ToggleGameObject_tD82BA740FE7646FFB4D3A12353FB4DF6CCE4F7AD  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_ActivationGameObject;
+	bool ___m_CurrentlyActive;
+};
+struct TransformSync_tF9249B51AC95936B597FBF4BAF7DBB4B6D30BD35  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_TargetTransform;
+	float ___m_SmoothFollowSpeed;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___m_Rigidbody;
+	bool ___m_HasTransform;
+	bool ___m_HasRigidbody;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_ThisTransform;
+	Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5* ___m_PositionTweenable;
+	QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145* ___m_RotationTweenable;
+};
+struct ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* ___m_ValueInput;
+	float ___m_PressThreshold;
+	float ___m_ReleaseThreshold;
+	bool ___m_IsPerformed;
+	bool ___m_WasPerformedThisFrame;
+	bool ___m_WasCompletedThisFrame;
+};
+struct Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5  : public TweenableVariableAsyncBase_1_tBC224ABEF15BBD66D75B9D20BED7ADB1F273E430
+{
+};
+struct XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Action_1_tBE7729820CBA793D8D5D57207BA5938B012863C5* ___registered;
+	Action_1_t9A06C49FCB3ADF4C984887951A3DC1DA07CFFBF0* ___unregistered;
+	XRInteractionManager_t93C7F7F0CFEAD83E1A70F92D05B0E663483746CD* ___m_InteractionManager;
+	RuntimeObject* ___U3CcontainingGroupU3Ek__BackingField;
+	InteractionLayerMask_t3B3480A4A5E1E0C43314C0D2CEB3BB39175E1FD4 ___m_InteractionLayers;
+	int32_t ___m_Handedness;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_AttachTransform;
+	bool ___m_KeepSelectedTargetValid;
+	bool ___m_DisableVisualsWhenBlockedInGroup;
+	XRBaseInteractable_t76185BD6DF3BC86B3CDD82E6368C3C7157E39AE4* ___m_StartingSelectedInteractable;
+	XRBaseTargetFilter_t24D9DBCEA900DFEA08D543C91DFC070C1C91594F* ___m_StartingTargetFilter;
+	HoverEnterEvent_t2BDBCA14FF94DA18C9AC12B43297F6C1641788AB* ___m_HoverEntered;
+	HoverExitEvent_t256704BC79FE0AA61EB2DE3FDDF43A1FC97F5832* ___m_HoverExited;
+	SelectEnterEvent_tBA2614C8C25D8794D5804C4F66195D74E64FC5D0* ___m_SelectEntered;
+	SelectExitEvent_t15DC0A39F9657BA9E6BAE6250D8D64C9671201F6* ___m_SelectExited;
+	RuntimeObject* ___m_TargetFilter;
+	bool ___m_AllowHover;
+	bool ___m_AllowSelect;
+	bool ___m_IsPerformingManualInteraction;
+	HashSetList_1_t52A6279CDC8FAE4460A87A1B6A5E3437D58F5AE2* ___m_InteractablesHovered;
+	bool ___U3ChasHoverU3Ek__BackingField;
+	HashSetList_1_t1A0488B6A7A99FC77B3DC8ADC7C241B5B2F21789* ___m_InteractablesSelected;
+	RuntimeObject* ___U3CfirstInteractableSelectedU3Ek__BackingField;
+	bool ___U3ChasSelectionU3Ek__BackingField;
+	List_1_t9A2E2984B23260AECDFA90CEB1F2887075FA4DF3* ___m_StartingHoverFilters;
+	ExposedRegistrationList_1_t11A438A04DF188A3BE1950639AAF0CBFAF9065A5* ___m_HoverFilters;
+	List_1_t9A2E2984B23260AECDFA90CEB1F2887075FA4DF3* ___m_StartingSelectFilters;
+	ExposedRegistrationList_1_t0AF641D8E06922C1FFAF3DA223105F57CE5BC4D8* ___m_SelectFilters;
+	BindableVariable_1_tAB8C2D23769D801C8E39D4AA927DD23AF0E6816C* ___m_LargestInteractionStrength;
+	bool ___m_ClearedLargestInteractionStrength;
+	Dictionary_2_tBF02F25A38E519F312D7EF1C8B204EBDC91AB9A1* ___m_AttachPoseOnSelect;
+	Dictionary_2_tBF02F25A38E519F312D7EF1C8B204EBDC91AB9A1* ___m_LocalAttachPoseOnSelect;
+	HashSetList_1_tF3CBA0C6731B032420F2FEC573A03EE7A351CBC4* ___m_InteractionStrengthInteractables;
+	Dictionary_2_tA13026C91A8E0CE5AB55DC00628A33C71D2BE3F2* ___m_InteractionStrengths;
+	RuntimeObject* ___m_ManualInteractionInteractable;
+	XRInteractionManager_t93C7F7F0CFEAD83E1A70F92D05B0E663483746CD* ___m_RegisteredInteractionManager;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_XROriginTransform;
+	bool ___m_HasXROrigin;
+	bool ___m_FailedToFindXROrigin;
+	int32_t ___U3CtargetPriorityModeU3Ek__BackingField;
+	List_1_t96062976A34EF744BABF4798339ADC3741F0CF6C* ___U3CtargetsForSelectionU3Ek__BackingField;
+};
+struct XRPokeFilter_tC756187569A8DFE55C540B756688000609B89AC8  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	XRBaseInteractable_t76185BD6DF3BC86B3CDD82E6368C3C7157E39AE4* ___m_Interactable;
+	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___m_PokeCollider;
+	PokeThresholdDatumProperty_t367C8AA0927AD55629D9EF7297FCCEB814F6BB30* ___m_PokeConfiguration;
+	XRPokeLogic_tFF15963730D3A0A66FA658DD48177B2CD5A2F26D* ___m_PokeLogic;
+	XRBaseInteractable_t76185BD6DF3BC86B3CDD82E6368C3C7157E39AE4* ___m_SubscribedInteractable;
+};
+struct BaseAsyncAffordanceStateReceiver_1_t1AF80AFA78475513159AB74414CDD1BF93201ED6  : public BaseAffordanceStateReceiver_1_t8B790ACDC3D68ED037D4C2E8E8812B2BDA97DBB4
+{
+	NativeArray_1_tEDE9DAD2CAE5954286BC0EF394A57ED0AC69FEE6 ___m_JobOutputStore;
+	NativeCurve_t53467541921F37973B10C15D756AC81FD88381D2 ___m_NativeCurve;
+	JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08 ___m_LastJobHandle;
+	bool ___m_OutputInitialized;
+};
+struct Vector3AffordanceReceiver_t2849A6C2EA72BD2796A4E0A5831DFDF230988458  : public BaseAsyncAffordanceStateReceiver_1_t1AF80AFA78475513159AB74414CDD1BF93201ED6
+{
+	Vector3AffordanceThemeDatumProperty_t7AE01710B3906411C8AA4452F3110650DB78C38F* ___m_AffordanceThemeDatum;
+	Vector3UnityEvent_tBF9BAC8FCCE7BBF3E98E9EDA6157F00E28B9153E* ___m_ValueUpdated;
+	BindableVariable_1_tB68DAB26AE7AF6E274A845BB487AEE92F9E1DAA0* ___U3CaffordanceValueU3Ek__BackingField;
+};
+struct LocalPositionOffsetAffordanceReceiver_t80AA3C7E3F8F611E956801F4CEB708BA255EFD08  : public Vector3AffordanceReceiver_t2849A6C2EA72BD2796A4E0A5831DFDF230988458
+{
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_TransformToTranslate;
+	bool ___m_HasTransformToTranslate;
+	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___m_InitialOffset;
+};
+struct Vector3ScaleAffordanceReceiver_tC5E30AA269B3C026CE28F6C0735CBA1C9B2FD52E  : public Vector3AffordanceReceiver_t2849A6C2EA72BD2796A4E0A5831DFDF230988458
+{
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_TargetTransform;
+};
+struct List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95_StaticFields
+{
+	IXRHoverInteractorU5BU5D_tF290343C9B996DB5599892C9944E6EC89A4EC718* ___s_emptyArray;
+};
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray;
+};
+struct List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2_StaticFields
+{
+	PoseU5BU5D_tFC818445A5F54FE4CD8B53D645FF0AD0E2A133EB* ___s_emptyArray;
+};
+struct List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D_StaticFields
+{
+	TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* ___s_emptyArray;
+};
+struct U3CPrivateImplementationDetailsU3E_tF24BE61EB8818608F56CD2CB1DD10D73B842FAAA_StaticFields
+{
+	__StaticArrayInitTypeSizeU3D1084_t64B41B096F4FA2EDDB87D758C31F83FC751D0AD7 ___23EBA69CC774245527A2A4AE9514DDA16AA01959C004F335C97DEFBCD6F126C9;
+	__StaticArrayInitTypeSizeU3D1630_tB9CD44C4FFF81779E1291724FD10C56BEE62788F ___5F0DBE6E0DAB10CC8C8B9015EEF5E85737454CAD4CF725AC5D0DAD56C559D592;
+};
+struct String_t_StaticFields
+{
+	String_t* ___Empty;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	String_t* ___TrueString;
+	String_t* ___FalseString;
+};
+struct IntPtr_t_StaticFields
+{
+	intptr_t ___Zero;
+};
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
+{
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion;
+};
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector;
+};
+struct float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_StaticFields
+{
+	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___zero;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
+};
+struct Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_StaticFields
+{
+	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___k_Identity;
+};
+struct InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD_StaticFields
+{
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___k_InputActionEnableProfilerMarker;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___k_InputActionDisableProfilerMarker;
+};
+struct XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4_StaticFields
+{
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_ProcessInteractionStrengthMarker;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_ProcessInteractionStrengthEventMarker;
+};
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArray
+{
+	ALIGN_FIELD (8) uint8_t m_Items[1];
+
+	inline uint8_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint8_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint8_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+struct PoseU5BU5D_tFC818445A5F54FE4CD8B53D645FF0AD0E2A133EB  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 m_Items[1];
+
+	inline Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 value)
+	{
+		m_Items[index] = value;
+	}
+};
+
+
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m1AB3815922EAB4210EC4D8F2053BEE86A700CE89_gshared_inline (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___0_item, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 List_1_get_Item_m30DAA93C38186B88FCB4FDE8CD17B27CC6517431_gshared (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m6C9BC48FF099B7CF07ADD778D1DDD6B7D42ED791_gshared (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m51E8C8F6D6AAA447F906F82CBA1114C86E69FF54_gshared (Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859_gshared (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BindableVariableBase_1_SubscribeAndUpdate_m5B7D6AA6417F69F27C39806544D0D88892BA6AE7_gshared (BindableVariableBase_1_tB9252B4815AD3E511244D3B578854D3FF333E4BD* __this, Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* ___0_callback, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenableVariableBase_1_HandleTween_m46B71286EECBE0E3F279B742875CE8EF4D068791_gshared (TweenableVariableBase_1_tE056BE2293DB2624363EEADF82A5A9439C26C35D* __this, float ___0_tweenTarget, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenableVariableBase_1_set_target_m353B619618455D8C59D23B5D02D69EFB492AAA59_gshared (TweenableVariableBase_1_tE056BE2293DB2624363EEADF82A5A9439C26C35D* __this, float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Component_TryGetComponent_TisRuntimeObject_m69D4ED21F14D49D805A2337F4332934CDA07DEDB_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, RuntimeObject** ___0_component, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenableVariableAsyncBase_1_set_Value_mBE82FC9D214396EF51C5F3840321A8134DCC925B_gshared (TweenableVariableAsyncBase_1_tBC224ABEF15BBD66D75B9D20BED7ADB1F273E430* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BindableVariableBase_1_set_Value_m19676F8DE67466CD43313044F2ADBAD0B83D9F0B_gshared (BindableVariableBase_1_t0B8C3C183E9A64B760FC611EA6858D9BD639E610* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenableVariableBase_1_set_target_m3127A21F0C2EF40FA4604D603803BA53DE604337_gshared (TweenableVariableBase_1_t491314D6C5C1BEA5AFEAB55CCB93192270815F82* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenableVariableBase_1_set_target_m3B5D4156AFDDEE2E041341605265E52A487F1657_gshared (TweenableVariableBase_1_t894346E06DB112599F8C5FBC5AD5F251F33CFBD9* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenableVariableBase_1_HandleTween_m61752C0D7316DD05AB1C8E10319F47902D4CDCD9_gshared (TweenableVariableBase_1_t491314D6C5C1BEA5AFEAB55CCB93192270815F82* __this, float ___0_tweenTarget, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenableVariableBase_1_HandleTween_m197557B3C05112A4C89C97E2200E07C1DCF2C274_gshared (TweenableVariableBase_1_t894346E06DB112599F8C5FBC5AD5F251F33CFBD9* __this, float ___0_tweenTarget, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E TweenableVariableAsyncBase_1_get_Value_m1FEDA58A135C58DC7573858CF65871F63712896F_gshared (TweenableVariableAsyncBase_1_tBC224ABEF15BBD66D75B9D20BED7ADB1F273E430* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 BindableVariableBase_1_get_Value_mDA92236BCE8EC7928399D7271AA97D7B62941EEC_gshared_inline (BindableVariableBase_1_t0B8C3C183E9A64B760FC611EA6858D9BD639E610* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseAffordanceStateReceiver_1_OnEnable_mB97FBD627A706DF4A4A13EF3276D3A3E8D87C4D4_gshared (BaseAffordanceStateReceiver_1_t8B790ACDC3D68ED037D4C2E8E8812B2BDA97DBB4* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mA763900B34C3394F230AE63708F530CA9A192B57_gshared (Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BindableVariableBase_1_get_Value_mC412EC0392D6CDA386D4E83A0615067AB99929F0_gshared_inline (BindableVariableBase_1_t9E98D971B506CF9B28B829E832171C4DE7175A46* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BindableVariableBase_1_set_Value_m059DC12D0DA11B5A9CA4BC2F29CDA7BA9798E601_gshared (BindableVariableBase_1_t9E98D971B506CF9B28B829E832171C4DE7175A46* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BindableEnum_1__ctor_m91E0216749C359658F5C77888858A85BE3D61D9B_gshared (BindableEnum_1_tFEF9312749E9FA8606777BD0F773B3C0C2B25075* __this, int32_t ___0_initialValue, bool ___1_checkEquality, Func_3_tE48B8474EE65D1530A10889B067677A4DDAB1DC5* ___2_equalityMethod, bool ___3_startInitialized, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInputReaderUtility_SetInputProperty_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m15744164C1D61E4554375F75CC67D115002FAEAE_gshared (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5** ___0_property, XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* ___1_value, Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* ___2_behavior, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRInputValueReader_1_ReadValue_mAFA366F0FF0345B1A9F16C19F1815D10E427860D_gshared (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRInputValueReader_1_TryReadValue_mA7A16FB5DD2CFAD42DF5414A8B012EDCF587F9AC_gshared (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* __this, float* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInputValueReader_1__ctor_m2D198A41FE129CDD40C6FDBF537BC35E3C4B6CFB_gshared (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* __this, String_t* ___0_name, int32_t ___1_inputSourceMode, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m7B82E119DCAE33691FA5A8FA0A162C582759678E_gshared (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___0_item, const RuntimeMethod* method) ;
+
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+inline Enumerator_t519AE1DAA64E517296768BEA2E732ED47F76A91D List_1_GetEnumerator_m01FCD3FC513065087F7E312BC9DE2D1C3FF655E5 (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t519AE1DAA64E517296768BEA2E732ED47F76A91D (*) (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_m9BF6C1C74CD711998DC8FAE5D6B8083586F5CFB5 (Enumerator_t519AE1DAA64E517296768BEA2E732ED47F76A91D* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t519AE1DAA64E517296768BEA2E732ED47F76A91D*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Enumerator_get_Current_mCBBD283BB42C56D73B7C4194020EC95292B36129_inline (Enumerator_t519AE1DAA64E517296768BEA2E732ED47F76A91D* __this, const RuntimeMethod* method)
+{
+	return ((  Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* (*) (Enumerator_t519AE1DAA64E517296768BEA2E732ED47F76A91D*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_InverseTransformPoint_m18CD395144D9C78F30E15A5B82B6670E792DBA5D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pose__ctor_m15CA45808A2BBF1956E836D22C387FAB80BED051 (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_rotation, const RuntimeMethod* method) ;
+inline void List_1_Add_m1AB3815922EAB4210EC4D8F2053BEE86A700CE89_inline (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2*, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971, const RuntimeMethod*))List_1_Add_m1AB3815922EAB4210EC4D8F2053BEE86A700CE89_gshared_inline)(__this, ___0_item, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m23033D7E2F0F298BE465B7F3A63CDF40A4EB70EB (RuntimeObject* ___0_message, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_context, const RuntimeMethod* method) ;
+inline bool Enumerator_MoveNext_mBAA697FE341E389C86536D9444A3E4AC02109E87 (Enumerator_t519AE1DAA64E517296768BEA2E732ED47F76A91D* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t519AE1DAA64E517296768BEA2E732ED47F76A91D*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+inline Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* List_1_get_Item_m8EAA91B4CE37CBB6C720FD238E4505097B29FFDA (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* (*) (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+inline Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 List_1_get_Item_m30DAA93C38186B88FCB4FDE8CD17B27CC6517431 (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 (*) (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2*, int32_t, const RuntimeMethod*))List_1_get_Item_m30DAA93C38186B88FCB4FDE8CD17B27CC6517431_gshared)(__this, ___0_index, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_rotation, const RuntimeMethod* method) ;
+inline Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ObjectResetPlane_ResetRigidbodyRoutine_m1BBFD060733C8A37BDCF98EE92075DFC760F738F (ObjectResetPlane_t250386B64E13D2BF74C06B92F37342283E4C392B* __this, Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___0_body, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
+inline int32_t List_1_get_Count_mB5E64608D47703A98476E026480AE38671047C87_inline (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResetRigidbodyRoutineU3Ed__7__ctor_mC3548147548CA1F0742DA9A9A63F382AF8B123AE (U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+inline void List_1__ctor_mDC3E95DC5C927A867B9B42EDE1945F909B894268 (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+inline void List_1__ctor_m6C9BC48FF099B7CF07ADD778D1DDD6B7D42ED791 (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2*, const RuntimeMethod*))List_1__ctor_m6C9BC48FF099B7CF07ADD778D1DDD6B7D42ED791_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_isKinematic_m6C3FD3EA358DADA3B191F2449CF1C4F8B22695ED (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForFixedUpdate__ctor_m28D22FD61960FCD538753493FAC080DA5EC7A9E7 (WaitForFixedUpdate_t86F5BC0B6A668AEF2903DE9ADB52062E457BD1B7* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___0_value, const RuntimeMethod* method) ;
+inline RuntimeObject* Component_GetComponent_TisIXRHoverInteractable_tB88E3F220034149EC6037AB0126FC607CC2CF219_mEE6B356A977A12B0BE632D42B58DD22EDF2BD125 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+inline RuntimeObject* Component_GetComponent_TisIXRInteractionStrengthInteractable_t0C79B1621B5D4987893370F8AF403574853D44B7_m30F0483203CBCAD90D7F82B220056EA8E75DD550 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* XRPokeFilter_get_pokeStateData_mFB6599849FC866D93E2E02661F591C9D3F65048A (XRPokeFilter_tC756187569A8DFE55C540B756688000609B89AC8* __this, const RuntimeMethod* method) ;
+inline void Action_1__ctor_m51E8C8F6D6AAA447F906F82CBA1114C86E69FF54 (Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m51E8C8F6D6AAA447F906F82CBA1114C86E69FF54_gshared)(__this, ___0_object, ___1_method, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BindingsGroup_AddBinding_m18697E73861A1C67DE0674F162B43CCE9E67C89B (BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A* __this, RuntimeObject* ___0_binding, const RuntimeMethod* method) ;
+inline void Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859 (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859_gshared)(__this, ___0_object, ___1_method, method);
+}
+inline RuntimeObject* BindableVariableBase_1_SubscribeAndUpdate_m5B7D6AA6417F69F27C39806544D0D88892BA6AE7 (BindableVariableBase_1_tB9252B4815AD3E511244D3B578854D3FF333E4BD* __this, Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* ___0_callback, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (BindableVariableBase_1_tB9252B4815AD3E511244D3B578854D3FF333E4BD*, Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*, const RuntimeMethod*))BindableVariableBase_1_SubscribeAndUpdate_m5B7D6AA6417F69F27C39806544D0D88892BA6AE7_gshared)(__this, ___0_callback, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BindingsGroup_Clear_m092668459F10E46245228224D1334DAB089B72E3 (BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A* __this, const RuntimeMethod* method) ;
+inline void TweenableVariableBase_1_HandleTween_m46B71286EECBE0E3F279B742875CE8EF4D068791 (TweenableVariableBase_1_tE056BE2293DB2624363EEADF82A5A9439C26C35D* __this, float ___0_tweenTarget, const RuntimeMethod* method)
+{
+	((  void (*) (TweenableVariableBase_1_tE056BE2293DB2624363EEADF82A5A9439C26C35D*, float, const RuntimeMethod*))TweenableVariableBase_1_HandleTween_m46B71286EECBE0E3F279B742875CE8EF4D068791_gshared)(__this, ___0_tweenTarget, method);
+}
+inline int32_t List_1_get_Count_m9767A091ADB8D7F7B698451FE1BB2A1528C2E152_inline (List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+inline RuntimeObject* List_1_get_Item_m118881A6117DB328B006412BD9A85A5A8742CD64 (List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) ;
+inline void TweenableVariableBase_1_set_target_m353B619618455D8C59D23B5D02D69EFB492AAA59 (TweenableVariableBase_1_tE056BE2293DB2624363EEADF82A5A9439C26C35D* __this, float ___0_value, const RuntimeMethod* method)
+{
+	((  void (*) (TweenableVariableBase_1_tE056BE2293DB2624363EEADF82A5A9439C26C35D*, float, const RuntimeMethod*))TweenableVariableBase_1_set_target_m353B619618455D8C59D23B5D02D69EFB492AAA59_gshared)(__this, ___0_value, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BindingsGroup__ctor_m1EFD3F405050571D3A66F9B95E8FBC296866A716 (BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FloatTweenableVariable__ctor_mE8A1546D61397EB6D999B82E247996198FB2E776 (FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float PokeStateData_get_interactionStrength_mCDA09DA4CD62F5A7C4CC68D9B89040643595F852_inline (PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkinnedMeshRenderer_SetBlendShapeWeight_mD5724DB29A33F007E42F3666BF4B7ABC9C7F6F5E (SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* __this, int32_t ___0_index, float ___1_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ToggleGameObject_get_activationGameObject_m1F1B6421F159376BB842ED8B1E26449A5E899600_inline (ToggleGameObject_tD82BA740FE7646FFB4D3A12353FB4DF6CCE4F7AD* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+inline bool Component_TryGetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2C2A32AA4FD62D8B9BF5E40B7E2F3EF738C532A6 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, Rigidbody_t268697F5A994213ED97393309870968BC1C7393C** ___0_component, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, Rigidbody_t268697F5A994213ED97393309870968BC1C7393C**, const RuntimeMethod*))Component_TryGetComponent_TisRuntimeObject_m69D4ED21F14D49D805A2337F4332934CDA07DEDB_gshared)(__this, ___0_component, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float3_op_Implicit_mE1831A3AC179B7EB3236F8202EC8DD5CE05376AB (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) ;
+inline void TweenableVariableAsyncBase_1_set_Value_mBE82FC9D214396EF51C5F3840321A8134DCC925B (TweenableVariableAsyncBase_1_tBC224ABEF15BBD66D75B9D20BED7ADB1F273E430* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_value, const RuntimeMethod* method)
+{
+	((  void (*) (TweenableVariableAsyncBase_1_tBC224ABEF15BBD66D75B9D20BED7ADB1F273E430*, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E, const RuntimeMethod*))TweenableVariableAsyncBase_1_set_Value_mBE82FC9D214396EF51C5F3840321A8134DCC925B_gshared)(__this, ___0_value, method);
+}
+inline void BindableVariableBase_1_set_Value_m19676F8DE67466CD43313044F2ADBAD0B83D9F0B (BindableVariableBase_1_t0B8C3C183E9A64B760FC611EA6858D9BD639E610* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method)
+{
+	((  void (*) (BindableVariableBase_1_t0B8C3C183E9A64B760FC611EA6858D9BD639E610*, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, const RuntimeMethod*))BindableVariableBase_1_set_Value_m19676F8DE67466CD43313044F2ADBAD0B83D9F0B_gshared)(__this, ___0_value, method);
+}
+inline void TweenableVariableBase_1_set_target_m3127A21F0C2EF40FA4604D603803BA53DE604337 (TweenableVariableBase_1_t491314D6C5C1BEA5AFEAB55CCB93192270815F82* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_value, const RuntimeMethod* method)
+{
+	((  void (*) (TweenableVariableBase_1_t491314D6C5C1BEA5AFEAB55CCB93192270815F82*, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E, const RuntimeMethod*))TweenableVariableBase_1_set_target_m3127A21F0C2EF40FA4604D603803BA53DE604337_gshared)(__this, ___0_value, method);
+}
+inline void TweenableVariableBase_1_set_target_m3B5D4156AFDDEE2E041341605265E52A487F1657 (TweenableVariableBase_1_t894346E06DB112599F8C5FBC5AD5F251F33CFBD9* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method)
+{
+	((  void (*) (TweenableVariableBase_1_t894346E06DB112599F8C5FBC5AD5F251F33CFBD9*, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, const RuntimeMethod*))TweenableVariableBase_1_set_target_m3B5D4156AFDDEE2E041341605265E52A487F1657_gshared)(__this, ___0_value, method);
+}
+inline void TweenableVariableBase_1_HandleTween_m61752C0D7316DD05AB1C8E10319F47902D4CDCD9 (TweenableVariableBase_1_t491314D6C5C1BEA5AFEAB55CCB93192270815F82* __this, float ___0_tweenTarget, const RuntimeMethod* method)
+{
+	((  void (*) (TweenableVariableBase_1_t491314D6C5C1BEA5AFEAB55CCB93192270815F82*, float, const RuntimeMethod*))TweenableVariableBase_1_HandleTween_m61752C0D7316DD05AB1C8E10319F47902D4CDCD9_gshared)(__this, ___0_tweenTarget, method);
+}
+inline void TweenableVariableBase_1_HandleTween_m197557B3C05112A4C89C97E2200E07C1DCF2C274 (TweenableVariableBase_1_t894346E06DB112599F8C5FBC5AD5F251F33CFBD9* __this, float ___0_tweenTarget, const RuntimeMethod* method)
+{
+	((  void (*) (TweenableVariableBase_1_t894346E06DB112599F8C5FBC5AD5F251F33CFBD9*, float, const RuntimeMethod*))TweenableVariableBase_1_HandleTween_m197557B3C05112A4C89C97E2200E07C1DCF2C274_gshared)(__this, ___0_tweenTarget, method);
+}
+inline float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E TweenableVariableAsyncBase_1_get_Value_m1FEDA58A135C58DC7573858CF65871F63712896F (TweenableVariableAsyncBase_1_tBC224ABEF15BBD66D75B9D20BED7ADB1F273E430* __this, const RuntimeMethod* method)
+{
+	return ((  float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E (*) (TweenableVariableAsyncBase_1_tBC224ABEF15BBD66D75B9D20BED7ADB1F273E430*, const RuntimeMethod*))TweenableVariableAsyncBase_1_get_Value_m1FEDA58A135C58DC7573858CF65871F63712896F_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 float3_op_Implicit_m9CC301DFD67EEFAA15CA05E91913E862B22326F6 (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_v, const RuntimeMethod* method) ;
+inline Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 BindableVariableBase_1_get_Value_mDA92236BCE8EC7928399D7271AA97D7B62941EEC_inline (BindableVariableBase_1_t0B8C3C183E9A64B760FC611EA6858D9BD639E610* __this, const RuntimeMethod* method)
+{
+	return ((  Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 (*) (BindableVariableBase_1_t0B8C3C183E9A64B760FC611EA6858D9BD639E610*, const RuntimeMethod*))BindableVariableBase_1_get_Value_mDA92236BCE8EC7928399D7271AA97D7B62941EEC_gshared_inline)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_MovePosition_mB2CD29ABC8F59AC338C0A3A5A6B75C38FDA92CA9 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_MoveRotation_m85825C7206E770E39DED9EE6D792702F577A891D (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_rot, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3TweenableVariable__ctor_m22723734B74E394A833F2EEA06F910E45A91F042 (Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuaternionTweenableVariable__ctor_m78DB27081DAD1BE2125659704E6B0391AA9331BD (QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Behaviour_get_isActiveAndEnabled_mEB4ECCE9761A7016BC619557CEFEA1A30D3BF28A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRInteractorExtensions_IsBlockedByInteractionWithinGroup_m0DDF8DED74ED6C86C3CDA970E470EFE354092E7C (RuntimeObject* ___0_interactor, const RuntimeMethod* method) ;
+inline void BaseAffordanceStateReceiver_1_OnEnable_mB97FBD627A706DF4A4A13EF3276D3A3E8D87C4D4 (BaseAffordanceStateReceiver_1_t8B790ACDC3D68ED037D4C2E8E8812B2BDA97DBB4* __this, const RuntimeMethod* method)
+{
+	((  void (*) (BaseAffordanceStateReceiver_1_t8B790ACDC3D68ED037D4C2E8E8812B2BDA97DBB4*, const RuntimeMethod*))BaseAffordanceStateReceiver_1_OnEnable_mB97FBD627A706DF4A4A13EF3276D3A3E8D87C4D4_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float3_op_Addition_mFFCF4F7457594F5EFB0678C0DE90AAD3D3F6947B_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_lhs, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___1_rhs, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3AffordanceReceiver_OnAffordanceValueUpdated_mBB5120B9FB6E709161DBD0AD58362174BC06F719 (Vector3AffordanceReceiver_t2849A6C2EA72BD2796A4E0A5831DFDF230988458* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_newValue, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3AffordanceReceiver__ctor_m369BD7371AF82E1E303B183EC60F057580C93588 (Vector3AffordanceReceiver_t2849A6C2EA72BD2796A4E0A5831DFDF230988458* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Application_get_isPlaying_m25B0ABDFEF54F5370CD3F263A813540843D00F34 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_UnbindAimFlags_m9BCE9DF16D45F777D63BBE5285E51685F2E3801C (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_BindAimFlags_mCC549E02D18E15D393769447B59914D2261B9FB6 (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_SetGestureState_mA8408914616784FF6321DC18D99C6CC46B0CE0C8 (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, int32_t ___0_state, bool ___1_forceInvoke, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionProperty_get_action_mABF2197D9CC6586E5DFB0481CF9C1B2586F41A47 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) ;
+inline void Action_1__ctor_mA763900B34C3394F230AE63708F530CA9A192B57 (Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_mA763900B34C3394F230AE63708F530CA9A192B57_gshared)(__this, ___0_object, ___1_method, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAction_add_performed_m0337FFA16EBEF7AE365C3B558CFDFF7BB9747B54 (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* __this, Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAction_add_canceled_m69EC253E21CC314BFB350A86E294D0651F5ECA77 (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* __this, Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionPropertyExtensions_EnableDirectAction_m4F6A0B5DD5EFACC0B84BFCBD5FA15491DBE9DA26 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___0_property, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionPropertyExtensions_DisableDirectAction_m976F69C07BC1AF691C6D3A1E03BBD4EA0D265932 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___0_property, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAction_remove_performed_m1BE84CED38F11F17C825FA782B35C92D708E6E44 (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* __this, Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAction_remove_canceled_m7CF8D377C61DB1290E153C56312A7C075544AF7F (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* __this, Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___0_value, const RuntimeMethod* method) ;
+inline int32_t BindableVariableBase_1_get_Value_mCB6FA52E7F1830E7FD9289E4F4FBE44948813802_inline (BindableVariableBase_1_t1241F44A52819D39C97ED9E1CA5C6C736EF53E9B* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (BindableVariableBase_1_t1241F44A52819D39C97ED9E1CA5C6C736EF53E9B*, const RuntimeMethod*))BindableVariableBase_1_get_Value_mC412EC0392D6CDA386D4E83A0615067AB99929F0_gshared_inline)(__this, method);
+}
+inline void BindableVariableBase_1_set_Value_m397C0DBE79B512C6383D85035C208443AD76AC7E (BindableVariableBase_1_t1241F44A52819D39C97ED9E1CA5C6C736EF53E9B* __this, int32_t ___0_value, const RuntimeMethod* method)
+{
+	((  void (*) (BindableVariableBase_1_t1241F44A52819D39C97ED9E1CA5C6C736EF53E9B*, int32_t, const RuntimeMethod*))BindableVariableBase_1_set_Value_m059DC12D0DA11B5A9CA4BC2F29CDA7BA9798E601_gshared)(__this, ___0_value, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAction__ctor_mD042AD3CC86AEDEB5FB1F8CD9E834FE35F9060B9 (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* __this, String_t* ___0_name, int32_t ___1_type, String_t* ___2_binding, String_t* ___3_interactions, String_t* ___4_processors, String_t* ___5_expectedControlType, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionProperty__ctor_m0E922A8B1C135221416D4ADB0B28FE1BCA80209A (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___0_action, const RuntimeMethod* method) ;
+inline void BindableEnum_1__ctor_mB7A02F9C41E3A84F5A402192EC6E8BCAB800568F (BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C* __this, int32_t ___0_initialValue, bool ___1_checkEquality, Func_3_t592C0BEF675DF1E62EDD0225BF9AA6FDBCE90CB3* ___2_equalityMethod, bool ___3_startInitialized, const RuntimeMethod* method)
+{
+	((  void (*) (BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C*, int32_t, bool, Func_3_t592C0BEF675DF1E62EDD0225BF9AA6FDBCE90CB3*, bool, const RuntimeMethod*))BindableEnum_1__ctor_m91E0216749C359658F5C77888858A85BE3D61D9B_gshared)(__this, ___0_initialValue, ___1_checkEquality, ___2_equalityMethod, ___3_startInitialized, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 OneEuroFilterVector3_Filter_m9A180E6E60F1BA648E5C930C1BB2B82FDA57D4EE (OneEuroFilterVector3_t71848A0EF10F7FB56132C476132C61D96078B8B3* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_rawValue, float ___1_deltaTime, float ___2_minCutoff, float ___3_beta, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Scale_m7C3CD199271902D5C00CBF35CD230DEB62B68CAE_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BurstMathUtility_FastSafeDivide_mA1538EAD0BC9F7445EB1AE206089CC0685C12C19 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_b, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_result, float ___3_tolerance, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E (RuntimeObject* ___0_message, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_context, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInputReaderUtility_SetInputProperty_m062703A18F912924471F2C79539A7B6509DEB264 (XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515** ___0_property, XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* ___1_value, Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* ___2_behavior, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInputButtonReader_EnableDirectActionIfModeUsed_mE9A109DD4852629D996091C59514A1BDB7FEB145 (XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInputButtonReader_DisableDirectActionIfModeUsed_mD7BCE5EAB00514C6BBF2D7831929C4D5FB3DA20A (XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRInputButtonReader_ReadValue_m1165BE4BE0AA4C9A436145B2DB8DF5BA38A32F3C (XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRInputButtonReader_ReadIsPerformed_mB00BFEC845F9B6C726F87B6E3EAA0A737EF51F56 (XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRInputButtonReader_TryReadValue_m86E3327A732F6BD40E74FA40DEECFB417BF54C8A (XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* __this, float* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInputButtonReader__ctor_m7C30DDE023CB21C8D1D99D7519E452D707BDC0D9 (XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* __this, String_t* ___0_name, String_t* ___1_valueName, bool ___2_wantsInitialStateCheck, int32_t ___3_inputSourceMode, const RuntimeMethod* method) ;
+inline void XRInputReaderUtility_SetInputProperty_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m15744164C1D61E4554375F75CC67D115002FAEAE (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5** ___0_property, XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* ___1_value, Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* ___2_behavior, const RuntimeMethod* method)
+{
+	((  void (*) (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5**, XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5*, Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA*, const RuntimeMethod*))XRInputReaderUtility_SetInputProperty_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m15744164C1D61E4554375F75CC67D115002FAEAE_gshared)(___0_property, ___1_value, ___2_behavior, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInputValueReader_EnableDirectActionIfModeUsed_m6194760B90FB92168D6DDCC80C20DD180169ACB2 (XRInputValueReader_t0A220D04F7D6F5BC7E5A253F5AF8A9C3AB430D59* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInputValueReader_DisableDirectActionIfModeUsed_m533212E2020FD7FA589B8B9F536BD7DC6E8048BC (XRInputValueReader_t0A220D04F7D6F5BC7E5A253F5AF8A9C3AB430D59* __this, const RuntimeMethod* method) ;
+inline float XRInputValueReader_1_ReadValue_mAFA366F0FF0345B1A9F16C19F1815D10E427860D (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* __this, const RuntimeMethod* method)
+{
+	return ((  float (*) (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5*, const RuntimeMethod*))XRInputValueReader_1_ReadValue_mAFA366F0FF0345B1A9F16C19F1815D10E427860D_gshared)(__this, method);
+}
+inline bool XRInputValueReader_1_TryReadValue_mA7A16FB5DD2CFAD42DF5414A8B012EDCF587F9AC (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* __this, float* ___0_value, const RuntimeMethod* method)
+{
+	return ((  bool (*) (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5*, float*, const RuntimeMethod*))XRInputValueReader_1_TryReadValue_mA7A16FB5DD2CFAD42DF5414A8B012EDCF587F9AC_gshared)(__this, ___0_value, method);
+}
+inline void XRInputValueReader_1__ctor_m2D198A41FE129CDD40C6FDBF537BC35E3C4B6CFB (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* __this, String_t* ___0_name, int32_t ___1_inputSourceMode, const RuntimeMethod* method)
+{
+	((  void (*) (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5*, String_t*, int32_t, const RuntimeMethod*))XRInputValueReader_1__ctor_m2D198A41FE129CDD40C6FDBF537BC35E3C4B6CFB_gshared)(__this, ___0_name, ___1_inputSourceMode, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float3__ctor_mC61002CD0EC13D7C37D846D021A78C028FB80DB9_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
+inline void List_1_AddWithResize_m7B82E119DCAE33691FA5A8FA0A162C582759678E (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2*, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971, const RuntimeMethod*))List_1_AddWithResize_m7B82E119DCAE33691FA5A8FA0A162C582759678E_gshared)(__this, ___0_item, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94869
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mAEA1E32FA56978A724BD1B50A7585292798ECDCA (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_tF24BE61EB8818608F56CD2CB1DD10D73B842FAAA____23EBA69CC774245527A2A4AE9514DDA16AA01959C004F335C97DEFBCD6F126C9_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_tF24BE61EB8818608F56CD2CB1DD10D73B842FAAA____5F0DBE6E0DAB10CC8C8B9015EEF5E85737454CAD4CF725AC5D0DAD56C559D592_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)1630));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_tF24BE61EB8818608F56CD2CB1DD10D73B842FAAA____5F0DBE6E0DAB10CC8C8B9015EEF5E85737454CAD4CF725AC5D0DAD56C559D592_FieldInfo_var) };
+		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
+		(&V_0)->___FilePathsData = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)1084));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_tF24BE61EB8818608F56CD2CB1DD10D73B842FAAA____23EBA69CC774245527A2A4AE9514DDA16AA01959C004F335C97DEFBCD6F126C9_FieldInfo_var) };
+		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
+		(&V_0)->___TypesData = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
+		(&V_0)->___TotalFiles = ((int32_t)14);
+		(&V_0)->___TotalTypes = ((int32_t)14);
+		(&V_0)->___IsEditorOnly = (bool)0;
+		MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F L_6 = V_0;
+		return L_6;
+	}
+}
+// Method Definition Index: 94870
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m1FE298CE5B0FCAC3C1779C4D63B20CA0A918D772 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t2B953E9D20AEC597BF8AA081ECC00608B4FF59FB* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshal_pinvoke(const MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F& unmarshaled, MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshaled_pinvoke& marshaled)
+{
+	marshaled.___FilePathsData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___FilePathsData);
+	marshaled.___TypesData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___TypesData);
+	marshaled.___TotalTypes = unmarshaled.___TotalTypes;
+	marshaled.___TotalFiles = unmarshaled.___TotalFiles;
+	marshaled.___IsEditorOnly = static_cast<int32_t>(unmarshaled.___IsEditorOnly);
+}
+IL2CPP_EXTERN_C void MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshal_pinvoke_back(const MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshaled_pinvoke& marshaled, MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F& unmarshaled)
+{
+	unmarshaled.___FilePathsData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___FilePathsData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___FilePathsData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___FilePathsData));
+	unmarshaled.___TypesData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___TypesData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___TypesData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___TypesData));
+	int32_t unmarshaledTotalTypes_temp_2 = 0;
+	unmarshaledTotalTypes_temp_2 = marshaled.___TotalTypes;
+	unmarshaled.___TotalTypes = unmarshaledTotalTypes_temp_2;
+	int32_t unmarshaledTotalFiles_temp_3 = 0;
+	unmarshaledTotalFiles_temp_3 = marshaled.___TotalFiles;
+	unmarshaled.___TotalFiles = unmarshaledTotalFiles_temp_3;
+	bool unmarshaledIsEditorOnly_temp_4 = false;
+	unmarshaledIsEditorOnly_temp_4 = static_cast<bool>(marshaled.___IsEditorOnly);
+	unmarshaled.___IsEditorOnly = unmarshaledIsEditorOnly_temp_4;
+}
+IL2CPP_EXTERN_C void MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshal_pinvoke_cleanup(MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___FilePathsData);
+	marshaled.___FilePathsData = NULL;
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___TypesData);
+	marshaled.___TypesData = NULL;
+}
+IL2CPP_EXTERN_C void MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshal_com(const MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F& unmarshaled, MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshaled_com& marshaled)
+{
+	marshaled.___FilePathsData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___FilePathsData);
+	marshaled.___TypesData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___TypesData);
+	marshaled.___TotalTypes = unmarshaled.___TotalTypes;
+	marshaled.___TotalFiles = unmarshaled.___TotalFiles;
+	marshaled.___IsEditorOnly = static_cast<int32_t>(unmarshaled.___IsEditorOnly);
+}
+IL2CPP_EXTERN_C void MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshal_com_back(const MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshaled_com& marshaled, MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F& unmarshaled)
+{
+	unmarshaled.___FilePathsData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___FilePathsData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___FilePathsData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___FilePathsData));
+	unmarshaled.___TypesData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___TypesData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___TypesData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___TypesData));
+	int32_t unmarshaledTotalTypes_temp_2 = 0;
+	unmarshaledTotalTypes_temp_2 = marshaled.___TotalTypes;
+	unmarshaled.___TotalTypes = unmarshaledTotalTypes_temp_2;
+	int32_t unmarshaledTotalFiles_temp_3 = 0;
+	unmarshaledTotalFiles_temp_3 = marshaled.___TotalFiles;
+	unmarshaled.___TotalFiles = unmarshaledTotalFiles_temp_3;
+	bool unmarshaledIsEditorOnly_temp_4 = false;
+	unmarshaledIsEditorOnly_temp_4 = static_cast<bool>(marshaled.___IsEditorOnly);
+	unmarshaled.___IsEditorOnly = unmarshaledIsEditorOnly_temp_4;
+}
+IL2CPP_EXTERN_C void MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshal_com_cleanup(MonoScriptData_t4DE282494AF68A9B2271B3E6C3EC28AA002DB60F_marshaled_com& marshaled)
+{
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___FilePathsData);
+	marshaled.___FilePathsData = NULL;
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___TypesData);
+	marshaled.___TypesData = NULL;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94871
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectResetPlane_Start_mB392CE4851EE4B43ECA891CDAC0E58811DBEB749 (ObjectResetPlane_t250386B64E13D2BF74C06B92F37342283E4C392B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m9BF6C1C74CD711998DC8FAE5D6B8083586F5CFB5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_mBAA697FE341E389C86536D9444A3E4AC02109E87_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mCBBD283BB42C56D73B7C4194020EC95292B36129_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m1AB3815922EAB4210EC4D8F2053BEE86A700CE89_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m01FCD3FC513065087F7E312BC9DE2D1C3FF655E5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5F74F4552573907FBE09143A3589664BC9ED23CD);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t519AE1DAA64E517296768BEA2E732ED47F76A91D V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* V_1 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:32>
+		List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* L_0 = __this->___m_ObjectsToReset;
+		NullCheck(L_0);
+		Enumerator_t519AE1DAA64E517296768BEA2E732ED47F76A91D L_1;
+		L_1 = List_1_GetEnumerator_m01FCD3FC513065087F7E312BC9DE2D1C3FF655E5(L_0, List_1_GetEnumerator_m01FCD3FC513065087F7E312BC9DE2D1C3FF655E5_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0089:
+			{
+				Enumerator_Dispose_m9BF6C1C74CD711998DC8FAE5D6B8083586F5CFB5((&V_0), Enumerator_Dispose_m9BF6C1C74CD711998DC8FAE5D6B8083586F5CFB5_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_007e_1;
+			}
+
+IL_000e_1:
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:32>
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+				L_2 = Enumerator_get_Current_mCBBD283BB42C56D73B7C4194020EC95292B36129_inline((&V_0), Enumerator_get_Current_mCBBD283BB42C56D73B7C4194020EC95292B36129_RuntimeMethod_var);
+				V_1 = L_2;
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:34>
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = V_1;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_4;
+				L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (!L_4)
+				{
+					goto IL_005f_1;
+				}
+			}
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:36>
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = V_1;
+				NullCheck(L_5);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+				L_6 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_5, NULL);
+				V_2 = L_6;
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:38>
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = __this->___m_ObjectRoot;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_8;
+				L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (!L_8)
+				{
+					goto IL_0046_1;
+				}
+			}
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:39>
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = __this->___m_ObjectRoot;
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10 = V_1;
+				NullCheck(L_10);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+				L_11 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_10, NULL);
+				NullCheck(L_9);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+				L_12 = Transform_InverseTransformPoint_m18CD395144D9C78F30E15A5B82B6670E792DBA5D(L_9, L_11, NULL);
+				V_2 = L_12;
+			}
+
+IL_0046_1:
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:41>
+				List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* L_13 = __this->___m_OriginalPositions;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = V_2;
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = V_1;
+				NullCheck(L_15);
+				Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_16;
+				L_16 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_15, NULL);
+				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_17;
+				memset((&L_17), 0, sizeof(L_17));
+				Pose__ctor_m15CA45808A2BBF1956E836D22C387FAB80BED051((&L_17), L_14, L_16, NULL);
+				NullCheck(L_13);
+				List_1_Add_m1AB3815922EAB4210EC4D8F2053BEE86A700CE89_inline(L_13, L_17, List_1_Add_m1AB3815922EAB4210EC4D8F2053BEE86A700CE89_RuntimeMethod_var);
+				goto IL_007e_1;
+			}
+
+IL_005f_1:
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:45>
+				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+				Debug_LogWarning_m23033D7E2F0F298BE465B7F3A63CDF40A4EB70EB(_stringLiteral5F74F4552573907FBE09143A3589664BC9ED23CD, __this, NULL);
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:46>
+				List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* L_18 = __this->___m_OriginalPositions;
+				il2cpp_codegen_initobj((&V_3), sizeof(Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971));
+				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_19 = V_3;
+				NullCheck(L_18);
+				List_1_Add_m1AB3815922EAB4210EC4D8F2053BEE86A700CE89_inline(L_18, L_19, List_1_Add_m1AB3815922EAB4210EC4D8F2053BEE86A700CE89_RuntimeMethod_var);
+			}
+
+IL_007e_1:
+			{
+				//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:32>
+				bool L_20;
+				L_20 = Enumerator_MoveNext_mBAA697FE341E389C86536D9444A3E4AC02109E87((&V_0), Enumerator_MoveNext_mBAA697FE341E389C86536D9444A3E4AC02109E87_RuntimeMethod_var);
+				if (L_20)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_0097;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0097:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:49>
+		return;
+	}
+}
+// Method Definition Index: 94872
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectResetPlane_Update_mFFD955BAF5684166CC09D48B84E7BE6C790EA971 (ObjectResetPlane_t250386B64E13D2BF74C06B92F37342283E4C392B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mB5E64608D47703A98476E026480AE38671047C87_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m30DAA93C38186B88FCB4FDE8CD17B27CC6517431_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m8EAA91B4CE37CBB6C720FD238E4505097B29FFDA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	int32_t V_1 = 0;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* V_2 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* V_4 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:56>
+		float L_0 = __this->___m_CheckTimer;
+		float L_1;
+		L_1 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___m_CheckTimer = ((float)il2cpp_codegen_subtract(L_0, L_1));
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:58>
+		float L_2 = __this->___m_CheckTimer;
+		if ((!(((float)L_2) > ((float)(0.0f)))))
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:59>
+		return;
+	}
+
+IL_0020:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:61>
+		float L_3 = __this->___m_CheckDuration;
+		__this->___m_CheckTimer = L_3;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:63>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_4, NULL);
+		float L_6 = L_5.___y;
+		V_0 = L_6;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:65>
+		V_1 = 0;
+		goto IL_00d2;
+	}
+
+IL_0044:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:67>
+		List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* L_7 = __this->___m_ObjectsToReset;
+		int32_t L_8 = V_1;
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = List_1_get_Item_m8EAA91B4CE37CBB6C720FD238E4505097B29FFDA(L_7, L_8, List_1_get_Item_m8EAA91B4CE37CBB6C720FD238E4505097B29FFDA_RuntimeMethod_var);
+		V_2 = L_9;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:68>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_11;
+		L_11 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_10, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_11)
+		{
+			goto IL_00ce;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:71>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = V_2;
+		NullCheck(L_12);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		L_13 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_12, NULL);
+		float L_14 = L_13.___y;
+		float L_15 = V_0;
+		if ((!(((float)L_14) < ((float)L_15))))
+		{
+			goto IL_00ce;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:73>
+		List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* L_16 = __this->___m_OriginalPositions;
+		int32_t L_17 = V_1;
+		NullCheck(L_16);
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_18;
+		L_18 = List_1_get_Item_m30DAA93C38186B88FCB4FDE8CD17B27CC6517431(L_16, L_17, List_1_get_Item_m30DAA93C38186B88FCB4FDE8CD17B27CC6517431_RuntimeMethod_var);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = L_18.___position;
+		V_3 = L_19;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:74>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20 = __this->___m_ObjectRoot;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_21;
+		L_21 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_20, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_21)
+		{
+			goto IL_0095;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:75>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22 = __this->___m_ObjectRoot;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = V_3;
+		NullCheck(L_22);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
+		L_24 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_22, L_23, NULL);
+		V_3 = L_24;
+	}
+
+IL_0095:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:77>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26 = V_3;
+		List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* L_27 = __this->___m_OriginalPositions;
+		int32_t L_28 = V_1;
+		NullCheck(L_27);
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_29;
+		L_29 = List_1_get_Item_m30DAA93C38186B88FCB4FDE8CD17B27CC6517431(L_27, L_28, List_1_get_Item_m30DAA93C38186B88FCB4FDE8CD17B27CC6517431_RuntimeMethod_var);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_30 = L_29.___rotation;
+		NullCheck(L_25);
+		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_25, L_26, L_30, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:79>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31 = V_2;
+		NullCheck(L_31);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_32;
+		L_32 = Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155(L_31, Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155_RuntimeMethod_var);
+		V_4 = L_32;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:80>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_33 = V_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_34;
+		L_34 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_33, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_34)
+		{
+			goto IL_00ce;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:82>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_35 = V_4;
+		RuntimeObject* L_36;
+		L_36 = ObjectResetPlane_ResetRigidbodyRoutine_m1BBFD060733C8A37BDCF98EE92075DFC760F738F(__this, L_35, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_37;
+		L_37 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_36, NULL);
+	}
+
+IL_00ce:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:65>
+		int32_t L_38 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_38, 1));
+	}
+
+IL_00d2:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:65>
+		int32_t L_39 = V_1;
+		List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* L_40 = __this->___m_ObjectsToReset;
+		NullCheck(L_40);
+		int32_t L_41;
+		L_41 = List_1_get_Count_mB5E64608D47703A98476E026480AE38671047C87_inline(L_40, List_1_get_Count_mB5E64608D47703A98476E026480AE38671047C87_RuntimeMethod_var);
+		if ((((int32_t)L_39) < ((int32_t)L_41)))
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:86>
+		return;
+	}
+}
+// Method Definition Index: 94873
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ObjectResetPlane_ResetRigidbodyRoutine_m1BBFD060733C8A37BDCF98EE92075DFC760F738F (ObjectResetPlane_t250386B64E13D2BF74C06B92F37342283E4C392B* __this, Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___0_body, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21* L_0 = (U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21*)il2cpp_codegen_object_new(U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21_il2cpp_TypeInfo_var);
+		U3CResetRigidbodyRoutineU3Ed__7__ctor_mC3548147548CA1F0742DA9A9A63F382AF8B123AE(L_0, 0, NULL);
+		U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21* L_1 = L_0;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_2 = ___0_body;
+		NullCheck(L_1);
+		L_1->___body = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___body), (void*)L_2);
+		return L_1;
+	}
+}
+// Method Definition Index: 94874
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectResetPlane__ctor_mC9E2B69E8F9FD3B1F1011DC301332C45113439D2 (ObjectResetPlane_t250386B64E13D2BF74C06B92F37342283E4C392B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m6C9BC48FF099B7CF07ADD778D1DDD6B7D42ED791_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mDC3E95DC5C927A867B9B42EDE1945F909B894268_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:13>
+		List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* L_0 = (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D*)il2cpp_codegen_object_new(List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D_il2cpp_TypeInfo_var);
+		List_1__ctor_mDC3E95DC5C927A867B9B42EDE1945F909B894268(L_0, List_1__ctor_mDC3E95DC5C927A867B9B42EDE1945F909B894268_RuntimeMethod_var);
+		__this->___m_ObjectsToReset = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ObjectsToReset), (void*)L_0);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:17>
+		__this->___m_CheckDuration = (2.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:23>
+		List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* L_1 = (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2*)il2cpp_codegen_object_new(List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2_il2cpp_TypeInfo_var);
+		List_1__ctor_m6C9BC48FF099B7CF07ADD778D1DDD6B7D42ED791(L_1, List_1__ctor_m6C9BC48FF099B7CF07ADD778D1DDD6B7D42ED791_RuntimeMethod_var);
+		__this->___m_OriginalPositions = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_OriginalPositions), (void*)L_1);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94875
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResetRigidbodyRoutineU3Ed__7__ctor_mC3548147548CA1F0742DA9A9A63F382AF8B123AE (U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 94876
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResetRigidbodyRoutineU3Ed__7_System_IDisposable_Dispose_mC46300D3BD0B9BE1560A525064A54F1DDD9DD2CC (U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 94877
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CResetRigidbodyRoutineU3Ed__7_MoveNext_mE1B83DA17D70BB95E76469686A08764AC6EDC158 (U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForFixedUpdate_t86F5BC0B6A668AEF2903DE9ADB52062E457BD1B7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		int32_t L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		int32_t L_2 = V_0;
+		if ((((int32_t)L_2) == ((int32_t)1)))
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0010:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:90>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_3 = __this->___body;
+		NullCheck(L_3);
+		Rigidbody_set_isKinematic_m6C3FD3EA358DADA3B191F2449CF1C4F8B22695ED(L_3, (bool)1, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:91>
+		WaitForFixedUpdate_t86F5BC0B6A668AEF2903DE9ADB52062E457BD1B7* L_4 = (WaitForFixedUpdate_t86F5BC0B6A668AEF2903DE9ADB52062E457BD1B7*)il2cpp_codegen_object_new(WaitForFixedUpdate_t86F5BC0B6A668AEF2903DE9ADB52062E457BD1B7_il2cpp_TypeInfo_var);
+		WaitForFixedUpdate__ctor_m28D22FD61960FCD538753493FAC080DA5EC7A9E7(L_4, NULL);
+		__this->___U3CU3E2__current = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_4);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_0037:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:92>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_5 = __this->___body;
+		NullCheck(L_5);
+		Rigidbody_set_isKinematic_m6C3FD3EA358DADA3B191F2449CF1C4F8B22695ED(L_5, (bool)0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ObjectResetPlane.cs:94>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 94878
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CResetRigidbodyRoutineU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1850B2F10BF8A8307A0AEBC50D7BD10C154E475C (U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 94879
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResetRigidbodyRoutineU3Ed__7_System_Collections_IEnumerator_Reset_mF6A6C4B9C85C2AF254CD205BF0AEB1CFC92EC8BF (U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CResetRigidbodyRoutineU3Ed__7_System_Collections_IEnumerator_Reset_mF6A6C4B9C85C2AF254CD205BF0AEB1CFC92EC8BF_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 94880
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CResetRigidbodyRoutineU3Ed__7_System_Collections_IEnumerator_get_Current_m2DB5C059CB4008A145432A1ECB6BBB7F38637265 (U3CResetRigidbodyRoutineU3Ed__7_tD23442B8D711C17B43ACB603D6C02757C5424B21* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94881
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PokeBlendShapeAnimator_OnEnable_mAB39E2D0F0FF5A0B6757102E41170CFF296CF59A (PokeBlendShapeAnimator_t48459CB445F2396B407770EBB860FC85B1B2F282* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BindableVariableBase_1_SubscribeAndUpdate_m5B7D6AA6417F69F27C39806544D0D88892BA6AE7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisIXRHoverInteractable_tB88E3F220034149EC6037AB0126FC607CC2CF219_mEE6B356A977A12B0BE632D42B58DD22EDF2BD125_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisIXRInteractionStrengthInteractable_t0C79B1621B5D4987893370F8AF403574853D44B7_m30F0483203CBCAD90D7F82B220056EA8E75DD550_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IReadOnlyBindableVariable_1_tD608177C44612AEF9CD25AEDCA15F1734DD0E073_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PokeBlendShapeAnimator_U3COnEnableU3Eb__10_0_m5A846165F2893202A66A686FD422B6D006ADE48A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PokeBlendShapeAnimator_U3COnEnableU3Eb__10_1_m1E7963F2192F3A1C80A82AD16EFF8FD27D5A1AF0_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:49>
+		XRPokeFilter_tC756187569A8DFE55C540B756688000609B89AC8* L_0 = __this->___m_PokeFilter;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* L_2 = __this->___m_SkinnedMeshRenderer;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0024;
+		}
+	}
+
+IL_001c:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:51>
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(__this, (bool)0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:52>
+		return;
+	}
+
+IL_0024:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:55>
+		XRPokeFilter_tC756187569A8DFE55C540B756688000609B89AC8* L_4 = __this->___m_PokeFilter;
+		NullCheck(L_4);
+		RuntimeObject* L_5;
+		L_5 = Component_GetComponent_TisIXRHoverInteractable_tB88E3F220034149EC6037AB0126FC607CC2CF219_mEE6B356A977A12B0BE632D42B58DD22EDF2BD125(L_4, Component_GetComponent_TisIXRHoverInteractable_tB88E3F220034149EC6037AB0126FC607CC2CF219_mEE6B356A977A12B0BE632D42B58DD22EDF2BD125_RuntimeMethod_var);
+		__this->___m_HoverInteractable = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_HoverInteractable), (void*)L_5);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:56>
+		XRPokeFilter_tC756187569A8DFE55C540B756688000609B89AC8* L_6 = __this->___m_PokeFilter;
+		NullCheck(L_6);
+		RuntimeObject* L_7;
+		L_7 = Component_GetComponent_TisIXRInteractionStrengthInteractable_t0C79B1621B5D4987893370F8AF403574853D44B7_m30F0483203CBCAD90D7F82B220056EA8E75DD550(L_6, Component_GetComponent_TisIXRInteractionStrengthInteractable_t0C79B1621B5D4987893370F8AF403574853D44B7_m30F0483203CBCAD90D7F82B220056EA8E75DD550_RuntimeMethod_var);
+		__this->___m_InteractionStrengthInteractable = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_InteractionStrengthInteractable), (void*)L_7);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:58>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:59>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:60>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:61>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:62>
+		BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A* L_8 = __this->___m_BindingsGroup;
+		XRPokeFilter_tC756187569A8DFE55C540B756688000609B89AC8* L_9 = __this->___m_PokeFilter;
+		NullCheck(L_9);
+		RuntimeObject* L_10;
+		L_10 = XRPokeFilter_get_pokeStateData_mFB6599849FC866D93E2E02661F591C9D3F65048A(L_9, NULL);
+		Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8* L_11 = (Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8*)il2cpp_codegen_object_new(Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8_il2cpp_TypeInfo_var);
+		Action_1__ctor_m51E8C8F6D6AAA447F906F82CBA1114C86E69FF54(L_11, __this, (intptr_t)((void*)PokeBlendShapeAnimator_U3COnEnableU3Eb__10_0_m5A846165F2893202A66A686FD422B6D006ADE48A_RuntimeMethod_var), NULL);
+		NullCheck(L_10);
+		RuntimeObject* L_12;
+		L_12 = InterfaceFuncInvoker1< RuntimeObject*, Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8* >::Invoke(0, IReadOnlyBindableVariable_1_tD608177C44612AEF9CD25AEDCA15F1734DD0E073_il2cpp_TypeInfo_var, L_10, L_11);
+		NullCheck(L_8);
+		BindingsGroup_AddBinding_m18697E73861A1C67DE0674F162B43CCE9E67C89B(L_8, L_12, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:64>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:65>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:66>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:67>
+		BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A* L_13 = __this->___m_BindingsGroup;
+		FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48* L_14 = __this->___m_TweenableVariable;
+		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_15 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_15, __this, (intptr_t)((void*)PokeBlendShapeAnimator_U3COnEnableU3Eb__10_1_m1E7963F2192F3A1C80A82AD16EFF8FD27D5A1AF0_RuntimeMethod_var), NULL);
+		NullCheck(L_14);
+		RuntimeObject* L_16;
+		L_16 = BindableVariableBase_1_SubscribeAndUpdate_m5B7D6AA6417F69F27C39806544D0D88892BA6AE7(L_14, L_15, BindableVariableBase_1_SubscribeAndUpdate_m5B7D6AA6417F69F27C39806544D0D88892BA6AE7_RuntimeMethod_var);
+		NullCheck(L_13);
+		BindingsGroup_AddBinding_m18697E73861A1C67DE0674F162B43CCE9E67C89B(L_13, L_16, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:68>
+		return;
+	}
+}
+// Method Definition Index: 94882
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PokeBlendShapeAnimator_OnDisable_m65AD1604A108B0A15667E0784602FA4EE3C1815A (PokeBlendShapeAnimator_t48459CB445F2396B407770EBB860FC85B1B2F282* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:75>
+		BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A* L_0 = __this->___m_BindingsGroup;
+		NullCheck(L_0);
+		BindingsGroup_Clear_m092668459F10E46245228224D1334DAB089B72E3(L_0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:76>
+		return;
+	}
+}
+// Method Definition Index: 94883
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PokeBlendShapeAnimator_Update_m7CDB6D5998E10235EBCB4BF29B11184B37A67058 (PokeBlendShapeAnimator_t48459CB445F2396B407770EBB860FC85B1B2F282* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IPokeStateDataProvider_t14F2B731F2979D1138EB70A11E36F274A23DC91C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IXRHoverInteractable_tB88E3F220034149EC6037AB0126FC607CC2CF219_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IXRInteractionStrengthInteractable_t0C79B1621B5D4987893370F8AF403574853D44B7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m9767A091ADB8D7F7B698451FE1BB2A1528C2E152_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m118881A6117DB328B006412BD9A85A5A8742CD64_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TweenableVariableBase_1_HandleTween_m46B71286EECBE0E3F279B742875CE8EF4D068791_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TweenableVariableBase_1_set_target_m353B619618455D8C59D23B5D02D69EFB492AAA59_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	int32_t V_2 = 0;
+	RuntimeObject* V_3 = NULL;
+	float V_4 = 0.0f;
+	FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48* G_B10_0 = NULL;
+	FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48* G_B9_0 = NULL;
+	float G_B11_0 = 0.0f;
+	FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48* G_B11_1 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:83>
+		FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48* L_0 = __this->___m_TweenableVariable;
+		float L_1;
+		L_1 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_0);
+		TweenableVariableBase_1_HandleTween_m46B71286EECBE0E3F279B742875CE8EF4D068791(L_0, ((float)il2cpp_codegen_multiply(L_1, (16.0f))), TweenableVariableBase_1_HandleTween_m46B71286EECBE0E3F279B742875CE8EF4D068791_RuntimeMethod_var);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:84>
+		RuntimeObject* L_2 = __this->___m_HoverInteractable;
+		NullCheck(L_2);
+		List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95* L_3;
+		L_3 = InterfaceFuncInvoker0< List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95* >::Invoke(4, IXRHoverInteractable_tB88E3F220034149EC6037AB0126FC607CC2CF219_il2cpp_TypeInfo_var, L_2);
+		NullCheck(L_3);
+		int32_t L_4;
+		L_4 = List_1_get_Count_m9767A091ADB8D7F7B698451FE1BB2A1528C2E152_inline(L_3, List_1_get_Count_m9767A091ADB8D7F7B698451FE1BB2A1528C2E152_RuntimeMethod_var);
+		if (L_4)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:85>
+		return;
+	}
+
+IL_0029:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:87>
+		V_0 = (0.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:88>
+		V_1 = (0.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:89>
+		V_2 = 0;
+		goto IL_0076;
+	}
+
+IL_0039:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:91>
+		RuntimeObject* L_5 = __this->___m_HoverInteractable;
+		NullCheck(L_5);
+		List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95* L_6;
+		L_6 = InterfaceFuncInvoker0< List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95* >::Invoke(4, IXRHoverInteractable_tB88E3F220034149EC6037AB0126FC607CC2CF219_il2cpp_TypeInfo_var, L_5);
+		int32_t L_7 = V_2;
+		NullCheck(L_6);
+		RuntimeObject* L_8;
+		L_8 = List_1_get_Item_m118881A6117DB328B006412BD9A85A5A8742CD64(L_6, L_7, List_1_get_Item_m118881A6117DB328B006412BD9A85A5A8742CD64_RuntimeMethod_var);
+		V_3 = L_8;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:92>
+		RuntimeObject* L_9 = __this->___m_InteractionStrengthInteractable;
+		RuntimeObject* L_10 = V_3;
+		NullCheck(L_9);
+		float L_11;
+		L_11 = InterfaceFuncInvoker1< float, RuntimeObject* >::Invoke(1, IXRInteractionStrengthInteractable_t0C79B1621B5D4987893370F8AF403574853D44B7_il2cpp_TypeInfo_var, L_9, L_10);
+		V_4 = L_11;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:93>
+		RuntimeObject* L_12 = V_3;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:94>
+		if (!((!(((RuntimeObject*)(RuntimeObject*)((RuntimeObject*)IsInst((RuntimeObject*)L_12, IPokeStateDataProvider_t14F2B731F2979D1138EB70A11E36F274A23DC91C_il2cpp_TypeInfo_var))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0))
+		{
+			goto IL_0069;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:96>
+		float L_13 = V_4;
+		V_0 = L_13;
+		goto IL_0072;
+	}
+
+IL_0069:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:100>
+		float L_14 = V_1;
+		float L_15 = V_4;
+		float L_16;
+		L_16 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_14, L_15, NULL);
+		V_1 = L_16;
+	}
+
+IL_0072:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:89>
+		int32_t L_17 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_17, 1));
+	}
+
+IL_0076:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:89>
+		int32_t L_18 = V_2;
+		RuntimeObject* L_19 = __this->___m_HoverInteractable;
+		NullCheck(L_19);
+		List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95* L_20;
+		L_20 = InterfaceFuncInvoker0< List_1_tB29D4BFC3BAB9F740D409256A24C885712CA4C95* >::Invoke(4, IXRHoverInteractable_tB88E3F220034149EC6037AB0126FC607CC2CF219_il2cpp_TypeInfo_var, L_19);
+		NullCheck(L_20);
+		int32_t L_21;
+		L_21 = List_1_get_Count_m9767A091ADB8D7F7B698451FE1BB2A1528C2E152_inline(L_20, List_1_get_Count_m9767A091ADB8D7F7B698451FE1BB2A1528C2E152_RuntimeMethod_var);
+		if ((((int32_t)L_18) < ((int32_t)L_21)))
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:104>
+		FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48* L_22 = __this->___m_TweenableVariable;
+		float L_23 = V_0;
+		float L_24 = V_1;
+		if ((((float)L_23) > ((float)L_24)))
+		{
+			G_B10_0 = L_22;
+			goto IL_009a;
+		}
+		G_B9_0 = L_22;
+	}
+	{
+		G_B11_0 = (0.0f);
+		G_B11_1 = G_B9_0;
+		goto IL_00a0;
+	}
+
+IL_009a:
+	{
+		float L_25 = __this->___m_TweenTarget;
+		G_B11_0 = L_25;
+		G_B11_1 = G_B10_0;
+	}
+
+IL_00a0:
+	{
+		NullCheck(G_B11_1);
+		TweenableVariableBase_1_set_target_m353B619618455D8C59D23B5D02D69EFB492AAA59(G_B11_1, G_B11_0, TweenableVariableBase_1_set_target_m353B619618455D8C59D23B5D02D69EFB492AAA59_RuntimeMethod_var);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:105>
+		return;
+	}
+}
+// Method Definition Index: 94884
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PokeBlendShapeAnimator__ctor_m16AC335520A1160C13AB18DCE0A8D11B85ACF50F (PokeBlendShapeAnimator_t48459CB445F2396B407770EBB860FC85B1B2F282* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:32>
+		__this->___m_BlendShapeMax = (100.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:34>
+		BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A* L_0 = (BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A*)il2cpp_codegen_object_new(BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A_il2cpp_TypeInfo_var);
+		BindingsGroup__ctor_m1EFD3F405050571D3A66F9B95E8FBC296866A716(L_0, NULL);
+		__this->___m_BindingsGroup = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_BindingsGroup), (void*)L_0);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:39>
+		FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48* L_1 = (FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48*)il2cpp_codegen_object_new(FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48_il2cpp_TypeInfo_var);
+		FloatTweenableVariable__ctor_mE8A1546D61397EB6D999B82E247996198FB2E776(L_1, NULL);
+		__this->___m_TweenableVariable = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TweenableVariable), (void*)L_1);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+// Method Definition Index: 94885
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PokeBlendShapeAnimator_U3COnEnableU3Eb__10_0_m5A846165F2893202A66A686FD422B6D006ADE48A (PokeBlendShapeAnimator_t48459CB445F2396B407770EBB860FC85B1B2F282* __this, PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 ___0_data, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:60>
+		float L_0 = __this->___m_BlendShapeMin;
+		float L_1 = __this->___m_BlendShapeMax;
+		float L_2;
+		L_2 = PokeStateData_get_interactionStrength_mCDA09DA4CD62F5A7C4CC68D9B89040643595F852_inline((&___0_data), NULL);
+		float L_3;
+		L_3 = Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline(L_0, L_1, L_2, NULL);
+		V_0 = L_3;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:61>
+		float L_4 = V_0;
+		__this->___m_TweenTarget = L_4;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:62>
+		return;
+	}
+}
+// Method Definition Index: 94886
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PokeBlendShapeAnimator_U3COnEnableU3Eb__10_1_m1E7963F2192F3A1C80A82AD16EFF8FD27D5A1AF0 (PokeBlendShapeAnimator_t48459CB445F2396B407770EBB860FC85B1B2F282* __this, float ___0_newValue, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:66>
+		SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* L_0 = __this->___m_SkinnedMeshRenderer;
+		int32_t L_1 = __this->___m_BlendShapeIndex;
+		float L_2 = ___0_newValue;
+		NullCheck(L_0);
+		SkinnedMeshRenderer_SetBlendShapeWeight_mD5724DB29A33F007E42F3666BF4B7ABC9C7F6F5E(L_0, L_1, L_2, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/PokeBlendShapeAnimator.cs:67>
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94887
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ToggleGameObject_get_activationGameObject_m1F1B6421F159376BB842ED8B1E26449A5E899600 (ToggleGameObject_tD82BA740FE7646FFB4D3A12353FB4DF6CCE4F7AD* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ToggleGameObject.cs:17>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_ActivationGameObject;
+		return L_0;
+	}
+}
+// Method Definition Index: 94888
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ToggleGameObject_set_activationGameObject_m80D56AC98F3C2732F92DEE560641F1977D2F30B6 (ToggleGameObject_tD82BA740FE7646FFB4D3A12353FB4DF6CCE4F7AD* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ToggleGameObject.cs:18>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___0_value;
+		__this->___m_ActivationGameObject = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ActivationGameObject), (void*)L_0);
+		return;
+	}
+}
+// Method Definition Index: 94889
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ToggleGameObject_get_currentlyActive_mBA87E8441E4BBDD08808D1CA538640F0EDB93A38 (ToggleGameObject_tD82BA740FE7646FFB4D3A12353FB4DF6CCE4F7AD* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ToggleGameObject.cs:30>
+		bool L_0 = __this->___m_CurrentlyActive;
+		return L_0;
+	}
+}
+// Method Definition Index: 94890
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ToggleGameObject_set_currentlyActive_mA8A72B3C48F9A5D84797062CB3EE824D5A24D0EB (ToggleGameObject_tD82BA740FE7646FFB4D3A12353FB4DF6CCE4F7AD* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ToggleGameObject.cs:33>
+		bool L_0 = ___0_value;
+		__this->___m_CurrentlyActive = L_0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ToggleGameObject.cs:34>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = ToggleGameObject_get_activationGameObject_m1F1B6421F159376BB842ED8B1E26449A5E899600_inline(__this, NULL);
+		bool L_2 = __this->___m_CurrentlyActive;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, L_2, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ToggleGameObject.cs:35>
+		return;
+	}
+}
+// Method Definition Index: 94891
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ToggleGameObject_ToggleActiveState_m129D4EAC372691B533A31ADD755B7C53EB4D35AF (ToggleGameObject_tD82BA740FE7646FFB4D3A12353FB4DF6CCE4F7AD* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ToggleGameObject.cs:43>
+		bool L_0 = __this->___m_CurrentlyActive;
+		__this->___m_CurrentlyActive = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ToggleGameObject.cs:44>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = ToggleGameObject_get_activationGameObject_m1F1B6421F159376BB842ED8B1E26449A5E899600_inline(__this, NULL);
+		bool L_2 = __this->___m_CurrentlyActive;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, L_2, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ToggleGameObject.cs:45>
+		return;
+	}
+}
+// Method Definition Index: 94892
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ToggleGameObject__ctor_mB392B39C494AB4DB4CB0725BB149568E52029BD5 (ToggleGameObject_tD82BA740FE7646FFB4D3A12353FB4DF6CCE4F7AD* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94893
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformSync_OnValidate_m962E893D30AA1375D88CA555517794CF1FB862FB (TransformSync_tF9249B51AC95936B597FBF4BAF7DBB4B6D30BD35* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* G_B3_0 = NULL;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* G_B2_0 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B4_0;
+	memset((&G_B4_0), 0, sizeof(G_B4_0));
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* G_B4_1 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:37>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___m_TargetTransform;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:39>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:40>
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:41>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_3);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_3, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_5;
+		L_5 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_5)
+		{
+			G_B3_0 = L_2;
+			goto IL_0044;
+		}
+		G_B2_0 = L_2;
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_6, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->___m_TargetTransform;
+		NullCheck(L_8);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_8, NULL);
+		NullCheck(L_7);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Transform_InverseTransformPoint_m18CD395144D9C78F30E15A5B82B6670E792DBA5D(L_7, L_9, NULL);
+		G_B4_0 = L_10;
+		G_B4_1 = G_B2_0;
+		goto IL_004f;
+	}
+
+IL_0044:
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = __this->___m_TargetTransform;
+		NullCheck(L_11);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_11, NULL);
+		G_B4_0 = L_12;
+		G_B4_1 = G_B3_0;
+	}
+
+IL_004f:
+	{
+		NullCheck(G_B4_1);
+		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(G_B4_1, G_B4_0, NULL);
+	}
+
+IL_0054:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:43>
+		return;
+	}
+}
+// Method Definition Index: 94894
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformSync_Awake_mA0B96B3C0BDE871DA71C0B847FC628D9E6170448 (TransformSync_tF9249B51AC95936B597FBF4BAF7DBB4B6D30BD35* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:50>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		__this->___m_ThisTransform = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ThisTransform), (void*)L_0);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:51>
+		return;
+	}
+}
+// Method Definition Index: 94895
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformSync_OnEnable_mC6A0414A04C45A9191991B131F726AD66AB8414F (TransformSync_tF9249B51AC95936B597FBF4BAF7DBB4B6D30BD35* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BindableVariableBase_1_set_Value_m19676F8DE67466CD43313044F2ADBAD0B83D9F0B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_TryGetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2C2A32AA4FD62D8B9BF5E40B7E2F3EF738C532A6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TweenableVariableAsyncBase_1_set_Value_mBE82FC9D214396EF51C5F3840321A8134DCC925B_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* V_0 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:58>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___m_TargetTransform;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:60>
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(__this, (bool)0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:61>
+		return;
+	}
+
+IL_0016:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:63>
+		__this->___m_HasTransform = (bool)1;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:65>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = __this->___m_TargetTransform;
+		NullCheck(L_2);
+		bool L_3;
+		L_3 = Component_TryGetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2C2A32AA4FD62D8B9BF5E40B7E2F3EF738C532A6(L_2, (&V_0), Component_TryGetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2C2A32AA4FD62D8B9BF5E40B7E2F3EF738C532A6_RuntimeMethod_var);
+		if (!L_3)
+		{
+			goto IL_003a;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:67>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_4 = V_0;
+		__this->___m_Rigidbody = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Rigidbody), (void*)L_4);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:68>
+		__this->___m_HasRigidbody = (bool)1;
+	}
+
+IL_003a:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:71>
+		Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5* L_5 = __this->___m_PositionTweenable;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = __this->___m_ThisTransform;
+		NullCheck(L_6);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_6, NULL);
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_8;
+		L_8 = float3_op_Implicit_mE1831A3AC179B7EB3236F8202EC8DD5CE05376AB(L_7, NULL);
+		NullCheck(L_5);
+		TweenableVariableAsyncBase_1_set_Value_mBE82FC9D214396EF51C5F3840321A8134DCC925B(L_5, L_8, TweenableVariableAsyncBase_1_set_Value_mBE82FC9D214396EF51C5F3840321A8134DCC925B_RuntimeMethod_var);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:72>
+		QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145* L_9 = __this->___m_RotationTweenable;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10 = __this->___m_ThisTransform;
+		NullCheck(L_10);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11;
+		L_11 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_10, NULL);
+		NullCheck(L_9);
+		BindableVariableBase_1_set_Value_m19676F8DE67466CD43313044F2ADBAD0B83D9F0B(L_9, L_11, BindableVariableBase_1_set_Value_m19676F8DE67466CD43313044F2ADBAD0B83D9F0B_RuntimeMethod_var);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:73>
+		return;
+	}
+}
+// Method Definition Index: 94896
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformSync_Update_mB3CF6CBB79DB975B144B23DD3D9D0F73B9C583E7 (TransformSync_tF9249B51AC95936B597FBF4BAF7DBB4B6D30BD35* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BindableVariableBase_1_get_Value_mDA92236BCE8EC7928399D7271AA97D7B62941EEC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TweenableVariableAsyncBase_1_get_Value_m1FEDA58A135C58DC7573858CF65871F63712896F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TweenableVariableBase_1_HandleTween_m197557B3C05112A4C89C97E2200E07C1DCF2C274_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TweenableVariableBase_1_HandleTween_m61752C0D7316DD05AB1C8E10319F47902D4CDCD9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TweenableVariableBase_1_set_target_m3127A21F0C2EF40FA4604D603803BA53DE604337_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TweenableVariableBase_1_set_target_m3B5D4156AFDDEE2E041341605265E52A487F1657_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float G_B3_0 = 0.0f;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:80>
+		Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5* L_0 = __this->___m_PositionTweenable;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = __this->___m_ThisTransform;
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_1, NULL);
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_3;
+		L_3 = float3_op_Implicit_mE1831A3AC179B7EB3236F8202EC8DD5CE05376AB(L_2, NULL);
+		NullCheck(L_0);
+		TweenableVariableBase_1_set_target_m3127A21F0C2EF40FA4604D603803BA53DE604337(L_0, L_3, TweenableVariableBase_1_set_target_m3127A21F0C2EF40FA4604D603803BA53DE604337_RuntimeMethod_var);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:81>
+		QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145* L_4 = __this->___m_RotationTweenable;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___m_ThisTransform;
+		NullCheck(L_5);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_6;
+		L_6 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_5, NULL);
+		NullCheck(L_4);
+		TweenableVariableBase_1_set_target_m3B5D4156AFDDEE2E041341605265E52A487F1657(L_4, L_6, TweenableVariableBase_1_set_target_m3B5D4156AFDDEE2E041341605265E52A487F1657_RuntimeMethod_var);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:83>
+		float L_7 = __this->___m_SmoothFollowSpeed;
+		if ((((float)L_7) > ((float)(0.0f))))
+		{
+			goto IL_0045;
+		}
+	}
+	{
+		G_B3_0 = (1.0f);
+		goto IL_0051;
+	}
+
+IL_0045:
+	{
+		float L_8 = __this->___m_SmoothFollowSpeed;
+		float L_9;
+		L_9 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		G_B3_0 = ((float)il2cpp_codegen_multiply(L_8, L_9));
+	}
+
+IL_0051:
+	{
+		V_0 = G_B3_0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:84>
+		Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5* L_10 = __this->___m_PositionTweenable;
+		float L_11 = V_0;
+		NullCheck(L_10);
+		TweenableVariableBase_1_HandleTween_m61752C0D7316DD05AB1C8E10319F47902D4CDCD9(L_10, L_11, TweenableVariableBase_1_HandleTween_m61752C0D7316DD05AB1C8E10319F47902D4CDCD9_RuntimeMethod_var);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:85>
+		QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145* L_12 = __this->___m_RotationTweenable;
+		float L_13 = V_0;
+		NullCheck(L_12);
+		TweenableVariableBase_1_HandleTween_m197557B3C05112A4C89C97E2200E07C1DCF2C274(L_12, L_13, TweenableVariableBase_1_HandleTween_m197557B3C05112A4C89C97E2200E07C1DCF2C274_RuntimeMethod_var);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:87>
+		bool L_14 = __this->___m_HasRigidbody;
+		if (L_14)
+		{
+			goto IL_00a0;
+		}
+	}
+	{
+		bool L_15 = __this->___m_HasTransform;
+		if (!L_15)
+		{
+			goto IL_00a0;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:88>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16 = __this->___m_TargetTransform;
+		Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5* L_17 = __this->___m_PositionTweenable;
+		NullCheck(L_17);
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_18;
+		L_18 = TweenableVariableAsyncBase_1_get_Value_m1FEDA58A135C58DC7573858CF65871F63712896F(L_17, TweenableVariableAsyncBase_1_get_Value_m1FEDA58A135C58DC7573858CF65871F63712896F_RuntimeMethod_var);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = float3_op_Implicit_m9CC301DFD67EEFAA15CA05E91913E862B22326F6(L_18, NULL);
+		QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145* L_20 = __this->___m_RotationTweenable;
+		NullCheck(L_20);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_21;
+		L_21 = BindableVariableBase_1_get_Value_mDA92236BCE8EC7928399D7271AA97D7B62941EEC_inline(L_20, BindableVariableBase_1_get_Value_mDA92236BCE8EC7928399D7271AA97D7B62941EEC_RuntimeMethod_var);
+		NullCheck(L_16);
+		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_16, L_19, L_21, NULL);
+	}
+
+IL_00a0:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:89>
+		return;
+	}
+}
+// Method Definition Index: 94897
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformSync_FixedUpdate_m85F1774A245BF1ADB65D927A3964B76CAE9B5562 (TransformSync_tF9249B51AC95936B597FBF4BAF7DBB4B6D30BD35* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BindableVariableBase_1_get_Value_mDA92236BCE8EC7928399D7271AA97D7B62941EEC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TweenableVariableAsyncBase_1_get_Value_m1FEDA58A135C58DC7573858CF65871F63712896F_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:96>
+		bool L_0 = __this->___m_HasRigidbody;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:97>
+		return;
+	}
+
+IL_0009:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:99>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1 = __this->___m_Rigidbody;
+		Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5* L_2 = __this->___m_PositionTweenable;
+		NullCheck(L_2);
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_3;
+		L_3 = TweenableVariableAsyncBase_1_get_Value_m1FEDA58A135C58DC7573858CF65871F63712896F(L_2, TweenableVariableAsyncBase_1_get_Value_m1FEDA58A135C58DC7573858CF65871F63712896F_RuntimeMethod_var);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = float3_op_Implicit_m9CC301DFD67EEFAA15CA05E91913E862B22326F6(L_3, NULL);
+		NullCheck(L_1);
+		Rigidbody_MovePosition_mB2CD29ABC8F59AC338C0A3A5A6B75C38FDA92CA9(L_1, L_4, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:100>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_5 = __this->___m_Rigidbody;
+		QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145* L_6 = __this->___m_RotationTweenable;
+		NullCheck(L_6);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_7;
+		L_7 = BindableVariableBase_1_get_Value_mDA92236BCE8EC7928399D7271AA97D7B62941EEC_inline(L_6, BindableVariableBase_1_get_Value_mDA92236BCE8EC7928399D7271AA97D7B62941EEC_RuntimeMethod_var);
+		NullCheck(L_5);
+		Rigidbody_MoveRotation_m85825C7206E770E39DED9EE6D792702F577A891D(L_5, L_7, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:101>
+		return;
+	}
+}
+// Method Definition Index: 94898
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformSync__ctor_m3C110D314A2E40254333D38385D6C5B688E158D1 (TransformSync_tF9249B51AC95936B597FBF4BAF7DBB4B6D30BD35* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:18>
+		__this->___m_SmoothFollowSpeed = (8.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:28>
+		Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5* L_0 = (Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5*)il2cpp_codegen_object_new(Vector3TweenableVariable_t0DF651B487F89825D0D459293C4A862C62C0EBD5_il2cpp_TypeInfo_var);
+		Vector3TweenableVariable__ctor_m22723734B74E394A833F2EEA06F910E45A91F042(L_0, NULL);
+		__this->___m_PositionTweenable = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_PositionTweenable), (void*)L_0);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/TransformSync.cs:29>
+		QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145* L_1 = (QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145*)il2cpp_codegen_object_new(QuaternionTweenableVariable_t511E026E030C36326A4F6FF19A68C459B5993145_il2cpp_TypeInfo_var);
+		QuaternionTweenableVariable__ctor_m78DB27081DAD1BE2125659704E6B0391AA9331BD(L_1, NULL);
+		__this->___m_RotationTweenable = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_RotationTweenable), (void*)L_1);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94899
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandsOneEuroFilterPostProcessor_Awake_mC236AEDF3F26CC51CA81D7E34A9E42821ADA3FD9 (HandsOneEuroFilterPostProcessor_tE99F8855C6D85959C0EDF9226ED522B08DBF14AE* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral85FC412A725E6535BFBEE96D1A4576A820275310);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HandsOneEuroFilterPostProcessor.cs:136>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogWarning_m23033D7E2F0F298BE465B7F3A63CDF40A4EB70EB(_stringLiteral85FC412A725E6535BFBEE96D1A4576A820275310, __this, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HandsOneEuroFilterPostProcessor.cs:137>
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(__this, (bool)0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HandsOneEuroFilterPostProcessor.cs:138>
+		return;
+	}
+}
+// Method Definition Index: 94900
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandsOneEuroFilterPostProcessor__ctor_m968575A7EBDD3D00B7FC8A5CB90DC8A10A74484E (HandsOneEuroFilterPostProcessor_tE99F8855C6D85959C0EDF9226ED522B08DBF14AE* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HandsOneEuroFilterPostProcessor.cs:21>
+		__this->___m_FilterMinCutoff = (0.100000001f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HandsOneEuroFilterPostProcessor.cs:27>
+		__this->___m_FilterBeta = (0.200000003f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94901
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HideObjectWhenInteractorBlocked_OnEnable_mD721B134FC7F3A25CC0F56937D43B117AE4B6378 (HideObjectWhenInteractorBlocked_tFF893F1B7C9DDC188C484B983256019D399F00E9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICurveInteractionDataProvider_tCAD1F7E51653D0E39F0146E20903EAA6FE82FA59_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HideObjectWhenInteractorBlocked.cs:27>
+		XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4* L_0 = __this->___m_Interactor;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___m_ObjectToHide;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0023;
+		}
+	}
+
+IL_001c:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HideObjectWhenInteractorBlocked.cs:28>
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(__this, (bool)0, NULL);
+	}
+
+IL_0023:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HideObjectWhenInteractorBlocked.cs:30>
+		__this->___m_HasCurveDataProvider = (bool)0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HideObjectWhenInteractorBlocked.cs:31>
+		XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4* L_4 = __this->___m_Interactor;
+		V_0 = ((RuntimeObject*)IsInst((RuntimeObject*)L_4, ICurveInteractionDataProvider_tCAD1F7E51653D0E39F0146E20903EAA6FE82FA59_il2cpp_TypeInfo_var));
+		RuntimeObject* L_5 = V_0;
+		if (!L_5)
+		{
+			goto IL_0047;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HideObjectWhenInteractorBlocked.cs:33>
+		RuntimeObject* L_6 = V_0;
+		__this->___m_CurveInteractionDataProvider = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurveInteractionDataProvider), (void*)L_6);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HideObjectWhenInteractorBlocked.cs:34>
+		__this->___m_HasCurveDataProvider = (bool)1;
+	}
+
+IL_0047:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HideObjectWhenInteractorBlocked.cs:36>
+		return;
+	}
+}
+// Method Definition Index: 94902
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HideObjectWhenInteractorBlocked_Update_mEAEE1F87BFEDFF9E4E952B6FAAE5E0CC14210EFC (HideObjectWhenInteractorBlocked_tFF893F1B7C9DDC188C484B983256019D399F00E9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICurveInteractionDataProvider_tCAD1F7E51653D0E39F0146E20903EAA6FE82FA59_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B4_0 = NULL;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B3_0 = NULL;
+	int32_t G_B5_0 = 0;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B5_1 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HideObjectWhenInteractorBlocked.cs:43>
+		bool L_0 = __this->___m_HasCurveDataProvider;
+		if (!L_0)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HideObjectWhenInteractorBlocked.cs:44>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___m_ObjectToHide;
+		RuntimeObject* L_2 = __this->___m_CurveInteractionDataProvider;
+		NullCheck(L_2);
+		bool L_3;
+		L_3 = InterfaceFuncInvoker0< bool >::Invoke(0, ICurveInteractionDataProvider_tCAD1F7E51653D0E39F0146E20903EAA6FE82FA59_il2cpp_TypeInfo_var, L_2);
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, L_3, NULL);
+		return;
+	}
+
+IL_001f:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HideObjectWhenInteractorBlocked.cs:46>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___m_ObjectToHide;
+		XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4* L_5 = __this->___m_Interactor;
+		NullCheck(L_5);
+		bool L_6;
+		L_6 = Behaviour_get_isActiveAndEnabled_mEB4ECCE9761A7016BC619557CEFEA1A30D3BF28A(L_5, NULL);
+		if (!L_6)
+		{
+			G_B4_0 = L_4;
+			goto IL_0042;
+		}
+		G_B3_0 = L_4;
+	}
+	{
+		XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4* L_7 = __this->___m_Interactor;
+		bool L_8;
+		L_8 = XRInteractorExtensions_IsBlockedByInteractionWithinGroup_m0DDF8DED74ED6C86C3CDA970E470EFE354092E7C(L_7, NULL);
+		G_B5_0 = ((((int32_t)L_8) == ((int32_t)0))? 1 : 0);
+		G_B5_1 = G_B3_0;
+		goto IL_0043;
+	}
+
+IL_0042:
+	{
+		G_B5_0 = 0;
+		G_B5_1 = G_B4_0;
+	}
+
+IL_0043:
+	{
+		NullCheck(G_B5_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(G_B5_1, (bool)G_B5_0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/HideObjectWhenInteractorBlocked.cs:47>
+		return;
+	}
+}
+// Method Definition Index: 94903
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HideObjectWhenInteractorBlocked__ctor_mB6F4F329FB9C299CFE8576538BA51EEE1B4370BE (HideObjectWhenInteractorBlocked_tFF893F1B7C9DDC188C484B983256019D399F00E9* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94904
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* LocalPositionOffsetAffordanceReceiver_get_transformToTranslate_m4B628BADA1191F4FF9FDEEF3D8C06A01B66EEA79 (LocalPositionOffsetAffordanceReceiver_t80AA3C7E3F8F611E956801F4CEB708BA255EFD08* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:24>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___m_TransformToTranslate;
+		return L_0;
+	}
+}
+// Method Definition Index: 94905
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocalPositionOffsetAffordanceReceiver_set_transformToTranslate_m51039ECE106F088CB14D32B4071FE6A260E6BA7D (LocalPositionOffsetAffordanceReceiver_t80AA3C7E3F8F611E956801F4CEB708BA255EFD08* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:27>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_value;
+		__this->___m_TransformToTranslate = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TransformToTranslate), (void*)L_0);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:28>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = __this->___m_TransformToTranslate;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		__this->___m_HasTransformToTranslate = L_2;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:29>
+		return;
+	}
+}
+// Method Definition Index: 94906
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocalPositionOffsetAffordanceReceiver_OnEnable_mF1286F85D4A10F40B727B28D190C01B0D541938C (LocalPositionOffsetAffordanceReceiver_t80AA3C7E3F8F611E956801F4CEB708BA255EFD08* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BaseAffordanceStateReceiver_1_OnEnable_mB97FBD627A706DF4A4A13EF3276D3A3E8D87C4D4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:38>
+		BaseAffordanceStateReceiver_1_OnEnable_mB97FBD627A706DF4A4A13EF3276D3A3E8D87C4D4(__this, BaseAffordanceStateReceiver_1_OnEnable_mB97FBD627A706DF4A4A13EF3276D3A3E8D87C4D4_RuntimeMethod_var);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:39>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___m_TransformToTranslate;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		__this->___m_HasTransformToTranslate = L_1;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:40>
+		return;
+	}
+}
+// Method Definition Index: 94907
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E LocalPositionOffsetAffordanceReceiver_GetCurrentValueForCapture_m934738FBEC8127ED0804F9BEBA9B28EA279018AB (LocalPositionOffsetAffordanceReceiver_t80AA3C7E3F8F611E956801F4CEB708BA255EFD08* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:45>
+		bool L_0 = __this->___m_HasTransformToTranslate;
+		if (!L_0)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:47>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = __this->___m_TransformToTranslate;
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_1, NULL);
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_3;
+		L_3 = float3_op_Implicit_mE1831A3AC179B7EB3236F8202EC8DD5CE05376AB(L_2, NULL);
+		__this->___m_InitialOffset = L_3;
+	}
+
+IL_001e:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:50>
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_4 = ((float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_StaticFields*)il2cpp_codegen_static_fields_for(float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_il2cpp_TypeInfo_var))->___zero;
+		return L_4;
+	}
+}
+// Method Definition Index: 94908
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocalPositionOffsetAffordanceReceiver_OnAffordanceValueUpdated_m35118C068B9C960E7C25B17E745C79C8F73D671C (LocalPositionOffsetAffordanceReceiver_t80AA3C7E3F8F611E956801F4CEB708BA255EFD08* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_newValue, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:56>
+		bool L_0 = __this->___m_HasTransformToTranslate;
+		if (!L_0)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:58>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = __this->___m_TransformToTranslate;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_2 = __this->___m_InitialOffset;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_3 = ___0_newValue;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_4;
+		L_4 = float3_op_Addition_mFFCF4F7457594F5EFB0678C0DE90AAD3D3F6947B_inline(L_2, L_3, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = float3_op_Implicit_m9CC301DFD67EEFAA15CA05E91913E862B22326F6(L_4, NULL);
+		NullCheck(L_1);
+		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_1, L_5, NULL);
+	}
+
+IL_0024:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:61>
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_6 = ___0_newValue;
+		Vector3AffordanceReceiver_OnAffordanceValueUpdated_mBB5120B9FB6E709161DBD0AD58362174BC06F719(__this, L_6, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:62>
+		return;
+	}
+}
+// Method Definition Index: 94909
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocalPositionOffsetAffordanceReceiver_OnValidate_m38F9459261F16EE89038DA80FFB180DD087B88CB (LocalPositionOffsetAffordanceReceiver_t80AA3C7E3F8F611E956801F4CEB708BA255EFD08* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:69>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___m_TransformToTranslate;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:70>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		__this->___m_TransformToTranslate = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TransformToTranslate), (void*)L_2);
+	}
+
+IL_001a:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:71>
+		return;
+	}
+}
+// Method Definition Index: 94910
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocalPositionOffsetAffordanceReceiver__ctor_m323FADB127F0EF7ADDA36A7AFB1C71D5C30BC1AF (LocalPositionOffsetAffordanceReceiver_t80AA3C7E3F8F611E956801F4CEB708BA255EFD08* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/LocalPositionOffsetAffordanceReceiver.cs:33>
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_0 = ((float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_StaticFields*)il2cpp_codegen_static_fields_for(float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_il2cpp_TypeInfo_var))->___zero;
+		__this->___m_InitialOffset = L_0;
+		Vector3AffordanceReceiver__ctor_m369BD7371AF82E1E303B183EC60F057580C93588(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94911
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD MetaSystemGestureDetector_get_aimFlagsAction_m2C5805AB317B9939E6277CB717063E1E589907FF (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:59>
+		InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD L_0 = __this->___m_AimFlagsAction;
+		return L_0;
+	}
+}
+// Method Definition Index: 94912
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_set_aimFlagsAction_m952D5A40B7C040E76B430C915A8B28ECB3F62C1B (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:62>
+		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Application_get_isPlaying_m25B0ABDFEF54F5370CD3F263A813540843D00F34(NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:63>
+		MetaSystemGestureDetector_UnbindAimFlags_m9BCE9DF16D45F777D63BBE5285E51685F2E3801C(__this, NULL);
+	}
+
+IL_000d:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:65>
+		InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD L_1 = ___0_value;
+		__this->___m_AimFlagsAction = L_1;
+		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___m_AimFlagsAction))->___m_Action), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___m_AimFlagsAction))->___m_Reference), (void*)NULL);
+		#endif
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:67>
+		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Application_get_isPlaying_m25B0ABDFEF54F5370CD3F263A813540843D00F34(NULL);
+		if (!L_2)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		bool L_3;
+		L_3 = Behaviour_get_isActiveAndEnabled_mEB4ECCE9761A7016BC619557CEFEA1A30D3BF28A(__this, NULL);
+		if (!L_3)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:68>
+		MetaSystemGestureDetector_BindAimFlags_mCC549E02D18E15D393769447B59914D2261B9FB6(__this, NULL);
+	}
+
+IL_0029:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:69>
+		return;
+	}
+}
+// Method Definition Index: 94913
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* MetaSystemGestureDetector_get_systemGestureStarted_m32D8A43F2C9D2738E7A2D3F2C61D7BE624C226C8 (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:83>
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_0 = __this->___m_SystemGestureStarted;
+		return L_0;
+	}
+}
+// Method Definition Index: 94914
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_set_systemGestureStarted_m56B4A305A63317E7F54B0A4F1038886FF117FFA6 (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:84>
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_0 = ___0_value;
+		__this->___m_SystemGestureStarted = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SystemGestureStarted), (void*)L_0);
+		return;
+	}
+}
+// Method Definition Index: 94915
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* MetaSystemGestureDetector_get_systemGestureEnded_mB04C5815904953F622CFC12FBA97EE30B9534586 (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:102>
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_0 = __this->___m_SystemGestureEnded;
+		return L_0;
+	}
+}
+// Method Definition Index: 94916
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_set_systemGestureEnded_mC007E016BA98BD84EC3EA88051F4EF4CEEC03EAB (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:103>
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_0 = ___0_value;
+		__this->___m_SystemGestureEnded = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SystemGestureEnded), (void*)L_0);
+		return;
+	}
+}
+// Method Definition Index: 94917
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* MetaSystemGestureDetector_get_menuPressed_m753D80451BECA3D92A4712E28578B63FFE117087 (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:119>
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_0 = __this->___m_MenuPressed;
+		return L_0;
+	}
+}
+// Method Definition Index: 94918
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_set_menuPressed_m46EEEC1A31E2ED1012F2F822594C9A6BF00D8318 (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:120>
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_0 = ___0_value;
+		__this->___m_MenuPressed = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_MenuPressed), (void*)L_0);
+		return;
+	}
+}
+// Method Definition Index: 94919
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MetaSystemGestureDetector_get_systemGestureState_m941EF54EBED75B6F8C7C4EA920C3A37F7471CF8A (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:129>
+		BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C* L_0 = __this->___m_SystemGestureState;
+		return L_0;
+	}
+}
+// Method Definition Index: 94920
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_OnEnable_m3B14BE9ED3EFC8AC1705E39C66A7A074652DBB90 (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral030B3FBF69A6A7FDCE638814FA9B1EAB978702BA);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:145>
+		MetaSystemGestureDetector_BindAimFlags_mCC549E02D18E15D393769447B59914D2261B9FB6(__this, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:155>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogWarning_m23033D7E2F0F298BE465B7F3A63CDF40A4EB70EB(_stringLiteral030B3FBF69A6A7FDCE638814FA9B1EAB978702BA, __this, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:156>
+		MetaSystemGestureDetector_SetGestureState_mA8408914616784FF6321DC18D99C6CC46B0CE0C8(__this, 0, (bool)1, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:158>
+		return;
+	}
+}
+// Method Definition Index: 94921
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_OnDisable_m6DCC095C2E7BCB2927CFC799AEC744A6BFB4DA05 (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:165>
+		MetaSystemGestureDetector_UnbindAimFlags_m9BCE9DF16D45F777D63BBE5285E51685F2E3801C(__this, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:166>
+		return;
+	}
+}
+// Method Definition Index: 94922
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_BindAimFlags_mCC549E02D18E15D393769447B59914D2261B9FB6 (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MetaSystemGestureDetector_OnAimFlagsActionPerformedOrCanceled_mA039A6CD5B5CAAE457D7672710A4A314ACCE12BD_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* V_0 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:170>
+		bool L_0 = __this->___m_AimFlagsBound;
+		if (!L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:171>
+		return;
+	}
+
+IL_0009:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:173>
+		InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* L_1 = (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*)(&__this->___m_AimFlagsAction);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_2;
+		L_2 = InputActionProperty_get_action_mABF2197D9CC6586E5DFB0481CF9C1B2586F41A47(L_1, NULL);
+		V_0 = L_2;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:174>
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_3 = V_0;
+		if (L_3)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:175>
+		return;
+	}
+
+IL_0019:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:177>
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_4 = V_0;
+		Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* L_5 = (Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E*)il2cpp_codegen_object_new(Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E_il2cpp_TypeInfo_var);
+		Action_1__ctor_mA763900B34C3394F230AE63708F530CA9A192B57(L_5, __this, (intptr_t)((void*)MetaSystemGestureDetector_OnAimFlagsActionPerformedOrCanceled_mA039A6CD5B5CAAE457D7672710A4A314ACCE12BD_RuntimeMethod_var), NULL);
+		NullCheck(L_4);
+		InputAction_add_performed_m0337FFA16EBEF7AE365C3B558CFDFF7BB9747B54(L_4, L_5, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:178>
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_6 = V_0;
+		Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* L_7 = (Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E*)il2cpp_codegen_object_new(Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E_il2cpp_TypeInfo_var);
+		Action_1__ctor_mA763900B34C3394F230AE63708F530CA9A192B57(L_7, __this, (intptr_t)((void*)MetaSystemGestureDetector_OnAimFlagsActionPerformedOrCanceled_mA039A6CD5B5CAAE457D7672710A4A314ACCE12BD_RuntimeMethod_var), NULL);
+		NullCheck(L_6);
+		InputAction_add_canceled_m69EC253E21CC314BFB350A86E294D0651F5ECA77(L_6, L_7, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:179>
+		__this->___m_AimFlagsBound = (bool)1;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:181>
+		InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD L_8 = __this->___m_AimFlagsAction;
+		InputActionPropertyExtensions_EnableDirectAction_m4F6A0B5DD5EFACC0B84BFCBD5FA15491DBE9DA26(L_8, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:182>
+		return;
+	}
+}
+// Method Definition Index: 94923
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_UnbindAimFlags_m9BCE9DF16D45F777D63BBE5285E51685F2E3801C (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MetaSystemGestureDetector_OnAimFlagsActionPerformedOrCanceled_mA039A6CD5B5CAAE457D7672710A4A314ACCE12BD_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* V_0 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:186>
+		bool L_0 = __this->___m_AimFlagsBound;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:187>
+		return;
+	}
+
+IL_0009:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:189>
+		InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* L_1 = (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*)(&__this->___m_AimFlagsAction);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_2;
+		L_2 = InputActionProperty_get_action_mABF2197D9CC6586E5DFB0481CF9C1B2586F41A47(L_1, NULL);
+		V_0 = L_2;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:190>
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_3 = V_0;
+		if (L_3)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:191>
+		return;
+	}
+
+IL_0019:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:193>
+		InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD L_4 = __this->___m_AimFlagsAction;
+		InputActionPropertyExtensions_DisableDirectAction_m976F69C07BC1AF691C6D3A1E03BBD4EA0D265932(L_4, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:195>
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_5 = V_0;
+		Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* L_6 = (Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E*)il2cpp_codegen_object_new(Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E_il2cpp_TypeInfo_var);
+		Action_1__ctor_mA763900B34C3394F230AE63708F530CA9A192B57(L_6, __this, (intptr_t)((void*)MetaSystemGestureDetector_OnAimFlagsActionPerformedOrCanceled_mA039A6CD5B5CAAE457D7672710A4A314ACCE12BD_RuntimeMethod_var), NULL);
+		NullCheck(L_5);
+		InputAction_remove_performed_m1BE84CED38F11F17C825FA782B35C92D708E6E44(L_5, L_6, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:196>
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_7 = V_0;
+		Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* L_8 = (Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E*)il2cpp_codegen_object_new(Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E_il2cpp_TypeInfo_var);
+		Action_1__ctor_mA763900B34C3394F230AE63708F530CA9A192B57(L_8, __this, (intptr_t)((void*)MetaSystemGestureDetector_OnAimFlagsActionPerformedOrCanceled_mA039A6CD5B5CAAE457D7672710A4A314ACCE12BD_RuntimeMethod_var), NULL);
+		NullCheck(L_7);
+		InputAction_remove_canceled_m7CF8D377C61DB1290E153C56312A7C075544AF7F(L_7, L_8, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:197>
+		__this->___m_AimFlagsBound = (bool)0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:198>
+		return;
+	}
+}
+// Method Definition Index: 94924
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_SetGestureState_mA8408914616784FF6321DC18D99C6CC46B0CE0C8 (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, int32_t ___0_state, bool ___1_forceInvoke, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BindableVariableBase_1_get_Value_mCB6FA52E7F1830E7FD9289E4F4FBE44948813802_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BindableVariableBase_1_set_Value_m397C0DBE79B512C6383D85035C208443AD76AC7E_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B8_0 = NULL;
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B7_0 = NULL;
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B11_0 = NULL;
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B10_0 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:202>
+		bool L_0 = ___1_forceInvoke;
+		if (L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C* L_1 = __this->___m_SystemGestureState;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = BindableVariableBase_1_get_Value_mCB6FA52E7F1830E7FD9289E4F4FBE44948813802_inline(L_1, BindableVariableBase_1_get_Value_mCB6FA52E7F1830E7FD9289E4F4FBE44948813802_RuntimeMethod_var);
+		int32_t L_3 = ___0_state;
+		if ((!(((uint32_t)L_2) == ((uint32_t)L_3))))
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:203>
+		return;
+	}
+
+IL_0012:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:205>
+		BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C* L_4 = __this->___m_SystemGestureState;
+		int32_t L_5 = ___0_state;
+		NullCheck(L_4);
+		BindableVariableBase_1_set_Value_m397C0DBE79B512C6383D85035C208443AD76AC7E(L_4, L_5, BindableVariableBase_1_set_Value_m397C0DBE79B512C6383D85035C208443AD76AC7E_RuntimeMethod_var);
+		int32_t L_6 = ___0_state;
+		if (!L_6)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		int32_t L_7 = ___0_state;
+		if ((((int32_t)L_7) == ((int32_t)1)))
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0026:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:209>
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_8 = __this->___m_SystemGestureEnded;
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_9 = L_8;
+		if (L_9)
+		{
+			G_B8_0 = L_9;
+			goto IL_0031;
+		}
+		G_B7_0 = L_9;
+	}
+	{
+		return;
+	}
+
+IL_0031:
+	{
+		NullCheck(G_B8_0);
+		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(G_B8_0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:210>
+		return;
+	}
+
+IL_0037:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:212>
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_10 = __this->___m_SystemGestureStarted;
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_11 = L_10;
+		if (L_11)
+		{
+			G_B11_0 = L_11;
+			goto IL_0042;
+		}
+		G_B10_0 = L_11;
+	}
+	{
+		return;
+	}
+
+IL_0042:
+	{
+		NullCheck(G_B11_0);
+		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(G_B11_0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:215>
+		return;
+	}
+}
+// Method Definition Index: 94925
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector_OnAimFlagsActionPerformedOrCanceled_mA039A6CD5B5CAAE457D7672710A4A314ACCE12BD (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, CallbackContext_tB251EE41F509C6E8A6B05EC97C029A45DF4F5FA8 ___0_context, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:261>
+		return;
+	}
+}
+// Method Definition Index: 94926
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaSystemGestureDetector__ctor_mF5508C719F65E5677F3CBA6B36FC1ADA4D6BFF88 (MetaSystemGestureDetector_t476B40FD3E3296828C5A114BD02737744AF41507* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BindableEnum_1__ctor_mB7A02F9C41E3A84F5A402192EC6E8BCAB800568F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE566E6091771397A8847DE9F0E5AF31E5E383CA7);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:41>
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0 = (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*)il2cpp_codegen_object_new(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD_il2cpp_TypeInfo_var);
+		InputAction__ctor_mD042AD3CC86AEDEB5FB1F8CD9E834FE35F9060B9(L_0, (String_t*)NULL, 0, (String_t*)NULL, (String_t*)NULL, (String_t*)NULL, _stringLiteralE566E6091771397A8847DE9F0E5AF31E5E383CA7, NULL);
+		InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD L_1;
+		memset((&L_1), 0, sizeof(L_1));
+		InputActionProperty__ctor_m0E922A8B1C135221416D4ADB0B28FE1BCA80209A((&L_1), L_0, NULL);
+		__this->___m_AimFlagsAction = L_1;
+		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___m_AimFlagsAction))->___m_Action), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___m_AimFlagsAction))->___m_Reference), (void*)NULL);
+		#endif
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/MetaSystemGestureDetector.cs:131>
+		BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C* L_2 = (BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C*)il2cpp_codegen_object_new(BindableEnum_1_t2DAF495BF038E3782E6ADC1CF417A3934BB6284C_il2cpp_TypeInfo_var);
+		BindableEnum_1__ctor_mB7A02F9C41E3A84F5A402192EC6E8BCAB800568F(L_2, 0, (bool)0, (Func_3_t592C0BEF675DF1E62EDD0225BF9AA6FDBCE90CB3*)NULL, (bool)0, BindableEnum_1__ctor_mB7A02F9C41E3A84F5A402192EC6E8BCAB800568F_RuntimeMethod_var);
+		__this->___m_SystemGestureState = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SystemGestureState), (void*)L_2);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94927
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OneEuroFilterVector3__ctor_m0A4D4430F87ED1FFB2509D3A0FEE3EF9908203B5 (OneEuroFilterVector3_t71848A0EF10F7FB56132C476132C61D96078B8B3* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_initialRawValue, float ___1_minCutoff, float ___2_beta, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:60>
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:62>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_initialRawValue;
+		__this->___m_LastRawValue = L_0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:63>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_initialRawValue;
+		__this->___m_LastFilteredValue = L_1;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:64>
+		float L_2 = ___1_minCutoff;
+		__this->___m_MinCutoff = L_2;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:65>
+		float L_3 = ___2_beta;
+		__this->___m_Beta = L_3;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:66>
+		return;
+	}
+}
+// Method Definition Index: 94928
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OneEuroFilterVector3_Initialize_m61A3828A7C86A0A1B51364B2C784EBCE925DA4B2 (OneEuroFilterVector3_t71848A0EF10F7FB56132C476132C61D96078B8B3* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_initialRawValue, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:74>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_initialRawValue;
+		__this->___m_LastRawValue = L_0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:75>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_initialRawValue;
+		__this->___m_LastFilteredValue = L_1;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:76>
+		return;
+	}
+}
+// Method Definition Index: 94929
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 OneEuroFilterVector3_Filter_m7FF7A90C7C87CA0CC3BBD4F510A0972C61B08C5A (OneEuroFilterVector3_t71848A0EF10F7FB56132C476132C61D96078B8B3* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_rawValue, float ___1_deltaTime, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:86>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_rawValue;
+		float L_1 = ___1_deltaTime;
+		float L_2 = __this->___m_MinCutoff;
+		float L_3 = __this->___m_Beta;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = OneEuroFilterVector3_Filter_m9A180E6E60F1BA648E5C930C1BB2B82FDA57D4EE(__this, L_0, L_1, L_2, L_3, NULL);
+		return L_4;
+	}
+}
+// Method Definition Index: 94930
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 OneEuroFilterVector3_Filter_m9A180E6E60F1BA648E5C930C1BB2B82FDA57D4EE (OneEuroFilterVector3_t71848A0EF10F7FB56132C476132C61D96078B8B3* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_rawValue, float ___1_deltaTime, float ___2_minCutoff, float ___3_beta, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:102>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_rawValue;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = __this->___m_LastRawValue;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_0, L_1, NULL);
+		float L_3 = ___1_deltaTime;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_2, L_3, NULL);
+		V_0 = L_4;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:105>
+		float L_5 = ___2_minCutoff;
+		float L_6 = ___2_minCutoff;
+		float L_7 = ___2_minCutoff;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		memset((&L_8), 0, sizeof(L_8));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_8), L_5, L_6, L_7, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:106>
+		float L_9 = ___3_beta;
+		float L_10 = ___3_beta;
+		float L_11 = ___3_beta;
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_1), L_9, L_10, L_11, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:109>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = Vector3_Scale_m7C3CD199271902D5C00CBF35CD230DEB62B68CAE_inline(L_12, L_13, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		L_15 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_8, L_14, NULL);
+		V_2 = L_15;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:112>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		L_16 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		V_6 = L_16;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_17, L_18, NULL);
+		V_7 = L_19;
+		BurstMathUtility_FastSafeDivide_mA1538EAD0BC9F7445EB1AE206089CC0685C12C19((&V_6), (&V_7), (&V_3), (9.99999997E-07f), NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:114>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = V_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = ___0_rawValue;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
+		L_22 = Vector3_Scale_m7C3CD199271902D5C00CBF35CD230DEB62B68CAE_inline(L_20, L_21, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:115>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
+		L_23 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = V_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
+		L_25 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_23, L_24, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26 = __this->___m_LastFilteredValue;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
+		L_27 = Vector3_Scale_m7C3CD199271902D5C00CBF35CD230DEB62B68CAE_inline(L_25, L_26, NULL);
+		V_4 = L_27;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:118>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = V_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
+		L_29 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_22, L_28, NULL);
+		V_5 = L_29;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:120>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = ___0_rawValue;
+		__this->___m_LastRawValue = L_30;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:121>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31 = V_5;
+		__this->___m_LastFilteredValue = L_31;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/OneEuroFilterVector3.cs:123>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = V_5;
+		return L_32;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94931
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PinchPointFollow_OnEnable_mA638AFC894D304EB87EA77CAC5D3EA1E8792CE2E (PinchPointFollow_tCD3FAB10E82231C7AB75912BC57946C882926007* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral97EAF83F2BEC9C23305078CA0F79B46A70D93C49);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/PinchPointFollow.cs:82>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogWarning_m23033D7E2F0F298BE465B7F3A63CDF40A4EB70EB(_stringLiteral97EAF83F2BEC9C23305078CA0F79B46A70D93C49, __this, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/PinchPointFollow.cs:83>
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(__this, (bool)0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/PinchPointFollow.cs:85>
+		return;
+	}
+}
+// Method Definition Index: 94932
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PinchPointFollow_OnDisable_mFD8286A010C0C8D06EC88608F6DA4EB946D3DC63 (PinchPointFollow_tCD3FAB10E82231C7AB75912BC57946C882926007* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/PinchPointFollow.cs:97>
+		return;
+	}
+}
+// Method Definition Index: 94933
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PinchPointFollow__ctor_m8C1DDBEBA98EFE2D67937E627C9BD2BC04C2E792 (PinchPointFollow_tCD3FAB10E82231C7AB75912BC57946C882926007* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/PinchPointFollow.cs:44>
+		__this->___m_RotationSmoothingSpeed = (12.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94934
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PokeGestureDetector_OnEnable_m6DD27B030C68C0264DA2550664810470AB98F3D1 (PokeGestureDetector_t94EB69FA33D2BEB523C380F2D7D9DF399AF41B17* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6BCA904C9FBE8D02E1CA3063029B795541A96085);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/PokeGestureDetector.cs:51>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(_stringLiteral6BCA904C9FBE8D02E1CA3063029B795541A96085, __this, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/PokeGestureDetector.cs:53>
+		return;
+	}
+}
+// Method Definition Index: 94935
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PokeGestureDetector_OnDisable_m0CD604623E5AC457F5A211AB6DB87B8AEF5CEA9F (PokeGestureDetector_t94EB69FA33D2BEB523C380F2D7D9DF399AF41B17* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/PokeGestureDetector.cs:67>
+		return;
+	}
+}
+// Method Definition Index: 94936
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PokeGestureDetector__ctor_mA6D3EC9146A3DACF8D754DE5EB5485369BCB78C1 (PokeGestureDetector_t94EB69FA33D2BEB523C380F2D7D9DF399AF41B17* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94937
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* ReleaseThresholdButtonReader_get_valueInput_m24EE7FD368A9ED9F49F9335FA36143C6332B1ECF (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:22>
+		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_0 = __this->___m_ValueInput;
+		return L_0;
+	}
+}
+// Method Definition Index: 94938
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReleaseThresholdButtonReader_set_valueInput_m8945D19B80516D7214A692D3ED455EEA9E8B6C43 (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:23>
+		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515** L_0 = (XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515**)(&__this->___m_ValueInput);
+		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_1 = ___0_value;
+		XRInputReaderUtility_SetInputProperty_m062703A18F912924471F2C79539A7B6509DEB264(L_0, L_1, __this, NULL);
+		return;
+	}
+}
+// Method Definition Index: 94939
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ReleaseThresholdButtonReader_get_pressThreshold_m3771542AC58EBF8DE00E2E08BF45F90ED9FA2ECC (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:39>
+		float L_0 = __this->___m_PressThreshold;
+		return L_0;
+	}
+}
+// Method Definition Index: 94940
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReleaseThresholdButtonReader_set_pressThreshold_m048414840430082E56E28C937DFD0EF6042F6CE9 (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:40>
+		float L_0 = ___0_value;
+		__this->___m_PressThreshold = L_0;
+		return;
+	}
+}
+// Method Definition Index: 94941
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ReleaseThresholdButtonReader_get_releaseThreshold_mAE3175C9BB7B5724DEFE5290B1180FC7D26238D7 (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:58>
+		float L_0 = __this->___m_ReleaseThreshold;
+		return L_0;
+	}
+}
+// Method Definition Index: 94942
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReleaseThresholdButtonReader_set_releaseThreshold_mB2E0E3D0B11C1F56F3EB4B0B8B362B11AFC1FEE0 (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:59>
+		float L_0 = ___0_value;
+		__this->___m_ReleaseThreshold = L_0;
+		return;
+	}
+}
+// Method Definition Index: 94943
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReleaseThresholdButtonReader_OnEnable_m37FB52F2122CA24D9D9B998CB47BACAA752A49DC (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, const RuntimeMethod* method) 
+{
+	XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* G_B2_0 = NULL;
+	XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* G_B1_0 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:71>
+		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_0 = __this->___m_ValueInput;
+		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000b;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		return;
+	}
+
+IL_000b:
+	{
+		NullCheck(G_B2_0);
+		XRInputButtonReader_EnableDirectActionIfModeUsed_mE9A109DD4852629D996091C59514A1BDB7FEB145(G_B2_0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:72>
+		return;
+	}
+}
+// Method Definition Index: 94944
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReleaseThresholdButtonReader_OnDisable_m3E8CF2D16F44D75C6EC9DE7EE9026B5FA31CB802 (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, const RuntimeMethod* method) 
+{
+	XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* G_B2_0 = NULL;
+	XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* G_B1_0 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:79>
+		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_0 = __this->___m_ValueInput;
+		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000b;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		return;
+	}
+
+IL_000b:
+	{
+		NullCheck(G_B2_0);
+		XRInputButtonReader_DisableDirectActionIfModeUsed_mD7BCE5EAB00514C6BBF2D7831929C4D5FB3DA20A(G_B2_0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:80>
+		return;
+	}
+}
+// Method Definition Index: 94945
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReleaseThresholdButtonReader_Update_m18893740DEFE0B2CA39B5E0FBF35EA4AB26B2A93 (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	float V_1 = 0.0f;
+	ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* G_B2_0 = NULL;
+	ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* G_B1_0 = NULL;
+	int32_t G_B3_0 = 0;
+	ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* G_B3_1 = NULL;
+	ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* G_B5_0 = NULL;
+	ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* G_B4_0 = NULL;
+	int32_t G_B6_0 = 0;
+	ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* G_B6_1 = NULL;
+	ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* G_B8_0 = NULL;
+	ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* G_B7_0 = NULL;
+	int32_t G_B9_0 = 0;
+	ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* G_B9_1 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:89>
+		bool L_0 = __this->___m_IsPerformed;
+		V_0 = L_0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:90>
+		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_1 = __this->___m_ValueInput;
+		NullCheck(L_1);
+		float L_2;
+		L_2 = XRInputButtonReader_ReadValue_m1165BE4BE0AA4C9A436145B2DB8DF5BA38A32F3C(L_1, NULL);
+		V_1 = L_2;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:91>
+		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_3 = __this->___m_ValueInput;
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = XRInputButtonReader_ReadIsPerformed_mB00BFEC845F9B6C726F87B6E3EAA0A737EF51F56(L_3, NULL);
+		bool L_5 = V_0;
+		if (((int32_t)((int32_t)L_4|(int32_t)L_5)))
+		{
+			G_B2_0 = __this;
+			goto IL_0031;
+		}
+		G_B1_0 = __this;
+	}
+	{
+		float L_6 = V_1;
+		float L_7 = __this->___m_PressThreshold;
+		G_B3_0 = ((((int32_t)((!(((float)L_6) >= ((float)L_7)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		G_B3_1 = G_B1_0;
+		goto IL_003a;
+	}
+
+IL_0031:
+	{
+		float L_8 = V_1;
+		float L_9 = __this->___m_ReleaseThreshold;
+		G_B3_0 = ((((float)L_8) > ((float)L_9))? 1 : 0);
+		G_B3_1 = G_B2_0;
+	}
+
+IL_003a:
+	{
+		NullCheck(G_B3_1);
+		G_B3_1->___m_IsPerformed = (bool)G_B3_0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:93>
+		bool L_10 = V_0;
+		if (L_10)
+		{
+			G_B5_0 = __this;
+			goto IL_004b;
+		}
+		G_B4_0 = __this;
+	}
+	{
+		bool L_11 = __this->___m_IsPerformed;
+		G_B6_0 = ((int32_t)(L_11));
+		G_B6_1 = G_B4_0;
+		goto IL_004c;
+	}
+
+IL_004b:
+	{
+		G_B6_0 = 0;
+		G_B6_1 = G_B5_0;
+	}
+
+IL_004c:
+	{
+		NullCheck(G_B6_1);
+		G_B6_1->___m_WasPerformedThisFrame = (bool)G_B6_0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:94>
+		bool L_12 = V_0;
+		if (!L_12)
+		{
+			G_B8_0 = __this;
+			goto IL_0060;
+		}
+		G_B7_0 = __this;
+	}
+	{
+		bool L_13 = __this->___m_IsPerformed;
+		G_B9_0 = ((((int32_t)L_13) == ((int32_t)0))? 1 : 0);
+		G_B9_1 = G_B7_0;
+		goto IL_0061;
+	}
+
+IL_0060:
+	{
+		G_B9_0 = 0;
+		G_B9_1 = G_B8_0;
+	}
+
+IL_0061:
+	{
+		NullCheck(G_B9_1);
+		G_B9_1->___m_WasCompletedThisFrame = (bool)G_B9_0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:95>
+		return;
+	}
+}
+// Method Definition Index: 94946
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReleaseThresholdButtonReader_ReadIsPerformed_m4F3760E91C6630CAA16789F3D4E7205B590CA3DB (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:100>
+		bool L_0 = __this->___m_IsPerformed;
+		return L_0;
+	}
+}
+// Method Definition Index: 94947
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReleaseThresholdButtonReader_ReadWasPerformedThisFrame_m8BA56CB61DBB4E9B89F459DBD04449F743B64086 (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:106>
+		bool L_0 = __this->___m_WasPerformedThisFrame;
+		return L_0;
+	}
+}
+// Method Definition Index: 94948
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReleaseThresholdButtonReader_ReadWasCompletedThisFrame_m1379ED56188FA24A4E012CFABB03A1B8D320C475 (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:112>
+		bool L_0 = __this->___m_WasCompletedThisFrame;
+		return L_0;
+	}
+}
+// Method Definition Index: 94949
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ReleaseThresholdButtonReader_ReadValue_m2D0B59ED3949F1598832D6038208B92BFF412633 (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:118>
+		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_0 = __this->___m_ValueInput;
+		NullCheck(L_0);
+		float L_1;
+		L_1 = XRInputButtonReader_ReadValue_m1165BE4BE0AA4C9A436145B2DB8DF5BA38A32F3C(L_0, NULL);
+		return L_1;
+	}
+}
+// Method Definition Index: 94950
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReleaseThresholdButtonReader_TryReadValue_mA6ADC0B74B6AFC9C870C6865A371754AB4841F8E (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, float* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:124>
+		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_0 = __this->___m_ValueInput;
+		float* L_1 = ___0_value;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = XRInputButtonReader_TryReadValue_m86E3327A732F6BD40E74FA40DEECFB417BF54C8A(L_0, L_1, NULL);
+		return L_2;
+	}
+}
+// Method Definition Index: 94951
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReleaseThresholdButtonReader__ctor_m525B651415AA5DEE410C9A06FF5209D062607650 (ReleaseThresholdButtonReader_t354750E78CF51CF57D2A573A2DEECE5387239697* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral86FADB31129B6F40C720A97600D69389EA3567E3);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:15>
+		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_0 = (XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515*)il2cpp_codegen_object_new(XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515_il2cpp_TypeInfo_var);
+		XRInputButtonReader__ctor_m7C30DDE023CB21C8D1D99D7519E452D707BDC0D9(L_0, _stringLiteral86FADB31129B6F40C720A97600D69389EA3567E3, (String_t*)NULL, (bool)0, 2, NULL);
+		__this->___m_ValueInput = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ValueInput), (void*)L_0);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:29>
+		__this->___m_PressThreshold = (1.0f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ReleaseThresholdButtonReader.cs:46>
+		__this->___m_ReleaseThreshold = (0.899999976f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94952
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* ValueDerivedButtonReader_get_valueInput_mDAB005BDD433B538E9D4A627F44DACADCA3C4B8F (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:21>
+		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_0 = __this->___m_ValueInput;
+		return L_0;
+	}
+}
+// Method Definition Index: 94953
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueDerivedButtonReader_set_valueInput_m7810A7156A1E5A2AEFF837283E9B3586C82C75F0 (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XRInputReaderUtility_SetInputProperty_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m15744164C1D61E4554375F75CC67D115002FAEAE_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:22>
+		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5** L_0 = (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5**)(&__this->___m_ValueInput);
+		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_1 = ___0_value;
+		XRInputReaderUtility_SetInputProperty_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m15744164C1D61E4554375F75CC67D115002FAEAE(L_0, L_1, __this, XRInputReaderUtility_SetInputProperty_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m15744164C1D61E4554375F75CC67D115002FAEAE_RuntimeMethod_var);
+		return;
+	}
+}
+// Method Definition Index: 94954
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ValueDerivedButtonReader_get_pressThreshold_m7E106A7EEA388D00DF539D9C62B0F9727B041BDF (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:35>
+		float L_0 = __this->___m_PressThreshold;
+		return L_0;
+	}
+}
+// Method Definition Index: 94955
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueDerivedButtonReader_set_pressThreshold_m9A8C9B4C7D312D08B238ADF4E2E1E9F0D79E713E (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:36>
+		float L_0 = ___0_value;
+		__this->___m_PressThreshold = L_0;
+		return;
+	}
+}
+// Method Definition Index: 94956
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ValueDerivedButtonReader_get_releaseThreshold_mDFA8DD65CAD0D20AE7910A602409A4879BBF5B84 (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:50>
+		float L_0 = __this->___m_ReleaseThreshold;
+		return L_0;
+	}
+}
+// Method Definition Index: 94957
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueDerivedButtonReader_set_releaseThreshold_m6B25D26C5DC3542644D6871494756AA9917549BB (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:51>
+		float L_0 = ___0_value;
+		__this->___m_ReleaseThreshold = L_0;
+		return;
+	}
+}
+// Method Definition Index: 94958
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueDerivedButtonReader_OnEnable_mD3452C97D3877C9C3D0B4B22807C427ECF9D7A3A (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, const RuntimeMethod* method) 
+{
+	XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* G_B2_0 = NULL;
+	XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* G_B1_0 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:63>
+		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_0 = __this->___m_ValueInput;
+		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000b;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		return;
+	}
+
+IL_000b:
+	{
+		NullCheck(G_B2_0);
+		XRInputValueReader_EnableDirectActionIfModeUsed_m6194760B90FB92168D6DDCC80C20DD180169ACB2(G_B2_0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:64>
+		return;
+	}
+}
+// Method Definition Index: 94959
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueDerivedButtonReader_OnDisable_mED9102E3876AC5FC416E068503EC3054A056F22A (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, const RuntimeMethod* method) 
+{
+	XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* G_B2_0 = NULL;
+	XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* G_B1_0 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:71>
+		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_0 = __this->___m_ValueInput;
+		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000b;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		return;
+	}
+
+IL_000b:
+	{
+		NullCheck(G_B2_0);
+		XRInputValueReader_DisableDirectActionIfModeUsed_m533212E2020FD7FA589B8B9F536BD7DC6E8048BC(G_B2_0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:72>
+		return;
+	}
+}
+// Method Definition Index: 94960
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueDerivedButtonReader_Update_m2DCB52274DEEF0F6BB115E0E8900B3B7E8863FB0 (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XRInputValueReader_1_ReadValue_mAFA366F0FF0345B1A9F16C19F1815D10E427860D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	float V_1 = 0.0f;
+	bool V_2 = false;
+	ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* G_B4_0 = NULL;
+	ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* G_B3_0 = NULL;
+	int32_t G_B5_0 = 0;
+	ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* G_B5_1 = NULL;
+	ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* G_B7_0 = NULL;
+	ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* G_B6_0 = NULL;
+	int32_t G_B8_0 = 0;
+	ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* G_B8_1 = NULL;
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:79>
+		bool L_0 = __this->___m_IsPerformed;
+		V_0 = L_0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:80>
+		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_1 = __this->___m_ValueInput;
+		NullCheck(L_1);
+		float L_2;
+		L_2 = XRInputValueReader_1_ReadValue_mAFA366F0FF0345B1A9F16C19F1815D10E427860D(L_1, XRInputValueReader_1_ReadValue_mAFA366F0FF0345B1A9F16C19F1815D10E427860D_RuntimeMethod_var);
+		V_1 = L_2;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:82>
+		float L_3 = V_1;
+		float L_4 = __this->___m_PressThreshold;
+		V_2 = (bool)((((int32_t)((!(((float)L_3) >= ((float)L_4)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:83>
+		bool L_5 = V_2;
+		bool L_6 = V_0;
+		if (!((int32_t)(((((int32_t)L_5) == ((int32_t)0))? 1 : 0)&(int32_t)L_6)))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:84>
+		float L_7 = V_1;
+		float L_8 = __this->___m_ReleaseThreshold;
+		V_2 = (bool)((((float)L_7) > ((float)L_8))? 1 : 0);
+	}
+
+IL_0032:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:86>
+		bool L_9 = V_2;
+		__this->___m_IsPerformed = L_9;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:87>
+		bool L_10 = V_0;
+		if (L_10)
+		{
+			G_B4_0 = __this;
+			goto IL_0045;
+		}
+		G_B3_0 = __this;
+	}
+	{
+		bool L_11 = __this->___m_IsPerformed;
+		G_B5_0 = ((int32_t)(L_11));
+		G_B5_1 = G_B3_0;
+		goto IL_0046;
+	}
+
+IL_0045:
+	{
+		G_B5_0 = 0;
+		G_B5_1 = G_B4_0;
+	}
+
+IL_0046:
+	{
+		NullCheck(G_B5_1);
+		G_B5_1->___m_WasPerformedThisFrame = (bool)G_B5_0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:88>
+		bool L_12 = V_0;
+		if (!L_12)
+		{
+			G_B7_0 = __this;
+			goto IL_005a;
+		}
+		G_B6_0 = __this;
+	}
+	{
+		bool L_13 = __this->___m_IsPerformed;
+		G_B8_0 = ((((int32_t)L_13) == ((int32_t)0))? 1 : 0);
+		G_B8_1 = G_B6_0;
+		goto IL_005b;
+	}
+
+IL_005a:
+	{
+		G_B8_0 = 0;
+		G_B8_1 = G_B7_0;
+	}
+
+IL_005b:
+	{
+		NullCheck(G_B8_1);
+		G_B8_1->___m_WasCompletedThisFrame = (bool)G_B8_0;
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:89>
+		return;
+	}
+}
+// Method Definition Index: 94961
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ValueDerivedButtonReader_ReadIsPerformed_m7ACBD12CEA1CA4EBFC69A4169D0DC5381A730548 (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:94>
+		bool L_0 = __this->___m_IsPerformed;
+		return L_0;
+	}
+}
+// Method Definition Index: 94962
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ValueDerivedButtonReader_ReadWasPerformedThisFrame_m240E8AFE5F7E61E14E0B904CFFD13D8C1EA5A7BF (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:100>
+		bool L_0 = __this->___m_WasPerformedThisFrame;
+		return L_0;
+	}
+}
+// Method Definition Index: 94963
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ValueDerivedButtonReader_ReadWasCompletedThisFrame_m812A21612452A50B00DA596034F7C39C5963F30E (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:106>
+		bool L_0 = __this->___m_WasCompletedThisFrame;
+		return L_0;
+	}
+}
+// Method Definition Index: 94964
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ValueDerivedButtonReader_ReadValue_mAF5AEF7DEC524C92467FCA0F302202E7F58826A2 (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XRInputValueReader_1_ReadValue_mAFA366F0FF0345B1A9F16C19F1815D10E427860D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:112>
+		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_0 = __this->___m_ValueInput;
+		NullCheck(L_0);
+		float L_1;
+		L_1 = XRInputValueReader_1_ReadValue_mAFA366F0FF0345B1A9F16C19F1815D10E427860D(L_0, XRInputValueReader_1_ReadValue_mAFA366F0FF0345B1A9F16C19F1815D10E427860D_RuntimeMethod_var);
+		return L_1;
+	}
+}
+// Method Definition Index: 94965
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ValueDerivedButtonReader_TryReadValue_mEA073EFFD2F1A8C750955EADD9E738F6B83FDE2D (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, float* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XRInputValueReader_1_TryReadValue_mA7A16FB5DD2CFAD42DF5414A8B012EDCF587F9AC_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:118>
+		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_0 = __this->___m_ValueInput;
+		float* L_1 = ___0_value;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = XRInputValueReader_1_TryReadValue_mA7A16FB5DD2CFAD42DF5414A8B012EDCF587F9AC(L_0, L_1, XRInputValueReader_1_TryReadValue_mA7A16FB5DD2CFAD42DF5414A8B012EDCF587F9AC_RuntimeMethod_var);
+		return L_2;
+	}
+}
+// Method Definition Index: 94966
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueDerivedButtonReader__ctor_m031C952CF148AE4B23A908A87C1263FD702134E9 (ValueDerivedButtonReader_t90C31BF7CB0D765150CB94E904FAA63E80315C9D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XRInputValueReader_1__ctor_m2D198A41FE129CDD40C6FDBF537BC35E3C4B6CFB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral86FADB31129B6F40C720A97600D69389EA3567E3);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:14>
+		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_0 = (XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5*)il2cpp_codegen_object_new(XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5_il2cpp_TypeInfo_var);
+		XRInputValueReader_1__ctor_m2D198A41FE129CDD40C6FDBF537BC35E3C4B6CFB(L_0, _stringLiteral86FADB31129B6F40C720A97600D69389EA3567E3, 2, XRInputValueReader_1__ctor_m2D198A41FE129CDD40C6FDBF537BC35E3C4B6CFB_RuntimeMethod_var);
+		__this->___m_ValueInput = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ValueInput), (void*)L_0);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:28>
+		__this->___m_PressThreshold = (0.800000012f);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/ValueDerivedButtonReader.cs:42>
+		__this->___m_ReleaseThreshold = (0.25f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 94967
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3ScaleAffordanceReceiver_OnEnable_m1AED5622A1B5216D3965AF3EFEC13C49069C15C3 (Vector3ScaleAffordanceReceiver_tC5E30AA269B3C026CE28F6C0735CBA1C9B2FD52E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BaseAffordanceStateReceiver_1_OnEnable_mB97FBD627A706DF4A4A13EF3276D3A3E8D87C4D4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/Vector3ScaleAffordanceReceiver.cs:21>
+		BaseAffordanceStateReceiver_1_OnEnable_mB97FBD627A706DF4A4A13EF3276D3A3E8D87C4D4(__this, BaseAffordanceStateReceiver_1_OnEnable_mB97FBD627A706DF4A4A13EF3276D3A3E8D87C4D4_RuntimeMethod_var);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/Vector3ScaleAffordanceReceiver.cs:22>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___m_TargetTransform;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/Vector3ScaleAffordanceReceiver.cs:23>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		__this->___m_TargetTransform = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TargetTransform), (void*)L_2);
+	}
+
+IL_0020:
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/Vector3ScaleAffordanceReceiver.cs:24>
+		return;
+	}
+}
+// Method Definition Index: 94968
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3ScaleAffordanceReceiver_OnAffordanceValueUpdated_m73456EE221F4541A07AB10735F7C63A074FD8574 (Vector3ScaleAffordanceReceiver_tC5E30AA269B3C026CE28F6C0735CBA1C9B2FD52E* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_newValue, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/Vector3ScaleAffordanceReceiver.cs:29>
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_0 = ___0_newValue;
+		Vector3AffordanceReceiver_OnAffordanceValueUpdated_mBB5120B9FB6E709161DBD0AD58362174BC06F719(__this, L_0, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/Vector3ScaleAffordanceReceiver.cs:30>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = __this->___m_TargetTransform;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_2 = ___0_newValue;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = float3_op_Implicit_m9CC301DFD67EEFAA15CA05E91913E862B22326F6(L_2, NULL);
+		NullCheck(L_1);
+		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_1, L_3, NULL);
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/Scripts/Vector3ScaleAffordanceReceiver.cs:31>
+		return;
+	}
+}
+// Method Definition Index: 94969
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3ScaleAffordanceReceiver__ctor_m3D1CDD639CFD3EFB41BA48CA04B1460736661B55 (Vector3ScaleAffordanceReceiver_tC5E30AA269B3C026CE28F6C0735CBA1C9B2FD52E* __this, const RuntimeMethod* method) 
+{
+	{
+		Vector3AffordanceReceiver__ctor_m369BD7371AF82E1E303B183EC60F057580C93588(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Method Definition Index: 45862
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	float G_B3_0 = 0.0f;
+	{
+		float L_0 = ___0_a;
+		float L_1 = ___1_b;
+		if ((((float)L_0) > ((float)L_1)))
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		float L_2 = ___1_b;
+		G_B3_0 = L_2;
+		goto IL_0009;
+	}
+
+IL_0008:
+	{
+		float L_3 = ___0_a;
+		G_B3_0 = L_3;
+	}
+
+IL_0009:
+	{
+		V_0 = G_B3_0;
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		float L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 26585
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float PokeStateData_get_interactionStrength_mCDA09DA4CD62F5A7C4CC68D9B89040643595F852_inline (PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.xr.interaction.toolkit@7faefd988174/Runtime/Interaction/Filtering/Poke/PokeStateData.cs:30>
+		float L_0 = __this->___U3CinteractionStrengthU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 45880
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = ___0_a;
+		float L_1 = ___1_b;
+		float L_2 = ___0_a;
+		float L_3 = ___2_t;
+		float L_4;
+		L_4 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(L_3, NULL);
+		V_0 = ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_1, L_2)), L_4))));
+		goto IL_0010;
+	}
+
+IL_0010:
+	{
+		float L_5 = V_0;
+		return L_5;
+	}
+}
+// Method Definition Index: 94887
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ToggleGameObject_get_activationGameObject_m1F1B6421F159376BB842ED8B1E26449A5E899600_inline (ToggleGameObject_tD82BA740FE7646FFB4D3A12353FB4DF6CCE4F7AD* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/naghamsabbour/Documents/UofT/Courses/ECE1724/Elevator Project/ECE1724-ElevatorVR/Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoSceneAssets/Scripts/ToggleGameObject.cs:17>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_ActivationGameObject;
+		return L_0;
+	}
+}
+// Method Definition Index: 53437
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float3_op_Addition_mFFCF4F7457594F5EFB0678C0DE90AAD3D3F6947B_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_lhs, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___1_rhs, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.mathematics@8017b507cc74/Unity.Mathematics/float3.gen.cs:283>
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_0 = ___0_lhs;
+		float L_1 = L_0.___x;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_2 = ___1_rhs;
+		float L_3 = L_2.___x;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_4 = ___0_lhs;
+		float L_5 = L_4.___y;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_6 = ___1_rhs;
+		float L_7 = L_6.___y;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_8 = ___0_lhs;
+		float L_9 = L_8.___z;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_10 = ___1_rhs;
+		float L_11 = L_10.___z;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_12;
+		memset((&L_12), 0, sizeof(L_12));
+		float3__ctor_mC61002CD0EC13D7C37D846D021A78C028FB80DB9_inline((&L_12), ((float)il2cpp_codegen_add(L_1, L_3)), ((float)il2cpp_codegen_add(L_5, L_7)), ((float)il2cpp_codegen_add(L_9, L_11)), NULL);
+		return L_12;
+	}
+}
+// Method Definition Index: 45788
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
+		float L_11 = L_10.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		memset((&L_12), 0, sizeof(L_12));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_12), ((float)il2cpp_codegen_subtract(L_1, L_3)), ((float)il2cpp_codegen_subtract(L_5, L_7)), ((float)il2cpp_codegen_subtract(L_9, L_11)), NULL);
+		V_0 = L_12;
+		goto IL_0030;
+	}
+
+IL_0030:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
+		return L_13;
+	}
+}
+// Method Definition Index: 45792
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
+		float L_7 = L_6.___z;
+		float L_8 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_9), ((float)(L_1/L_2)), ((float)(L_4/L_5)), ((float)(L_7/L_8)), NULL);
+		V_0 = L_9;
+		goto IL_0021;
+	}
+
+IL_0021:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = V_0;
+		return L_10;
+	}
+}
+// Method Definition Index: 45755
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___x = L_0;
+		float L_1 = ___1_y;
+		__this->___y = L_1;
+		float L_2 = ___2_z;
+		__this->___z = L_2;
+		return;
+	}
+}
+// Method Definition Index: 45757
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Scale_m7C3CD199271902D5C00CBF35CD230DEB62B68CAE_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
+		float L_11 = L_10.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		memset((&L_12), 0, sizeof(L_12));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_12), ((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)), ((float)il2cpp_codegen_multiply(L_9, L_11)), NULL);
+		V_0 = L_12;
+		goto IL_0030;
+	}
+
+IL_0030:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
+		return L_13;
+	}
+}
+// Method Definition Index: 45787
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
+		float L_11 = L_10.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		memset((&L_12), 0, sizeof(L_12));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_12), ((float)il2cpp_codegen_add(L_1, L_3)), ((float)il2cpp_codegen_add(L_5, L_7)), ((float)il2cpp_codegen_add(L_9, L_11)), NULL);
+		V_0 = L_12;
+		goto IL_0030;
+	}
+
+IL_0030:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
+		return L_13;
+	}
+}
+// Method Definition Index: 45780
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___oneVector;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 9462
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->____current;
+		return L_0;
+	}
+}
+// Method Definition Index: 9412
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m1AB3815922EAB4210EC4D8F2053BEE86A700CE89_gshared_inline (List_1_t785970ECD3400B166B17F92860A0ABA24BBD51B2* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___0_item, const RuntimeMethod* method) 
+{
+	PoseU5BU5D_tFC818445A5F54FE4CD8B53D645FF0AD0E2A133EB* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = __this->____version;
+		__this->____version = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		PoseU5BU5D_tFC818445A5F54FE4CD8B53D645FF0AD0E2A133EB* L_1 = __this->____items;
+		V_0 = L_1;
+		int32_t L_2 = __this->____size;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		PoseU5BU5D_tFC818445A5F54FE4CD8B53D645FF0AD0E2A133EB* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		PoseU5BU5D_tFC818445A5F54FE4CD8B53D645FF0AD0E2A133EB* L_6 = V_0;
+		int32_t L_7 = V_1;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_8 = ___0_item;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_9 = ___0_item;
+		List_1_AddWithResize_m7B82E119DCAE33691FA5A8FA0A162C582759678E(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		return;
+	}
+}
+// Method Definition Index: 9401
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->____size;
+		return L_0;
+	}
+}
+// Method Definition Index: 92034
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 BindableVariableBase_1_get_Value_mDA92236BCE8EC7928399D7271AA97D7B62941EEC_gshared_inline (BindableVariableBase_1_t0B8C3C183E9A64B760FC611EA6858D9BD639E610* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.xr.core-utils@f0450cbac8d6/Runtime/Bindings/Variables/BindableVariableBase.cs:34>
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0 = __this->___m_InternalValue;
+		return L_0;
+	}
+}
+// Method Definition Index: 92034
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BindableVariableBase_1_get_Value_mC412EC0392D6CDA386D4E83A0615067AB99929F0_gshared_inline (BindableVariableBase_1_t9E98D971B506CF9B28B829E832171C4DE7175A46* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.xr.core-utils@f0450cbac8d6/Runtime/Bindings/Variables/BindableVariableBase.cs:34>
+		int32_t L_0 = __this->___m_InternalValue;
+		return L_0;
+	}
+}
+// Method Definition Index: 45879
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	float V_1 = 0.0f;
+	bool V_2 = false;
+	{
+		float L_0 = ___0_value;
+		V_0 = (bool)((((float)L_0) < ((float)(0.0f)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		V_1 = (0.0f);
+		goto IL_002d;
+	}
+
+IL_0015:
+	{
+		float L_2 = ___0_value;
+		V_2 = (bool)((((float)L_2) > ((float)(1.0f)))? 1 : 0);
+		bool L_3 = V_2;
+		if (!L_3)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		V_1 = (1.0f);
+		goto IL_002d;
+	}
+
+IL_0029:
+	{
+		float L_4 = ___0_value;
+		V_1 = L_4;
+		goto IL_002d;
+	}
+
+IL_002d:
+	{
+		float L_5 = V_1;
+		return L_5;
+	}
+}
+// Method Definition Index: 53408
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float3__ctor_mC61002CD0EC13D7C37D846D021A78C028FB80DB9_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.mathematics@8017b507cc74/Unity.Mathematics/float3.gen.cs:41>
+		float L_0 = ___0_x;
+		__this->___x = L_0;
+		//<source_info:./Library/PackageCache/com.unity.mathematics@8017b507cc74/Unity.Mathematics/float3.gen.cs:42>
+		float L_1 = ___1_y;
+		__this->___y = L_1;
+		//<source_info:./Library/PackageCache/com.unity.mathematics@8017b507cc74/Unity.Mathematics/float3.gen.cs:43>
+		float L_2 = ___2_z;
+		__this->___z = L_2;
+		//<source_info:./Library/PackageCache/com.unity.mathematics@8017b507cc74/Unity.Mathematics/float3.gen.cs:44>
+		return;
+	}
+}
