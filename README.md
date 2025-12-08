@@ -95,6 +95,7 @@ The VR app can operate in two modes:
 ### 3. Backend API Service
 
 > **Also not part of this repo, but consumed by it.**
+- We will leave the current api up for the month of december https://178.128.234.40/number.php, you should be able to manipulate the elevator in vr from here with no need for the api key
 
 - A very small HTTP service (e.g., PHP/Flask/Node) that:
   - Receives updates from the edge AI module.
