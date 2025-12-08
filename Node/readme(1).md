@@ -276,13 +276,3 @@ API_KEY = "YOUR_API_KEY"
 
 ---
 
-## Notes
-
-- If your backend should only accept **single digits (0–9)**:
-  - Change the PHP range check to `> 9`.
-  - Align your Pi-side validation as well.
-- For production hardening:
-  - Add rate limiting in Nginx.
-  - Move the API behind HTTPS (Let’s Encrypt).
-  - Store the API key outside the repo (env/config management).
-
