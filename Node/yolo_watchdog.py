@@ -158,6 +158,7 @@ def main():
 
                 if num and is_valid_number(num, args.min_val, args.max_val):
                     print(f"[YOLO] VALID number found: {num}")
+                    send_value_to_api(num)
                     return
 
             frame_count += 1
