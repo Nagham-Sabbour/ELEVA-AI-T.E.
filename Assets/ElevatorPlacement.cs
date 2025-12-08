@@ -4,7 +4,7 @@ using UnityEngine.XR;
 public class ElevatorPlacement : MonoBehaviour
 {
     [Header("References")]
-    public Transform xrCamera;              // The VR camera (HMD)
+    public Transform xrCamera;              // The VR camera
 
     [Header("Settings")]
     public float initialDistance = 2f;      // How far in front of your head to place the rig
@@ -14,7 +14,6 @@ public class ElevatorPlacement : MonoBehaviour
     [Header("State")]
     public bool placementDone = false;      // true = locked, false = can move/rotate
 
-    // Internal state
     float baseFloorY;                       // Floor height for floor 0 at startup
 
     bool isRotating = false;
@@ -30,7 +29,7 @@ public class ElevatorPlacement : MonoBehaviour
 
     void Start()
     {
-        // Auto-assign camera if not set
+        // Auto assign camera if not set
         if (xrCamera == null)
         {
             Camera cam = Camera.main;
@@ -71,13 +70,12 @@ public class ElevatorPlacement : MonoBehaviour
 
         leftHand.TryGetFeatureValue(CommonUsages.triggerButton, out leftTriggerPressed);
 
-        // -------- LEFT TRIGGER: LOCK / UNLOCK (DOUBLE CLICK) --------
+        // Left trigger double click toggles lock/unlock
         if (leftTriggerPressed && !leftTriggerLast)
         {
             float now = Time.time;
             if (now - lastLeftTriggerClickTime <= doubleClickInterval)
             {
-                // Double-click -> toggle lock
                 placementDone = !placementDone;
                 isRotating = false; // stop any ongoing rotation
                 lastLeftTriggerClickTime = -999f;
@@ -98,7 +96,7 @@ public class ElevatorPlacement : MonoBehaviour
             return;
         }
 
-        // -------- RIGHT STICK CLICK: SNAP IN FRONT (KEEP CURRENT FLOOR) --------
+        // Right joy stick click snaps elvator infront of camera
         if (stickClick && !rightStickClickLast)
         {
             // Snap in front of camera, but keep current Y so the "current floor" alignment stays correct
@@ -106,7 +104,7 @@ public class ElevatorPlacement : MonoBehaviour
         }
         rightStickClickLast = stickClick;
 
-        // -------- RIGHT TRIGGER: ROTATE ONLY (NO TRANSLATION) --------
+        // Right trigger rotates only
         if (rightTriggerPressed && !rightTriggerLast)
         {
             StartRotation(rightHand);
@@ -122,14 +120,14 @@ public class ElevatorPlacement : MonoBehaviour
             UpdateRotation(rightHand);
         }
 
-        // -------- RIGHT STICK AXIS: MOVE ON XZ PLANE (VIEW-RELATIVE) --------
+        // Right joy stick moves on XZ plane
         if (stickAxis.sqrMagnitude > 0.001f)
         {
             MoveWithStick(stickAxis);
         }
     }
 
-    // Snap in front of camera; keepY = true to preserve current floor alignment
+    // Snap in front of camera
     void PlaceInFrontOfCamera(bool keepY)
     {
         if (xrCamera == null) return;
@@ -148,18 +146,18 @@ public class ElevatorPlacement : MonoBehaviour
 
         if (keepY)
         {
-            // Preserve current vertical offset so current floor stays aligned
+            // Stay on current floor
             pos.y = transform.position.y;
         }
         else
         {
-            // Initial placement: align floor 0 with real floor
+            // Initial placement align floor 0 with real floor
             pos.y = baseFloorY;
         }
 
         transform.position = pos;
 
-        // Yaw matches camera, stay perfectly upright
+        // Yaw matches camera stay upright
         Vector3 euler = transform.eulerAngles;
         euler.x = 0f;
         euler.y = xrCamera.eulerAngles.y;
@@ -188,7 +186,7 @@ public class ElevatorPlacement : MonoBehaviour
         Vector3 handEuler = handRot.eulerAngles;
         float currentHandYaw = handEuler.y;
 
-        // DeltaAngle handles wrap-around at 0/360 properly
+        // DeltaAngle handles wrap-around at 0 to 360
         float deltaYaw = Mathf.DeltaAngle(grabStartHandYaw, currentHandYaw);
         float newYaw = grabStartRigYaw + deltaYaw;
 
@@ -215,9 +213,8 @@ public class ElevatorPlacement : MonoBehaviour
         Vector3 moveDir = camRight * stickAxis.x + camForward * stickAxis.y;
         Vector3 pos = transform.position + moveDir * moveSpeed * Time.deltaTime;
 
-        // Keep current height (floor alignment)
+        // Keep current height
         pos.y = transform.position.y;
-
         transform.position = pos;
     }
 }

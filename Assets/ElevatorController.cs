@@ -78,14 +78,14 @@ public class ElevatorController : MonoBehaviour
         UpdateUI();
     }
 
-    void Update()
-    {
-        // Left controller = user floor (rig moves in Y)
-        // HandleLeftController();
+    // void Update()
+    // {
+    //     Left controller = user floor (rig moves in Y)
+    //     HandleLeftController();
 
-        // Manual elevator control via right controller (DISABLED – kept for reference)
-        // HandleRightController();
-    }
+    //     Manual elevator control via right controller (DISABLED – kept for reference)
+    //     HandleRightController();
+    // }
 
     void HandleLeftController()
     {
@@ -97,7 +97,6 @@ public class ElevatorController : MonoBehaviour
         leftHand.TryGetFeatureValue(CommonUsages.primaryButton, out primaryPressed);
         leftHand.TryGetFeatureValue(CommonUsages.secondaryButton, out secondaryPressed);
 
-        // primary = floor down, secondary = floor up (your latest mapping)
         if (primaryPressed && !leftPrimaryLast)
         {
             ChangeUserFloor(-1);
@@ -123,41 +122,32 @@ public class ElevatorController : MonoBehaviour
     }
 
 
-    // =====================================================================
     // LEGACY: manual elevator control with right controller (kept as comment)
-    // =====================================================================
-    /*
-    void HandleRightController()
-    {
-        if (isMoving) return; // Don't accept new commands while moving
+    // void HandleRightController()
+    // {
+    //     if (isMoving) return; // Don't accept new commands while moving
 
-        InputDevice rightHand = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
+    //     InputDevice rightHand = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
 
-        bool primaryPressed = false;
-        bool secondaryPressed = false;
+    //     bool primaryPressed = false;
+    //     bool secondaryPressed = false;
 
-        rightHand.TryGetFeatureValue(CommonUsages.primaryButton, out primaryPressed);
-        rightHand.TryGetFeatureValue(CommonUsages.secondaryButton, out secondaryPressed);
+    //     rightHand.TryGetFeatureValue(CommonUsages.primaryButton, out primaryPressed);
+    //     rightHand.TryGetFeatureValue(CommonUsages.secondaryButton, out secondaryPressed);
 
-        // primary = elevator down, secondary = elevator up
-        if (primaryPressed && !rightPrimaryLast)
-        {
-            TryMoveElevator(-1);
-        }
-        if (secondaryPressed && !rightSecondaryLast)
-        {
-            TryMoveElevator(+1);
-        }
+    //     // primary = elevator down, secondary = elevator up
+    //     if (primaryPressed && !rightPrimaryLast)
+    //     {
+    //         TryMoveElevator(-1);
+    //     }
+    //     if (secondaryPressed && !rightSecondaryLast)
+    //     {
+    //         TryMoveElevator(+1);
+    //     }
 
-        rightPrimaryLast = primaryPressed;
-        rightSecondaryLast = secondaryPressed;
-    }
-    */
-
-    // change floor by 1 +/-
-    // determine current floor
-    // determine new floor current + change
-    // ChangeUserFloor(newFloor)
+    //     rightPrimaryLast = primaryPressed;
+    //     rightSecondaryLast = secondaryPressed;
+    // }
 
     public void ChangeUserFloor(int delta)
     {
@@ -180,8 +170,7 @@ public class ElevatorController : MonoBehaviour
     }
 
 
-    // ================== MOVEMENT (used by API + legacy controls) ==================
-
+    // MOVEMENT (used by API + legacy controls)
     void TryMoveElevator(int targetFloor)
     {
         if (targetFloor < minFloor || targetFloor > maxFloor) return;
@@ -263,7 +252,7 @@ public class ElevatorController : MonoBehaviour
         }
     }
 
-    // ========================== API POLLING ==========================
+    // API POLLING
 
     IEnumerator PollApiRoutine()
     {
